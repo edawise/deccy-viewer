@@ -1,0 +1,10 @@
+{
+	"depends_on": ["zzzzzzzz"],
+	"kind": "decision", 
+	"content": {
+		"type": "text", 
+		"ref": "inline",
+		"content": "vsc-deccy is a vscode extension that visualises the deccy graph of a project", 
+		"rationale": "it helps visualise the connections of nodes, beyond what a jj graph can show" 
+	}
+}
