@@ -1,0 +1,10 @@
+{
+	"depends_on": ["uuutyrzs", "svssunnl"],
+	"kind": "decision", 
+	"content": {
+		"type": "text", 
+		"ref": "inline",
+		"content": "deccy is a directed acyclic graph - a single jj change represents a single decision and maps to a single node in the deccy graph", 
+		"rationale": "the decision is the basic unit of work and jj handles the vcs" 
+	}
+}
