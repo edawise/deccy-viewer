@@ -1,0 +1,10 @@
+{
+	"depends_on": ["uuutyrzs"],
+	"kind": "decision", 
+	"content": {
+		"type": "text", 
+		"ref": "inline",
+		"content": "the viewer should be a webview panel with an interactive html page",
+		"rationale": "rich user experience and side panel for easy viewing of the content" 
+	}
+}
