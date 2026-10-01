@@ -1,0 +1,6 @@
+jj new -A $1;
+NEW_CHANGE_ID=$(jj log -r @ --no-graph -T 'change_id.shortest(8)')
+jj commit -m "$2";
+echo "{\n\t\"depends_on\": [],\n\t\"kind\": \"\", \n\t\"content\": {\n\t\t\"type\": \"\", \n\t\t\"ref\": \"\", \n\t\t\"rationale\": \"\" \n\t}\n}" > nodes/${NEW_CHANGE_ID}.json;
+jj squash;
+code nodes/${NEW_CHANGE_ID}.json;
