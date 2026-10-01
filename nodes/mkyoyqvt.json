@@ -1,0 +1,10 @@
+{
+	"depends_on": ["mmsmukkk"],
+	"kind": "decision", 
+	"content": {
+		"type": "text", 
+		"ref": "inline",
+		"content": "edges come in two types: depends_on and evaluates: a depends_on edge declares a dependency of a child node on a parent node, an evaluates edge declares an evaluation of a child node by a parent node ", 
+		"rationale": "simplifies the relationships between nodes while maintaining broadness and flexibility" 
+	}
+}
