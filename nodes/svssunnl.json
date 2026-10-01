@@ -1,0 +1,10 @@
+{
+	"depends_on": ["uuutyrzs"],
+	"kind": "decision", 
+	"content": {
+		"type": "text", 
+		"ref": "inline",
+		"content": "read deccy vcs data from the jj repo log", 
+		"rationale": "jj is the chosen vcs backend for deccy, so we must be able to read node information from it" 
+	}
+}
