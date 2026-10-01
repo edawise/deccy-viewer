@@ -1,0 +1,10 @@
+{
+	"depends_on": ["zkvxornu","mkyoyqvt"],
+	"kind": "decision", 
+	"content": {
+		"type": "text", 
+		"ref": "inline",
+		"content": "depends_on edges declare a prerequisite of the declaring node: every decision must declare depends_on pointing to a decision/evaluation, and evaluations may additionally declare depends_on; evaluates edges can point from an evaluation to a decision/evaluation. every decision must depend on at least one node, every evaluation must evaluate at least one node", 
+		"rationale": "logical relationships to enforce some structure" 
+	}
+}
