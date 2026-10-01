@@ -1,0 +1,10 @@
+{
+	"depends_on": ["mmsmukkk"],
+	"kind": "decision", 
+	"content": {
+		"type": "text", 
+		"ref": "inline",
+		"content": "nodes come in two types: decisions and evaluations - decisions include constraints, design choices and implementations, evaluations include review criteria, tests and other quality checks", 
+		"rationale": "simplifies the elements of work while maintaining broadness and flexibility" 
+	}
+}
