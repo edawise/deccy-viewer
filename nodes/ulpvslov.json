@@ -1,0 +1,9 @@
+{
+	"depends_on": ["mmsmukkk", "zkvxornu", "mkyoyqvt", "lnqowznu"],
+	"kind": "decision", 
+	"content": {
+		"type": "json-schema", 
+		"ref": ["schemas/node.json"], 
+		"rationale": "define the base structure of a node" 
+	}
+}
