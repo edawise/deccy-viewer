@@ -1,0 +1,10 @@
+{
+	"depends_on": ["uuutyrzs"],
+	"kind": "decision", 
+	"content": {
+		"type": "text", 
+		"ref": "inline",
+		"content": "the publisher is edawise", 
+		"rationale": "publisher" 
+	}
+}
