@@ -1,0 +1,10 @@
+{
+	"depends_on": ["mkyoyqvt"],
+	"kind": "decision",
+	"content": {
+		"type": "visual-spec",
+		"ref": "inline",
+		"content": "{\"element\": \"edge/*\", \"aspect\": \"direction\", \"state\": \"default\", \"value\": \"parent-to-child\", \"note\": \"depends_on runs from listed prerequisite to declaring node; evaluates runs from declaring evaluator to listed node\"}",
+		"rationale": "unambiguous arrow semantics"
+	}
+}
