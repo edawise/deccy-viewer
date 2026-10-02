@@ -1,0 +1,10 @@
+{
+	"depends_on": ["rtmqlnwm"],
+	"kind": "decision", 
+	"content": {
+		"type": "ears", 
+		"ref": "inline",
+		"content": "WHEN the user hovers a node, the viewer shall show a tooltip with the node's rationale.", 
+		"rationale": "short overview for quick browsing/perusal" 
+	}
+}
