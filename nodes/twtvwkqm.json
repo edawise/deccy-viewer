@@ -1,0 +1,10 @@
+{
+	"depends_on": ["kzqwqptv"],
+	"kind": "decision", 
+	"content": {
+		"type": "ears", 
+		"ref": "inline", 
+		"content": "WHEN the user invokes the command vcsDeccy.openGraph, the extension shall open a webview panel titled Deccy Graph.",
+		"rationale": "entry point behaviour for extension" 
+	}
+}
