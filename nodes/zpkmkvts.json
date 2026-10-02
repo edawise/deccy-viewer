@@ -1,0 +1,10 @@
+{
+	"depends_on": ["oumoznwq", "ykvrkysl"],
+	"kind": "decision",
+	"content": {
+		"type": "ears",
+		"ref": "inline",
+		"content": "WHEN the user presses Esc, the viewer shall clear the selection.",
+		"rationale": "keyboard equivalent of click empty canvas"
+	}
+}
