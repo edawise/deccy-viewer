@@ -1,0 +1,10 @@
+{
+	"depends_on": ["tqxvykwn", "rwxywllw", "otyqzpxn"],
+	"kind": "decision",
+	"content": {
+		"type": "visual-spec",
+		"ref": "inline",
+		"content": "{\"element\": \"edge/unresolved\", \"aspect\": \"colour-role\", \"state\": \"default\", \"value\": \"warning\", \"token\": \"--vscode-charts-red\"}",
+		"rationale": "broken links read as warnings"
+	}
+}
