@@ -1,0 +1,10 @@
+{
+	"depends_on": ["kyokxuml", "ykvrkysl"],
+	"kind": "decision", 
+	"content": {
+		"type": "ears", 
+		"ref": "inline", 
+		"content": "WHEN the user presses + or -, the viewer shall zoom about the viewport centre.",
+		"rationale": "keyboard zoom" 
+	}
+}
