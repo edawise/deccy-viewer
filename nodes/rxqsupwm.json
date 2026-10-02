@@ -1,0 +1,9 @@
+{
+	"depends_on": ["uuutyrzs"],
+	"kind": "decision", 
+	"content": {
+		"type": "text", 
+		"ref": [".gitignore"], 
+		"rationale": "standard gitignore" 
+	}
+}
