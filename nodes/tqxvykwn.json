@@ -1,0 +1,10 @@
+{
+	"depends_on": ["kwovtsuv"],
+	"kind": "decision", 
+	"content": {
+		"type": "ears", 
+		"ref": "inline", 
+		"content": "IF a dependency or evaluation references a missing node id, THEN the viewer shall render the edge as unresolved and mark it visibly.",
+		"rationale": "make broken links visible" 
+	}
+}
