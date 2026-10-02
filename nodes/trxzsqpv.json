@@ -1,0 +1,10 @@
+{
+	"depends_on": ["rtmqlnwm"],
+	"kind": "decision", 
+	"content": {
+		"type": "ears", 
+		"ref": "inline", 
+		"content": "WHEN the user double-clicks a node, the viewer shall open nodes/<id>.json in the editor.",
+		"rationale": "quick access to node" 
+	}
+}
