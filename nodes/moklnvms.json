@@ -1,0 +1,10 @@
+{
+	"depends_on": ["kwovtsuv"],
+	"kind": "decision",
+	"content": {
+		"type": "visual-spec",
+		"ref": "inline",
+		"content": "{\"element\": \"edge/related, node/related\", \"aspect\": \"emphasis\", \"state\": \"hover-neighbour\", \"value\": \"highlight\", \"note\": \"associated = incident edges and adjacent nodes per kwovtsuv\"}",
+		"rationale": "hover shows the local neighbourhood"
+	}
+}
