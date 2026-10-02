@@ -1,0 +1,9 @@
+{
+	"depends_on": ["mmsmukkk", "ulpvslov", "qpsnwxlu", "svssunnl", "uvmutyww", "vxmzzunt", "tqxvykwn", "tmmynypo", "krvyoumy"],
+	"kind": "decision",
+	"content": {
+		"type": "implementation",
+		"ref": ["src/data/nodes.ts", "src/data/jj.ts", "src/data/watch.ts"],
+		"rationale": "produce validated node records and jj labels; everything downstream consumes this"
+	}
+}
