@@ -1,0 +1,10 @@
+{
+	"depends_on": ["zkvxornu", "mkyoyqvt", "vylxkuxr"],
+	"kind": "decision", 
+	"content": {
+		"type": "ears", 
+		"ref": "inline", 
+		"content": "The viewer shall distinguish decisions from evaluations by shape and depends_on from evaluates edges by line style",
+		"rationale": "visual distinction for quick comprehension" 
+	}
+}
