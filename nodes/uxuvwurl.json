@@ -1,0 +1,10 @@
+{
+	"depends_on": ["vylxkuxr", "ltrnmrsr"],
+	"kind": "decision", 
+	"content": {
+		"type": "ears", 
+		"ref": "inline", 
+		"content": "WHILE no node is selected, the viewer shall show all elements in the viewport undimmed.",
+		"rationale": "show the whole project" 
+	}
+}
