@@ -1,0 +1,10 @@
+{
+	"depends_on": ["tyvynnqo"],
+	"kind": "decision",
+	"content": {
+		"type": "visual-spec",
+		"ref": "inline",
+		"content": "{\"element\": \"edge/unresolved\", \"aspect\": \"stroke-style\", \"state\": \"default\", \"value\": \"dotted\", \"note\": \"colour role: warning (D22); visibly marked\"}",
+		"rationale": "broken links stand out from valid edges"
+	}
+}
