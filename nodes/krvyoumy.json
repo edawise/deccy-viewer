@@ -1,0 +1,10 @@
+{
+	"depends_on": ["ulpvslov", "qpsnwxlu", "vxmzzunt"],
+	"kind": "decision",
+	"content": {
+		"type": "ears",
+		"ref": "inline",
+		"content": "IF a file under nodes/ is not valid JSON, its file name is not a valid node id, or it does not conform to schemas/node.json, THEN the viewer shall omit that node from the graph, show an inline warning naming the file and the problem, and render the remaining nodes.",
+		"rationale": "contain malformed documents instead of failing the graph"
+	}
+}
