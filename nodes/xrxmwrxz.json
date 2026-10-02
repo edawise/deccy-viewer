@@ -1,0 +1,10 @@
+{
+	"depends_on": ["tmmynypo", "tqxvykwn"],
+	"kind": "decision",
+	"content": {
+		"type": "ears",
+		"ref": "inline",
+		"content": "The viewer shall omit the repo root zzzzzzzz and edges to it from the rendered graph.",
+		"rationale": "the root is bookkeeping only and must not be flagged as a broken link"
+	}
+}
