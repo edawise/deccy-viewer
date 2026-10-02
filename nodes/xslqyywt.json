@@ -1,0 +1,10 @@
+{
+	"depends_on": ["uswruqlq"],
+	"kind": "decision",
+	"content": {
+		"type": "visual-spec",
+		"ref": "inline",
+		"content": "{\"element\": \"node/dragging\", \"aspect\": \"emphasis\", \"state\": \"dragging\", \"value\": \"lifted-no-tooltip\", \"note\": \"tooltips suppressed during drag and pan per uswruqlq\"}",
+		"rationale": "drag feels direct and uncluttered"
+	}
+}
