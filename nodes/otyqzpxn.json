@@ -1,0 +1,10 @@
+{
+	"depends_on": ["vznnxtor", "mnovnnot"],
+	"kind": "decision",
+	"content": {
+		"type": "visual-spec",
+		"ref": "inline",
+		"content": "{\"element\": \"edge/evaluates\", \"aspect\": \"stroke-style\", \"state\": \"default\", \"value\": \"dashed\"}",
+		"rationale": "evaluation edges read as secondary"
+	}
+}
