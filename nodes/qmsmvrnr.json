@@ -1,0 +1,9 @@
+{
+	"depends_on": ["zswmtqst", "mmsmukkk", "zkvxornu", "mkyoyqvt", "lnqowznu", "tmmynypo", "xrxmwrxz", "tqxvykwn", "ruqsmuxz", "zqwxlzxm", "owtptzpl", "qmnttlqk", "vvqvvwzk", "msvoysvz"],
+	"kind": "decision",
+	"content": {
+		"type": "implementation",
+		"ref": ["src/graph/model.ts", "src/graph/order.ts", "src/graph/layout.ts"],
+		"rationale": "assemble the DAG, order it deterministically and lay it out. The graph layer now also serves geometry incrementally (msvoysvz): buildGraph holds an incidence index, built once per graph revision, so neighbour and incident-edge lookups read the revision in hand instead of scanning the edge set, and layoutGraph takes the prior layout together with the dragged positions, recomputes only the dragged node's box and its incident routes and carries every other box and route over."
+	}
+}
