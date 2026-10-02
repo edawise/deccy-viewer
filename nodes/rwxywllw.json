@@ -1,0 +1,10 @@
+{
+	"depends_on": ["vznnxtor", "mnovnnot"],
+	"kind": "decision",
+	"content": {
+		"type": "visual-spec",
+		"ref": "inline",
+		"content": "{\"element\": \"edge/depends_on\", \"aspect\": \"stroke-style\", \"state\": \"default\", \"value\": \"solid\"}",
+		"rationale": "dependency edges are the default visual"
+	}
+}
