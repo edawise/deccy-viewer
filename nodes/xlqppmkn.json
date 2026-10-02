@@ -1,0 +1,10 @@
+{
+	"depends_on": ["vxmzzunt"],
+	"kind": "decision",
+	"content": {
+		"type": "visual-spec",
+		"ref": "inline",
+		"content": "{\"element\": \"panel/banner\", \"aspect\": \"colour-role\", \"state\": \"default\", \"value\": \"error-surface\", \"token\": \"--vscode-inputValidation-errorBackground\"}",
+		"rationale": "error state uses the workbench validation styling"
+	}
+}
