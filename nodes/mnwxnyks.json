@@ -1,0 +1,10 @@
+{
+	"depends_on": ["vylxkuxr"],
+	"kind": "decision",
+	"content": {
+		"type": "visual-spec",
+		"ref": "inline",
+		"content": "{\"element\": \"node/label-secondary\", \"aspect\": \"colour-role\", \"state\": \"default\", \"value\": \"muted\", \"token\": \"--vscode-descriptionForeground\"}",
+		"rationale": "secondary text recedes without vanishing"
+	}
+}
