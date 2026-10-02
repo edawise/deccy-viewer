@@ -1,0 +1,10 @@
+{
+	"depends_on": ["vznnxtor"],
+	"kind": "decision",
+	"content": {
+		"type": "visual-spec",
+		"ref": "inline",
+		"content": "{\"element\": \"node/decision\", \"aspect\": \"shape\", \"state\": \"default\", \"value\": \"rectangle\"}",
+		"rationale": "decision nodes read as boxes"
+	}
+}
