@@ -1,0 +1,10 @@
+{
+	"depends_on": ["vylxkuxr"],
+	"kind": "decision",
+	"content": {
+		"type": "visual-spec",
+		"ref": "inline",
+		"content": "{\"element\": \"node/label, panel/detail\", \"aspect\": \"colour-role\", \"state\": \"default\", \"value\": \"text\", \"token\": \"--vscode-editor-foreground\"}",
+		"rationale": "primary text follows the theme"
+	}
+}
