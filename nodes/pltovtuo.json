@@ -1,0 +1,10 @@
+{
+	"depends_on": ["ltrnmrsr", "srsnqppq", "kyokxuml"],
+	"kind": "decision", 
+	"content": {
+		"type": "ears", 
+		"ref": "inline",
+		"content": "The viewer shall keep pan, zoom and selection state stable across focus changes of the panel.", 
+		"rationale": "visual continuity and user experience" 
+	}
+}
