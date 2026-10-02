@@ -1,0 +1,10 @@
+{
+	"depends_on": ["vznnxtor", "sullyqzs"],
+	"kind": "decision",
+	"content": {
+		"type": "visual-spec",
+		"ref": "inline",
+		"content": "{\"element\": \"node/evaluation\", \"aspect\": \"shape\", \"state\": \"default\", \"value\": \"rounded-rectangle\"}",
+		"rationale": "evaluations distinguish from decisions"
+	}
+}
