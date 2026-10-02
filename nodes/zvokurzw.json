@@ -1,0 +1,10 @@
+{
+	"depends_on": ["srsnqppq", "ykvrkysl"],
+	"kind": "decision", 
+	"content": {
+		"type": "ears", 
+		"ref": "inline",
+		"content": "WHEN the user presses the arrow keys, the viewer shall pan the viewport.",
+		"rationale": "keyboard panning" 
+	}
+}
