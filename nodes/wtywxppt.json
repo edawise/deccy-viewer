@@ -1,0 +1,10 @@
+{
+	"depends_on": ["rtmqlnwm"],
+	"kind": "decision",
+	"content": {
+		"type": "visual-spec",
+		"ref": "inline",
+		"content": "{\"element\": \"node/*, edge/*\", \"aspect\": \"hit-target\", \"state\": \"default\", \"value\": \"min 24px\", \"note\": \"pointer precision and keyboard reachability\"}",
+		"rationale": "every interactive element is reliably targetable"
+	}
+}
