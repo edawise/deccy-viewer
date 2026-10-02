@@ -1,0 +1,10 @@
+{
+	"depends_on": ["vpqxkzxq", "pltovtuo"],
+	"kind": "decision", 
+	"content": {
+		"type": "ears", 
+		"ref": "inline", 
+		"content": "Panel state (open, selection, pan, zoom, node positions) shall persist in workspaceState.",
+		"rationale": "to maintain state during and across sessions" 
+	}
+}
