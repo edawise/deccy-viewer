@@ -1,0 +1,10 @@
+{
+	"depends_on": ["svssunnl", "ulpvslov", "mmsmukkk", "vylxkuxr"],
+	"kind": "decision", 
+	"content": {
+		"type": "ears", 
+		"ref": "inline", 
+		"content": "The extension shall read node documents from nodes/*.json in the workspace root, and change descriptions from jj as node labels",
+		"rationale": "data source" 
+	}
+}
