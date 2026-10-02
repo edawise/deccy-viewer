@@ -1,0 +1,10 @@
+{
+	"depends_on": ["npytqytq"],
+	"kind": "decision",
+	"content": {
+		"type": "visual-spec",
+		"ref": "inline",
+		"content": "{\"element\": \"node/label\", \"aspect\": \"font-size\", \"state\": \"default\", \"value\": \"13px\", \"note\": \"family inherits the workbench font\"}",
+		"rationale": "typography stays consistent with the workbench"
+	}
+}
