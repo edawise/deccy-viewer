@@ -1,0 +1,10 @@
+{
+	"depends_on": ["mnovnnot", "spllzqlw"],
+	"kind": "decision",
+	"content": {
+		"type": "visual-spec",
+		"ref": "inline",
+		"content": "{\"element\": \"edge/*\", \"aspect\": \"routing\", \"state\": \"default\", \"value\": \"cubic-bezier\", \"note\": \"re-routed when a node is dragged per spllzqlw\"}",
+		"rationale": "curved routes stay readable across layers"
+	}
+}
