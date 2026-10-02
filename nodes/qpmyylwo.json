@@ -1,0 +1,10 @@
+{
+	"depends_on": ["vylxkuxr"],
+	"kind": "decision",
+	"content": {
+		"type": "visual-spec",
+		"ref": "inline",
+		"content": "{\"element\": \"edge/evaluates\", \"aspect\": \"colour-role\", \"state\": \"default\", \"value\": \"edge-alt\", \"token\": \"--vscode-charts-purple\"}",
+		"rationale": "evaluation edges get their own hue"
+	}
+}
