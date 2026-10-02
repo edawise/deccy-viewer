@@ -1,0 +1,9 @@
+{
+	"depends_on": ["vylxkuxr", "ltrnmrsr"],
+	"kind": "decision",
+	"content": {
+		"type": "text",
+		"ref": ["design/chrome-layout.md"],
+		"rationale": "spatial arrangement of the panel is layout, shown once as a schematic"
+	}
+}
