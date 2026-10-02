@@ -1,0 +1,9 @@
+{
+	"depends_on": ["vylxkuxr", "ltrnmrsr", "yrtrqutm"],
+	"kind": "decision",
+	"content": {
+		"type": "text",
+		"ref": ["design/chrome-layout.md"],
+		"rationale": "spatial arrangement of the panel is layout, shown once as a schematic; the detail region's internal arrangement is the section stack whose collapse granularity yrtrqutm settles, so that prerequisite is recorded here and the schematic shows the sections rather than a single collapsible region"
+	}
+}
