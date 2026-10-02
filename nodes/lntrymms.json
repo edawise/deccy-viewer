@@ -1,0 +1,10 @@
+{
+	"depends_on": ["srsnqppq", "kyokxuml"],
+	"kind": "decision", 
+	"content": {
+		"type": "ears", 
+		"ref": "inline",
+		"content": "WHEN the user invokes \"fit graph\", the viewer shall reset pan and zoom to frame all nodes.", 
+		"rationale": "reset view operation" 
+	}
+}
