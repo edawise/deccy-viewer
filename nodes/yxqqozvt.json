@@ -1,0 +1,10 @@
+{
+	"depends_on": ["vylxkuxr"],
+	"kind": "decision", 
+	"content": {
+		"type": "ears", 
+		"ref": "inline",
+		"content": "WHEN the panel is resized, the viewer shall reflow the graph viewport to the new size.", 
+		"rationale": "visual responsiveness and usability" 
+	}
+}
