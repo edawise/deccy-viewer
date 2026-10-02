@@ -1,0 +1,10 @@
+{
+	"depends_on": ["ywullzun"],
+	"kind": "decision",
+	"content": {
+		"type": "visual-spec",
+		"ref": "inline",
+		"content": "{\"element\": \"canvas\", \"aspect\": \"overlay\", \"state\": \"loading\", \"value\": \"progress-indicator\", \"note\": \"workbench progress styling; input queued per ywullzun\"}",
+		"rationale": "detail design for EARS-S4"
+	}
+}
