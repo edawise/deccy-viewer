@@ -1,0 +1,9 @@
+{
+	"depends_on": ["zswmtqst", "mmsmukkk", "zkvxornu", "mkyoyqvt", "lnqowznu", "tmmynypo", "xrxmwrxz", "tqxvykwn", "ruqsmuxz", "zqwxlzxm", "owtptzpl", "qmnttlqk", "vvqvvwzk"],
+	"kind": "decision",
+	"content": {
+		"type": "implementation",
+		"ref": ["src/graph/model.ts", "src/graph/order.ts", "src/graph/layout.ts"],
+		"rationale": "assemble the DAG, order it deterministically and lay it out"
+	}
+}
