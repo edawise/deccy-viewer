@@ -1,0 +1,10 @@
+{
+	"depends_on": ["vylxkuxr"],
+	"kind": "decision",
+	"content": {
+		"type": "visual-spec",
+		"ref": "inline",
+		"content": "{\"element\": \"edge/depends_on\", \"aspect\": \"colour-role\", \"state\": \"default\", \"value\": \"edge\", \"token\": \"--vscode-textLink-foreground\"}",
+		"rationale": "dependency edges use the link colour users already know"
+	}
+}
