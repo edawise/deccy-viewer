@@ -1,0 +1,9 @@
+{
+	"depends_on": ["uuutyrzs"],
+	"kind": "decision", 
+	"content": {
+		"type": "text", 
+		"ref": [".gitignore"], 
+		"rationale": "standard gitignore: the vendored dependency tree, the build output and the packaged .vsix artifacts stay out of the repository" 
+	}
+}
