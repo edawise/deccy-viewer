@@ -1,0 +1,10 @@
+{
+	"depends_on": ["ltrnmrsr"],
+	"kind": "decision", 
+	"content": {
+		"type": "ears", 
+		"ref": "inline", 
+		"content": "WHILE a node is selected, the viewer shall highlight that node, its direct dependencies, dependents and evaluations, and dim unrelated elements.",
+		"rationale": "show the relevant context of the selected node" 
+	}
+}
