@@ -1,0 +1,10 @@
+{
+	"depends_on": ["qqmrtwor", "mrrooxux"],
+	"kind": "decision",
+	"content": {
+		"type": "visual-spec",
+		"ref": "inline",
+		"content": "{\"element\": \"node/selected\", \"aspect\": \"emphasis\", \"state\": \"selected\", \"value\": \"stronger-highlight\", \"note\": \"colour role: accent (D21)\"}",
+		"rationale": "The emphasis node/selected takes in the selected state is the stronger of the two emphases the prerequisites rank: mrrooxux orders the selected element's highlight above the quieter highlight carried by the elements connected to it, so the selected element's own cue must denote the bolder side of that ordering rather than a highlight whose relative weight is left unstated. The value names the stronger emphasis for exactly this element and state, which is the one commitment this entry adds. The colour role stays the accent role qqmrtwor records for node/selected, kept in the note beside the ordering, so the entry fixes which of the two emphases this element takes while the colour that prerequisite already fixes stays the emphasis's colour role. Both uses are visible in the entry itself and neither is inferred from a class, token, metric or drawing mechanism: the entry states the relative weight and the colour role for this element and state, and says nothing about hover, dimming, focus, or any element or state outside the selected node."
+	}
+}
