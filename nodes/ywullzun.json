@@ -1,0 +1,10 @@
+{
+	"depends_on": ["rtmqlnwm", "luqwqrll"],
+	"kind": "decision", 
+	"content": {
+		"type": "ears", 
+		"ref": "inline", 
+		"content": "WHILE graph data is being loaded or reloaded, the viewer shall show a progress indicator and queue but not drop user interaction input.",
+		"rationale": "handle loading states gracefully" 
+	}
+}
