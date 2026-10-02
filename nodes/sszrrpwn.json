@@ -1,0 +1,10 @@
+{
+	"depends_on": ["vlvmrkzr"],
+	"kind": "decision",
+	"content": {
+		"type": "visual-spec",
+		"ref": "inline",
+		"content": "{\"element\": \"edge/*\", \"aspect\": \"arrowhead-size\", \"state\": \"default\", \"value\": \"8px\"}",
+		"rationale": "direction is visible at default zoom"
+	}
+}
