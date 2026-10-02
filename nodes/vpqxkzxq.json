@@ -1,0 +1,10 @@
+{
+	"depends_on": ["pltovtuo", "luqwqrll"],
+	"kind": "decision", 
+	"content": {
+		"type": "ears", 
+		"ref": "inline", 
+		"content": "WHEN the extension is activated and the panel was previously open, the viewer shall restore the panel with its last interaction state.",
+		"rationale": "maintain state across sessions" 
+	}
+}
