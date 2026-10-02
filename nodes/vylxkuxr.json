@@ -1,0 +1,10 @@
+{
+	"depends_on": ["uprztqnr", "mmsmukkk"],
+	"kind": "decision", 
+	"content": {
+		"type": "ears", 
+		"ref": "inline",
+		"content": "The viewer shall present the deccy graph inside a VS Code webview panel as an interactive HTML page.", 
+		"rationale": "formalise the upstream decision" 
+	}
+}
