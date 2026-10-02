@@ -1,0 +1,10 @@
+{
+	"depends_on": ["luqwqrll"],
+	"kind": "decision", 
+	"content": {
+		"type": "ears", 
+		"ref": "inline", 
+		"content": "IF the graph data cannot be read from either nodes/*.json or the jj repo, THEN the viewer shall show an inline error message and keep the last successfully rendered graph.",
+		"rationale": "handle load errors gracefully" 
+	}
+}
