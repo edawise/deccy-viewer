@@ -1,0 +1,10 @@
+{
+	"depends_on": ["zqwxlzxm"],
+	"kind": "decision",
+	"content": {
+		"type": "visual-spec",
+		"ref": "inline",
+		"content": "{\"element\": \"graph\", \"aspect\": \"layer-spacing\", \"state\": \"default\", \"value\": \"96px\"}",
+		"rationale": "layers read as distinct ranks"
+	}
+}
