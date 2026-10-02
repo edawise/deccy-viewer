@@ -1,0 +1,10 @@
+{
+	"depends_on": ["xlqppmkn"],
+	"kind": "decision",
+	"content": {
+		"type": "visual-spec",
+		"ref": "inline",
+		"content": "{\"element\": \"panel/banner\", \"aspect\": \"emphasis\", \"state\": \"error\", \"value\": \"inline-error-banner\", \"note\": \"colour role: error-surface (D4i)\"}",
+		"rationale": "failures are visible without blocking the canvas"
+	}
+}
