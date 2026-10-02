@@ -1,0 +1,10 @@
+{
+	"depends_on": ["lnqowznu"],
+	"kind": "decision", 
+	"content": {
+		"type": "text", 
+		"ref": "inline",
+		"content": "decisions with no dependencies list the repo root id zzzzzzzz as a dependency",
+		"rationale": "indicate which nodes are roots of the graph" 
+	}
+}
