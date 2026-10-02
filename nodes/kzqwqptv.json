@@ -1,0 +1,10 @@
+{
+	"depends_on": ["vylxkuxr", "uuutyrzs"],
+	"kind": "decision", 
+	"content": {
+		"type": "ears", 
+		"ref": "inline", 
+		"content": "The extension shall contribute the command deccyViewer.openGraph (Command Palette + panel title bar)",
+		"rationale": "entry point for the deccy-viewer extension: the command id carries the extension's own deccyViewer identity, matching the deccy-viewer / \"Deccy Viewer\" name the extension is defined under, and is reachable from both the Command Palette and the panel title bar" 
+	}
+}
