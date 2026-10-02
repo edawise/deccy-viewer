@@ -1,0 +1,10 @@
+{
+	"depends_on": ["mnovnnot"],
+	"kind": "decision",
+	"content": {
+		"type": "visual-spec",
+		"ref": "inline",
+		"content": "{\"element\": \"edge/*\", \"aspect\": \"arrowhead\", \"state\": \"default\", \"value\": \"child-end\", \"note\": \"single arrowhead at the child end of every edge\"}",
+		"rationale": "direction is visible at a glance"
+	}
+}
