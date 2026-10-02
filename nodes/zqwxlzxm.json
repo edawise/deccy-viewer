@@ -1,0 +1,10 @@
+{
+	"depends_on": ["mmsmukkk"],
+	"kind": "decision",
+	"content": {
+		"type": "visual-spec",
+		"ref": "inline",
+		"content": "{\"element\": \"graph\", \"aspect\": \"layout-algorithm\", \"state\": \"default\", \"value\": \"layered-topological\", \"note\": \"deterministic: layers = topological depth from roots, left-to-right within layer; dragged positions override per spllzqlw\"}",
+		"rationale": "stable, readable arrangement of a DAG"
+	}
+}
