@@ -1,0 +1,10 @@
+{
+	"depends_on": ["sullyqzs", "twotxvqp"],
+	"kind": "decision",
+	"content": {
+		"type": "visual-spec",
+		"ref": "inline",
+		"content": "{\"element\": \"node/*\", \"aspect\": \"size\", \"state\": \"default\", \"value\": \"240px wide, min-height 72px\", \"note\": \"label wraps inside the box\"}",
+		"rationale": "labels stay legible without dominating the canvas"
+	}
+}
