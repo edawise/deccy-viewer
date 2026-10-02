@@ -1,0 +1,10 @@
+{
+	"depends_on": ["rtmqlnwm", "ulpvslov"],
+	"kind": "decision", 
+	"content": {
+		"type": "ears", 
+		"ref": "inline",
+		"content": "WHEN the user clicks a node, the viewer shall select it and display its node detail: kind, content and rationale.", 
+		"rationale": "detailed view" 
+	}
+}
