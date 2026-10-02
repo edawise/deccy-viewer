@@ -1,0 +1,10 @@
+{
+	"depends_on": ["qqmrtwor"],
+	"kind": "decision",
+	"content": {
+		"type": "visual-spec",
+		"ref": "inline",
+		"content": "{\"element\": \"node/selected\", \"aspect\": \"emphasis\", \"state\": \"selected\", \"value\": \"accent-border\", \"note\": \"colour role: accent (D21)\"}",
+		"rationale": "selection is unmistakable"
+	}
+}
