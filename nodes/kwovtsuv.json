@@ -1,0 +1,10 @@
+{
+	"depends_on": ["rtmqlnwm"],
+	"kind": "decision", 
+	"content": {
+		"type": "ears", 
+		"ref": "inline",
+		"content": "WHEN the user hovers over a node, the viewer shall highlight the edges and nodes associated with it.", 
+		"rationale": "allow easier navigation of related context" 
+	}
+}
