@@ -1,0 +1,10 @@
+{
+	"depends_on": ["vylxkuxr", "uuutyrzs"],
+	"kind": "decision", 
+	"content": {
+		"type": "ears", 
+		"ref": "inline", 
+		"content": "The extension shall contribute the command vcsDeccy.openGraph (Command Palette + panel title bar)",
+		"rationale": "entry point for extension" 
+	}
+}
