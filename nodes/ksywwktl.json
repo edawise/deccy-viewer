@@ -1,0 +1,10 @@
+{
+	"depends_on": ["zkwypuor"],
+	"kind": "decision",
+	"content": {
+		"type": "visual-spec",
+		"ref": "inline",
+		"content": "{\"element\": \"*\", \"aspect\": \"opacity\", \"state\": \"dimmed\", \"value\": \"0.3\", \"note\": \"elements unrelated to the selection per zkwypuor\"}",
+		"rationale": "focus the user's attention on the selection"
+	}
+}
