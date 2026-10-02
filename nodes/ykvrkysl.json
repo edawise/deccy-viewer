@@ -1,0 +1,10 @@
+{
+	"depends_on": ["rtmqlnwm"],
+	"kind": "decision", 
+	"content": {
+		"type": "ears", 
+		"ref": "inline",
+		"content": "The viewer shall support keyboard equivalents for selection, pan, zoom, fit and node movement.", 
+		"rationale": "keyboard accessibility" 
+	}
+}
