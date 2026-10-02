@@ -1,0 +1,10 @@
+{
+	"depends_on": ["ruqsmuxz"],
+	"kind": "decision",
+	"content": {
+		"type": "visual-spec",
+		"ref": "inline",
+		"content": "{\"element\": \"node/focus\", \"aspect\": \"emphasis\", \"state\": \"focus\", \"value\": \"focus-outline\", \"note\": \"colour role: accent (D4f); visible focus for keyboard traversal\"}",
+		"rationale": "keyboard users can see where they are"
+	}
+}
