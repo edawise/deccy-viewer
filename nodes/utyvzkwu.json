@@ -1,0 +1,10 @@
+{
+	"depends_on": ["twslmwvn"],
+	"kind": "decision",
+	"content": {
+		"type": "visual-spec",
+		"ref": "inline",
+		"content": "{\"element\": \"canvas\", \"aspect\": \"content\", \"state\": \"empty\", \"value\": \"empty-state-message\"}",
+		"rationale": "detail design for EARS-UW2"
+	}
+}
