@@ -1,0 +1,10 @@
+{
+	"depends_on": ["srsnqppq", "spllzqlw", "zrxnpzkq"],
+	"kind": "decision", 
+	"content": {
+		"type": "ears", 
+		"ref": "inline",
+		"content": "WHILE a node is being dragged or the canvas is being panned, the viewer shall suppress hover tooltips.", 
+		"rationale": "prevent visual noise" 
+	}
+}
