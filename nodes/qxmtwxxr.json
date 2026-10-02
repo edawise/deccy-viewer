@@ -1,0 +1,10 @@
+{
+	"depends_on": ["luqwqrll", "rmsyvtvn"],
+	"kind": "decision", 
+	"content": {
+		"type": "ears", 
+		"ref": "inline",
+		"content": "WHEN the selected node no longer exists after a reload, the viewer shall clear the selection.",
+		"rationale": "so the user is not selecting an invalid node" 
+	}
+}
