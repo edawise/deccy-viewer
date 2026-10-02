@@ -1,0 +1,10 @@
+{
+	"depends_on": ["zkwypuor", "vylxkuxr"],
+	"kind": "decision",
+	"content": {
+		"type": "visual-spec",
+		"ref": "inline",
+		"content": "{\"element\": \"node/selected, node/focus\", \"aspect\": \"colour-role\", \"state\": \"default\", \"value\": \"accent\", \"token\": \"--vscode-focusBorder\"}",
+		"rationale": "accent matches the workbench focus treatment"
+	}
+}
