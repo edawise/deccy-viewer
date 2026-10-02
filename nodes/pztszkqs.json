@@ -1,0 +1,10 @@
+{
+	"depends_on": ["zrxnpzkq"],
+	"kind": "decision",
+	"content": {
+		"type": "visual-spec",
+		"ref": "inline",
+		"content": "{\"element\": \"panel/tooltip\", \"aspect\": \"colour-role\", \"state\": \"default\", \"value\": \"tooltip-surface\", \"token\": \"--vscode-editorWidget-background\"}",
+		"rationale": "tooltips look native to the workbench"
+	}
+}
