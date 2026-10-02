@@ -1,0 +1,10 @@
+{
+	"depends_on": ["rtmqlnwm"],
+	"kind": "decision", 
+	"content": {
+		"type": "ears", 
+		"ref": "inline",
+		"content": "WHEN the user scrolls or pinches over the canvas, the viewer shall zoom about the pointer position.", 
+		"rationale": "allow viewing the graph at different levels of detail" 
+	}
+}
