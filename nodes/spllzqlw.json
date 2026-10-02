@@ -1,0 +1,10 @@
+{
+	"depends_on": ["rtmqlnwm"],
+	"kind": "decision", 
+	"content": {
+		"type": "ears", 
+		"ref": "inline",
+		"content": "WHEN the user drags a node, the viewer shall move that node and re-route its edges.", 
+		"rationale": "reorganise the graph for easier viewing" 
+	}
+}
