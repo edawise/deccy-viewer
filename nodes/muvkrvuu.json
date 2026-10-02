@@ -1,0 +1,10 @@
+{
+	"depends_on": ["lntrymms", "ykvrkysl"],
+	"kind": "decision", 
+	"content": {
+		"type": "ears", 
+		"ref": "inline",
+		"content": "WHEN the user presses f, the viewer shall fit the graph to the viewport.",
+		"rationale": "keyboard fit" 
+	}
+}
