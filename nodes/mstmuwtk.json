@@ -1,0 +1,10 @@
+{
+	"depends_on": ["yxqqozvt", "zrqxuzzy"],
+	"kind": "decision",
+	"content": {
+		"type": "visual-spec",
+		"ref": "inline",
+		"content": "{\"element\": \"panel\", \"aspect\": \"responsive\", \"state\": \"narrow\", \"value\": \"detail stacks below canvas under 600px width\", \"note\": \"the threshold itself is not visible in the layout sketch\"}",
+		"rationale": "the panel stays usable at small sizes"
+	}
+}
