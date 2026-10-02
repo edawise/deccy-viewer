@@ -1,0 +1,10 @@
+{
+	"depends_on": ["vylxkuxr"],
+	"kind": "decision",
+	"content": {
+		"type": "visual-spec",
+		"ref": "inline",
+		"content": "{\"element\": \"canvas\", \"aspect\": \"colour-role\", \"state\": \"default\", \"value\": \"surface\", \"token\": \"--vscode-editor-background\"}",
+		"rationale": "canvas blends with the editor surface"
+	}
+}
