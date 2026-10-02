@@ -1,0 +1,10 @@
+{
+	"depends_on": ["ltrnmrsr"],
+	"kind": "decision",
+	"content": {
+		"type": "ears",
+		"ref": "inline",
+		"content": "WHEN the user clicks empty canvas without dragging, the viewer shall clear the selection.",
+		"rationale": "mechanism to clear node selection"
+	}
+}
