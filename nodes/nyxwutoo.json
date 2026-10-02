@@ -1,0 +1,10 @@
+{
+	"depends_on": ["spllzqlw", "ykvrkysl"],
+	"kind": "decision",
+	"content": {
+		"type": "ears",
+		"ref": "inline",
+		"content": "WHEN the user presses Shift and an arrow key, the viewer shall move the selected node.",
+		"rationale": "keyboard equivalent of node drag"
+	}
+}
