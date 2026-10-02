@@ -1,0 +1,10 @@
+{
+	"depends_on": ["ltrnmrsr", "srsnqppq", "kyokxuml"],
+	"kind": "decision", 
+	"content": {
+		"type": "ears", 
+		"ref": "inline",
+		"content": "WHEN the underlying jj graph data changes, the viewer shall re-render the graph without losing the current selection, pan or zoom.", 
+		"rationale": "update data without changing visual state" 
+	}
+}
