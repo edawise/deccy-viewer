@@ -1,0 +1,10 @@
+{
+	"depends_on": ["srsnqppq", "kyokxuml"],
+	"kind": "decision", 
+	"content": {
+		"type": "ears", 
+		"ref": "inline",
+		"content": "IF a zoom or pan operation would move the viewport outside its limits, THEN the viewer shall clamp the viewport at those limits.", 
+		"rationale": "limit pan and zoom operations" 
+	}
+}
