@@ -1,0 +1,10 @@
+{
+	"depends_on": ["ltrnmrsr", "ykvrkysl"],
+	"kind": "decision",
+	"content": {
+		"type": "ears",
+		"ref": "inline",
+		"content": "WHEN the user presses Tab, the viewer shall move focus to the next node in graph order (by topological depth from the roots, then initial left-to-right position, then node id), wrapping at the last node; dragging a node shall not change this order.",
+		"rationale": "predictable keyboard traversal"
+	}
+}
