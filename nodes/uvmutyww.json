@@ -1,0 +1,10 @@
+{
+	"depends_on": ["luqwqrll", "qpsnwxlu"],
+	"kind": "decision", 
+	"content": {
+		"type": "ears", 
+		"ref": "inline", 
+		"content": "WHEN a file under nodes/ is created, modified or deleted, the viewer shall reload the graph",
+		"rationale": "handle graph refresh" 
+	}
+}
