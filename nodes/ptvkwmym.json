@@ -1,0 +1,10 @@
+{
+	"depends_on": ["sullyqzs", "twotxvqp"],
+	"kind": "decision",
+	"content": {
+		"type": "visual-spec",
+		"ref": "inline",
+		"content": "{\"element\": \"node/*\", \"aspect\": \"radius\", \"state\": \"default\", \"value\": \"decision: 2px; evaluation: 8px\", \"note\": \"shape split per D3/D4\"}",
+		"rationale": "corner treatment reinforces the shape distinction"
+	}
+}
