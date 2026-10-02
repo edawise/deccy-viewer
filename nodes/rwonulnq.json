@@ -1,0 +1,10 @@
+{
+	"depends_on": ["ruqsmuxz"],
+	"kind": "decision",
+	"content": {
+		"type": "ears",
+		"ref": "inline",
+		"content": "WHEN the user presses Shift and Tab, the viewer shall move focus to the previous node in graph order.",
+		"rationale": "reverse keyboard traversal"
+	}
+}
