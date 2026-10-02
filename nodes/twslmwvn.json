@@ -1,0 +1,10 @@
+{
+	"depends_on": ["vylxkuxr"],
+	"kind": "decision", 
+	"content": {
+		"type": "ears", 
+		"ref": "inline",
+		"content": "IF the repo contains no nodes, THEN the viewer shall show an empty-state message instead of a blank canvas.", 
+		"rationale": "fail gracefully" 
+	}
+}
