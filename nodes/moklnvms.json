@@ -1,0 +1,10 @@
+{
+	"depends_on": ["kwovtsuv", "mrrooxux"],
+	"kind": "decision",
+	"content": {
+		"type": "visual-spec",
+		"ref": "inline",
+		"content": "{\"element\": \"edge/related, node/related\", \"aspect\": \"emphasis\", \"state\": \"hover-neighbour\", \"value\": \"quieter-highlight\", \"note\": \"associated = incident edges and adjacent nodes per kwovtsuv; the emphasis is the quieter side of the two-level cue, below the bolder emphasis the selected element takes per mrrooxux\"}",
+		"rationale": "hover shows the local neighbourhood, and the neighbours are context around the node being hovered rather than the focus of the cue. The spec keeps the association kwovtsuv records — hovering a node marks its incident edges and adjacent nodes, with the associated set defined there and unchanged here — and takes from mrrooxux only that association cue's relative weight: the connected elements sit on the quieter, supporting side of a two-level emphasis whose bolder side belongs to the selected element. The value and its note therefore denote a weight below the selected element's highlight instead of an emphasis of equal strength, so the hovered neighbourhood reads as supporting context and does not compete with the element at its centre. The row stays at that one aspect: it names no colour, token, metric, class or drawing mechanism, so how the quieter emphasis is rendered remains open, and it leaves the selected element's own cue, dimming of unrelated elements, focus, drag and every other state to the decisions that own them. Because the only two things it states are the association kwovtsuv already requires and the relative weight mrrooxux already orders, it adds no emphasis the prerequisites do not license and no ordering they contradict."
+	}
+}
