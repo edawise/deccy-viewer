@@ -1,0 +1,10 @@
+{
+	"depends_on": ["twtvwkqm", "lntrymms"],
+	"kind": "decision",
+	"content": {
+		"type": "visual-spec",
+		"ref": "inline",
+		"content": "{\"element\": \"panel/toolbar\", \"aspect\": \"actions\", \"state\": \"default\", \"value\": \"fit-graph: codicon screen-full\", \"note\": \"invocation affordance for lntrymms\"}",
+		"rationale": "commands need a visible home"
+	}
+}
