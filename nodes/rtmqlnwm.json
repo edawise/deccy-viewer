@@ -1,0 +1,10 @@
+{
+	"depends_on": ["vylxkuxr"],
+	"kind": "decision", 
+	"content": {
+		"type": "ears", 
+		"ref": "inline",
+		"content": "The viewer shall respond to pointer input (hover, click, double-click, drag, scroll) on every rendered node, edge and the canvas.", 
+		"rationale": "define the interaction details" 
+	}
+}
