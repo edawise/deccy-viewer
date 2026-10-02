@@ -1,0 +1,10 @@
+{
+	"depends_on": ["ltrnmrsr", "ykvrkysl"],
+	"kind": "decision",
+	"content": {
+		"type": "ears",
+		"ref": "inline",
+		"content": "WHEN the user presses Enter, the viewer shall select the focused node.",
+		"rationale": "keyboard equivalent of click to select"
+	}
+}
