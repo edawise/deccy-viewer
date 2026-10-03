@@ -1,0 +1,9 @@
+{
+	"depends_on": ["qmsmvrnr", "vylxkuxr", "uprztqnr", "tqxvykwn", "vznnxtor", "zrqxuzzy", "mspmqvuk", "mstmuwtk", "mnovnnot", "vlvmrkzr", "sullyqzs", "twotxvqp", "rwxywllw", "otyqzpxn", "ymnkpuvl", "znzkwlnz", "npytqytq", "mnwxnyks", "oqotyplt", "qpmyylwo", "tyvynnqo", "owtptzpl", "ptvkwmym", "utzrtvwy", "sszrrpwn", "wtywxppt", "noplrntp", "yruxqknp", "ympqvvwr"],
+	"kind": "decision",
+	"content": {
+		"type": "implementation",
+		"ref": ["media/webview.html", "src/webview/main.ts", "src/webview/render.ts", "src/styles/grammar.css"],
+		"rationale": "the interactive HTML page and its static visual grammar"
+	}
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Deccy Graph</title>
+		<!--
+			The interactive HTML page the viewer presents the deccy graph in
+			(vylxkuxr, uprztqnr). The regions below are the normative spatial
+			arrangement of the panel (zrqxuzzy, design/chrome-layout.md); their
+			appearance is the static visual grammar (src/styles/grammar.css) and
+			the drawing of the graph is src/webview/render.ts.
+
+			The extension host serves this file inside the webview panel and
+			resolves every reference here through webview.asWebviewUri: the
+			stylesheets are src/styles/grammar.css, src/styles/interact.css and
+			src/styles/states.css as they stand, the script is the
+			compiled entry of src/webview/main.ts, and the codicon stylesheet of
+			the workbench supplies the toolbar glyph (mspmqvuk). Nothing else is
+			loaded.
+		-->
+		<link rel="stylesheet" href="../src/styles/grammar.css" />
+		<link rel="stylesheet" href="../src/styles/interact.css" />
+		<link rel="stylesheet" href="../src/styles/states.css" />
+		<script type="module" src="../src/webview/main.js"></script>
+	</head>
+	<body>
+		<div class="panel">
+			<!-- toolbar: fixed row at the top of the panel (zrqxuzzy) holding the
+			     fit-graph action (mspmqvuk) -->
+			<header class="panel__toolbar">
+				<button class="panel__action" type="button" title="Fit graph" aria-label="Fit graph">
+					<span class="codicon codicon-screen-full" aria-hidden="true"></span>
+				</button>
+			</header>
+
+			<!-- error banner: directly below the toolbar, present only in the
+			     error state (zrqxuzzy) -->
+			<div class="panel__banner" role="alert" hidden></div>
+
+			<div class="panel__body">
+				<!-- canvas: fills all remaining area (zrqxuzzy); the surface wraps
+				     both layers and carries the pan/zoom transform (ympqvvwr), the
+				     edge layer beneath the node boxes (zrqxuzzy) -->
+				<main class="canvas">
+					<div class="canvas__surface">
+						<svg class="canvas__edges"></svg>
+						<div class="canvas__nodes"></div>
+					</div>
+				</main>
+
+				<!-- detail: right-hand region beside the canvas, collapsible
+				     (zrqxuzzy) -->
+				<aside class="panel__detail">
+					<details class="detail" open>
+						<summary class="detail__header">Detail</summary>
+						<div class="detail__body"></div>
+					</details>
+				</aside>
+			</div>
+		</div>
+	</body>
+</html>

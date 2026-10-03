@@ -1,0 +1,242 @@
+/**
+ * The static visual grammar of the deccy graph viewer (rtlotqvy): the
+ * appearance of the page regions of media/webview.html and of the graph drawn
+ * in them.
+ *
+ * Every fixed value below is a visual-spec record of the graph and cites the
+ * node id it encodes. Values that no record fixes (paddings, dividers, stroke
+ * widths, dash patterns) are marked "unspecified" and chosen here; the colour
+ * roles are bound to the workbench theme so the page follows whatever theme
+ * the workbench runs (znzkwlnz, npytqytq, mnwxnyks, oqotyplt, qpmyylwo,
+ * tyvynnqo).
+ */
+
+:root {
+	/* The colour roles (visual-spec aspect "colour-role"). */
+	--surface: var(--vscode-editor-background); /* znzkwlnz: canvas */
+	--text: var(--vscode-editor-foreground); /* npytqytq: node/label, panel/detail */
+	--muted: var(--vscode-descriptionForeground); /* mnwxnyks: node/label-secondary */
+	--edge: var(--vscode-textLink-foreground); /* oqotyplt: edge/depends_on */
+	--edge-alt: var(--vscode-charts-purple); /* qpmyylwo: edge/evaluates */
+	--warning: var(--vscode-charts-red); /* tyvynnqo: edge/unresolved */
+}
+
+/*
+ * Panel chrome (zrqxuzzy, design/chrome-layout.md): toolbar row at the top,
+ * error banner directly below it, canvas filling the remaining area and the
+ * detail region beside the canvas.
+ */
+
+body {
+	margin: 0;
+}
+
+.panel {
+	display: grid;
+	grid-template-rows: auto auto minmax(0, 1fr);
+	height: 100vh;
+	color: var(--text); /* npytqytq: panel/detail */
+	/* The label family inherits the workbench font (utzrtvwy): it is set once
+	   for the page here and never repeated on the labels themselves. */
+	font-family: var(--vscode-font-family);
+}
+
+.panel__toolbar {
+	display: flex;
+	align-items: center;
+	gap: 4px; /* unspecified */
+	padding: 4px; /* unspecified */
+	border-bottom: 1px solid var(--muted); /* unspecified divider */
+}
+
+/* The fit-graph action (mspmqvuk). Its size and colours are unspecified. */
+.panel__action {
+	min-width: 24px;
+	min-height: 24px;
+	padding: 2px;
+	background: none;
+	border: none;
+	color: var(--text);
+	cursor: pointer;
+}
+
+/* The error banner, present only in the error state (zrqxuzzy). Its emphasis
+   and colour role are set by their own visual-spec records and are not part of
+   this grammar. */
+.panel__banner {
+	padding: 8px; /* unspecified */
+}
+
+.panel__banner[hidden] {
+	display: none;
+}
+
+.panel__body {
+	display: grid;
+	grid-template-columns: minmax(0, 1fr) 280px; /* detail width unspecified */
+	min-height: 0;
+}
+
+/* The canvas blends with the editor surface (znzkwlnz) and clips the graph to
+   the viewport; the surface inside it carries the pan and zoom (ympqvvwr). */
+.canvas {
+	position: relative;
+	overflow: hidden;
+	background: var(--surface);
+}
+
+/* The surface wraps both canvas layers and carries the pan/zoom transform
+   (ympqvvwr); the edge layer anchors to it at the canvas origin. */
+.canvas__surface {
+	position: relative;
+	transform-origin: 0 0;
+}
+
+/* The edge layer runs beneath the node boxes (zrqxuzzy): it is an overlay at
+   the canvas origin and takes no layout space, so the boxes are drawn on top
+   of it at their own coordinates instead of being pushed below it. Both layers
+   are positioned and the node layer comes later in the page, so the boxes paint
+   above the edges. */
+.canvas__edges {
+	position: absolute; /* unspecified positioning */
+	top: 0;
+	left: 0;
+	display: block;
+}
+
+.canvas__nodes {
+	position: relative;
+}
+
+/* The detail region takes the text colour role with the node label (npytqytq)
+   and sits beside the canvas (zrqxuzzy). */
+.panel__detail {
+	overflow: auto;
+	border-left: 1px solid var(--muted); /* unspecified divider */
+	color: var(--text);
+}
+
+.detail__body {
+	padding: 8px; /* unspecified */
+}
+
+/*
+ * Narrow panel (mstmuwtk): the detail stacks below the canvas under 600px
+ * width. The threshold itself is not visible in the layout sketch.
+ */
+@media (max-width: 599.98px) {
+	.panel__body {
+		grid-template-columns: minmax(0, 1fr);
+		grid-template-rows: minmax(0, 1fr) auto;
+	}
+
+	.panel__detail {
+		border-left: none;
+		border-top: 1px solid var(--muted); /* unspecified divider */
+	}
+}
+
+/*
+ * Node boxes (owtptzpl): 240px wide and at least 72px tall, with the label
+ * wrapping inside the box. The layout hands the renderer the coordinates and
+ * any height the wrapped label grew to.
+ */
+
+.node {
+	position: absolute;
+	box-sizing: border-box;
+	width: 240px; /* owtptzpl */
+	min-width: 24px; /* wtywxppt: hit target */
+	min-height: 72px; /* owtptzpl */
+	padding: 8px; /* unspecified */
+	background: var(--surface); /* znzkwlnz: the box hides edges passing beneath it */
+	border: 1px solid var(--muted); /* unspecified border colour */
+	color: var(--text); /* npytqytq: node/label */
+}
+
+/* A decision node is a rectangle (sullyqzs) with a 2px radius (ptvkwmym). */
+.node--decision {
+	border-radius: 2px;
+}
+
+/* An evaluation node is a rounded rectangle (twotxvqp) with an 8px radius
+   (ptvkwmym); the corner treatment reinforces the shape distinction. */
+.node--evaluation {
+	border-radius: 8px;
+}
+
+/* The label is 13px (utzrtvwy) in the text colour role (npytqytq) and wraps
+   inside the box (owtptzpl). Its family inherits the workbench font. */
+.node__label {
+	font-size: 13px;
+	overflow-wrap: anywhere;
+}
+
+/* The secondary label takes the muted colour role (mnwxnyks). Its size is not
+   fixed by the grammar, so it inherits the label size (utzrtvwy). */
+.node__label-secondary {
+	color: var(--muted);
+	overflow-wrap: anywhere;
+}
+
+/*
+ * Edges: the stroke style distinguishes the edge kinds (vznnxtor) and the
+ * arrowhead sits at the child end (mnovnnot, vlvmrkzr).
+ */
+
+.edge {
+	fill: none;
+	stroke-width: 1.5px; /* unspecified */
+}
+
+/* A depends_on edge is the default visual: solid (rwxywllw) in the edge colour
+   role (oqotyplt). */
+.edge--depends_on {
+	stroke: var(--edge);
+	stroke-dasharray: none;
+}
+
+/* An evaluates edge reads as secondary: dashed (otyqzpxn) in the edge-alt
+   colour role (qpmyylwo). */
+.edge--evaluates {
+	stroke: var(--edge-alt);
+	stroke-dasharray: 6 4; /* unspecified */
+}
+
+/* An unresolved edge is dotted (ymnkpuvl) in the warning colour role
+   (tyvynnqo): the visible marking of an edge whose other end names a node id
+   with no node (tqxvykwn). This rule comes last so the marking overrides the
+   stroke style of the edge kind. */
+.edge--unresolved {
+	stroke: var(--warning);
+	stroke-dasharray: 2 4; /* unspecified */
+}
+
+/* The single arrowhead at the child end of every edge (vlvmrkzr) is 8px
+   (sszrrpwn); render.ts builds the marker geometry and it is filled here with
+   the colour role of its edge. */
+.arrowhead--depends_on {
+	fill: var(--edge);
+}
+
+.arrowhead--evaluates {
+	fill: var(--edge-alt);
+}
+
+.arrowhead--unresolved {
+	fill: var(--warning);
+}
+
+/*
+ * Hit targets (wtywxppt): every interactive element is at least 24px, so
+ * pointer precision never decides whether an edge can be reached. Each edge
+ * carries an invisible 24px stroke over its route; node boxes keep the floor
+ * above.
+ */
+
+.edge__hit {
+	fill: none;
+	stroke: transparent;
+	stroke-width: 24px;
+	pointer-events: stroke;
+}
