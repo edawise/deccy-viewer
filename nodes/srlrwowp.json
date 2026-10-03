@@ -1,0 +1,9 @@
+{
+	"depends_on": ["rnqkxwsu", "rtlotqvy", "yruxqknp", "uuutyrzs", "kzqwqptv", "twtvwkqm", "vpqxkzxq"],
+	"kind": "decision",
+	"content": {
+		"type": "implementation",
+		"ref": ["package.json", "src/extension.ts", "src/panel.ts"],
+		"rationale": "the extension shell that hosts the finished page; nothing here invents viewer behaviour"
+	}
+}
