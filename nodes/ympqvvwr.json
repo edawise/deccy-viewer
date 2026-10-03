@@ -1,0 +1,9 @@
+{
+	"depends_on": ["vylxkuxr", "zrqxuzzy", "qmsmvrnr"],
+	"kind": "decision",
+	"content": {
+		"type": "contract",
+		"ref": ["src/webview/contract.ts"],
+		"rationale": "the page interface the renderer, interaction and state layers all implement; the compiler enforces it"
+	}
+}
