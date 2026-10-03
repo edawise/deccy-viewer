@@ -1,0 +1,44 @@
+# Ship only the runtime files. Everything not excluded is packaged,
+# so exclude the repo tooling and sources explicitly. In particular vsce
+# must never walk .jj/ (its op_heads break packaging) or bundle
+# node_modules and sources (the 8998-file warning).
+.jj/**
+.git/**
+.vscode/**
+nodes/**
+schemas/**
+design/**
+.gitignore
+newnode
+
+# Sources: the page loads the compiled entry src/webview/main.js and the
+# stylesheets as they stand, never the TypeScript sources.
+src/**/*.ts
+src/data/**
+src/graph/**
+
+# Dependencies: only the codicon stylesheet and its font are loaded
+# (src/panel.ts resolves them through asWebviewUri). Blocklist the rest of
+# the @vscode/codicons package instead of exclude-plus-negation: negating
+# a directory re-includes its whole subtree in vsce's matcher, so the
+# unused parts are named explicitly. (devDependencies are already dropped
+# by vsce; @vscode/codicons is the only runtime dependency.)
+node_modules/@vscode/codicons/.devcontainer
+node_modules/@vscode/codicons/.github
+node_modules/@vscode/codicons/.vscode
+node_modules/@vscode/codicons/_iconCloud
+node_modules/@vscode/codicons/dist/codicon.csv
+node_modules/@vscode/codicons/dist/codicon.html
+node_modules/@vscode/codicons/dist/codicon.svg
+node_modules/@vscode/codicons/dist/codiconsLibrary.ts
+node_modules/@vscode/codicons/scripts
+node_modules/@vscode/codicons/src
+node_modules/@vscode/codicons/.fantasticonrc.js
+node_modules/@vscode/codicons/svgo.config.js
+node_modules/@vscode/codicons/package.json
+node_modules/@vscode/codicons/preview.png
+node_modules/@vscode/codicons/*.md
+node_modules/@vscode/codicons/LICENSE*
+
+# Kept: out/extension.js (package.json main), media/webview.html,
+# src/styles/*.css, src/webview/main.js (built by vscode:prepublish).

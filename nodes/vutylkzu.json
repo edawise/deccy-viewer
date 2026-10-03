@@ -1,0 +1,9 @@
+{
+	"depends_on": ["uuutyrzs"],
+	"kind": "decision",
+	"content": {
+		"type": "text",
+		"ref": [".vscodeignore"],
+		"rationale": "ship only the runtime files (out/extension.js, media/webview.html, src/styles/*.css, src/webview/main.js, codicon css+font); vsce packages everything not excluded, so .jj/ breaks packaging and node_modules/sources bloat it — the ignore names the unused parts explicitly, including the non-runtime files of the codicons package"
+	}
+}
