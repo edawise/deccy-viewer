@@ -1,0 +1,9 @@
+{
+	"depends_on": ["qmsmvrnr", "vylxkuxr", "uprztqnr", "tqxvykwn", "vznnxtor", "mstmuwtk", "mnovnnot", "vlvmrkzr", "sullyqzs", "twotxvqp", "rwxywllw", "otyqzpxn", "ymnkpuvl", "znzkwlnz", "npytqytq", "mnwxnyks", "oqotyplt", "qpmyylwo", "tyvynnqo", "owtptzpl", "ptvkwmym", "utzrtvwy", "sszrrpwn", "wtywxppt", "ympqvvwr", "tnturzro"],
+	"kind": "decision",
+	"content": {
+		"type": "implementation",
+		"ref": ["src/webview/render.ts", "src/styles/grammar.css"],
+		"rationale": "the renderer and the static visual grammar of the interactive HTML page: the drawing of the graph is a renderer kept for the life of the canvas (tnturzro), which carries the element it drew for every node and every edge, the heights it has already measured for those boxes and one static set of arrowheads from one draw to the next, so a draw writes only the boxes and routes its layout changed instead of rebuilding the layers, the label heights are measured on the first draw of a graph revision and reused by every later draw, a one-node move measures only the box it moved and updates that node and its incident edges in the elements they already occupy and measures no box it did not move, and a height the move measures different from the one drawn before, when it changes the row the moved box sits in, moves the layers below that row by the difference through a single translation of their container rather than by repositioning, remeasuring or laying out their boxes one by one; the module turns the layout's geometry into the drawing the visual-spec records fix, a box for a decision, a rounded box for an evaluation, solid and dashed edges with a single arrowhead at the child end, and an unresolved edge visibly marked, and the stylesheet carries those fixed values as the static visual grammar; the page shell, the entry point and the composition of the interactions, the presentation, the detail panel and the toolbar are not this decision's subject"
+	}
+}
