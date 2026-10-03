@@ -1,0 +1,9 @@
+{
+	"depends_on": ["rnqkxwsu", "rtlotqvy", "yruxqknp", "uuutyrzs", "kzqwqptv", "twtvwkqm", "vpqxkzxq", "vqultolm"],
+	"kind": "decision",
+	"content": {
+		"type": "implementation",
+		"ref": ["package.json", "src/extension.ts", "src/panel.ts"],
+		"rationale": "the extension shell that hosts the finished page; nothing here invents viewer behaviour. package.json declares @vscode/codicons as the only runtime dependency, so the production dependency closure the packager resolves contains nothing beyond it; the build and check-suite tooling (esbuild and the @types packages) stays dev-only and never becomes part of that closure."
+	}
+}

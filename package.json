@@ -1,0 +1,59 @@
+{
+	"name": "vsc-deccy",
+	"displayName": "vsc-deccy",
+	"description": "Visualises the deccy graph of a project",
+	"version": "0.1.0",
+	"publisher": "edawise",
+	"license": "Apache-2.0",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/edawise/deccy.git"
+	},
+	"engines": {
+		"vscode": "^1.71.0"
+	},
+	"categories": ["Visualization"],
+	"activationEvents": [
+		"workspaceContains:nodes/*.json",
+		"onCommand:vscDeccy.openGraph"
+	],
+	"main": "./out/extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "vscDeccy.openGraph",
+				"title": "Open Deccy Graph",
+				"category": "Deccy",
+				"icon": "$(graph)"
+			}
+		],
+		"menus": {
+			"commandPalette": [
+				{
+					"command": "vscDeccy.openGraph"
+				}
+			],
+			"editor/title": [
+				{
+					"command": "vscDeccy.openGraph",
+					"when": "activeWebviewPanelId == 'vscDeccy.graph'",
+					"group": "navigation"
+				}
+			]
+		}
+	},
+	"scripts": {
+		"build": "npm run build:extension && npm run build:page",
+		"build:extension": "esbuild src/extension.ts --bundle --platform=node --format=cjs --external:vscode --outfile=out/extension.js",
+		"build:page": "esbuild src/webview/main.ts --bundle --format=esm --alias:node:fs='data:text/javascript,export const promises={} /* the page reads no files: the host posts the data (main.ts) */' --alias:node:path='data:text/javascript,export const join=()=>null /* the page resolves no paths (main.ts) */' --outfile=src/webview/main.js",
+		"vscode:prepublish": "npm run build"
+	},
+	"dependencies": {
+		"@vscode/codicons": "^0.0.36"
+	},
+	"devDependencies": {
+		"@types/node": "^22.20.4",
+		"@types/vscode": "^1.71.0",
+		"esbuild": "^0.28.2"
+	}
+}
