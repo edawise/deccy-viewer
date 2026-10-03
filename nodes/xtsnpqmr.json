@@ -1,0 +1,10 @@
+{
+	"depends_on": ["uuutyrzs"],
+	"kind": "decision",
+	"content": {
+		"type": "text",
+		"ref": "inline",
+		"content": "the extension should be runnable from a fresh clone with one step: a single VS Code debug session, no manual build, install or packaging",
+		"rationale": "keep the edit-run loop frictionless; the extension exists to inspect this very repo"
+	}
+}
