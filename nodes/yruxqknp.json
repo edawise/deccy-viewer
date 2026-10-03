@@ -1,0 +1,9 @@
+{
+	"depends_on": ["ympqvvwr", "qmsmvrnr", "noplrntp", "luqwqrll", "ywullzun", "twslmwvn", "vxmzzunt", "qxmtwxxr", "rmsyvtvn", "pltovtuo", "vmruuytr", "utyvzkwu", "utzyzwmu", "xlqppmkn"],
+	"kind": "decision",
+	"content": {
+		"type": "implementation",
+		"ref": ["src/webview/state.ts", "src/webview/states.ts", "src/styles/states.css"],
+		"rationale": "loading, empty and error presentation; state survival and persistence"
+	}
+}

@@ -1,0 +1,100 @@
+/**
+ * The loading, empty and error presentation of the deccy graph viewer
+ * (yruxqknp), on top of the static visual grammar (rtlotqvy, grammar.css).
+ * Only the presentations the viewer moves in and out of are styled here; the
+ * default appearance of the nodes, edges, canvas and panels belongs to
+ * grammar.css.
+ *
+ * The selectors are the classes states.ts puts on the presentation elements
+ * (StatesController):
+ *
+ * - .state-progress, .state-progress-bar: the progress indicator overlaying
+ *   the canvas while the graph data is loading (vmruuytr, ywullzun);
+ * - .state-empty: the empty-state message on the canvas (utyvzkwu), shown
+ *   instead of a blank canvas when the repo contains no nodes (twslmwvn);
+ * - .state-error: the inline error banner below the toolbar (utzyzwmu,
+ *   zrqxuzzy) on the error surface (xlqppmkn).
+ */
+
+:root {
+	/* Colour roles. The error surface is the workbench validation styling
+	   (xlqppmkn: --vscode-inputValidation-errorBackground), paired with the
+	   matching workbench foreground so the banner text stays legible; the
+	   progress indicator takes the workbench progress styling (vmruuytr:
+	   --vscode-progressBar-background). */
+	--error-surface: var(--vscode-inputValidation-errorBackground);
+	--error-text: var(--vscode-inputValidation-errorForeground, var(--vscode-foreground));
+	--progress: var(--vscode-progressBar-background);
+}
+
+/* The presentation elements position against the canvas they sit on. */
+.canvas {
+	position: relative;
+}
+
+/* canvas/overlay, loading: the progress indicator (vmruuytr) over the graph
+   that is being loaded or reloaded (ywullzun). It has no surface of its own
+   and takes no pointer input, so interaction on the canvas carries on
+   underneath it and is queued rather than swallowed (ywullzun). */
+.state-progress {
+	position: absolute;
+	inset: 0;
+	pointer-events: none;
+}
+
+/* The indicator itself (vmruuytr): the workbench progress styling — a thin
+   bar travelling along the top of the canvas. */
+.state-progress-bar {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 2px;
+	width: 30%;
+	background: var(--progress);
+	animation: state-progress-travel 1.4s ease-in-out infinite;
+}
+
+@keyframes state-progress-travel {
+	from {
+		transform: translateX(-100%);
+	}
+	to {
+		transform: translateX(350%);
+	}
+}
+
+.state-progress[hidden] {
+	display: none;
+}
+
+/* canvas/content, empty: the empty-state message (utyvzkwu) that stands in
+   for a blank canvas when the repo contains no nodes (twslmwvn). It takes no
+   pointer input either, so the canvas stays interactive underneath. */
+.state-empty {
+	position: absolute;
+	inset: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 24px;
+	text-align: center;
+	pointer-events: none;
+}
+
+.state-empty[hidden] {
+	display: none;
+}
+
+/* panel/banner, error: the inline error banner (utzyzwmu) on the error
+   surface (xlqppmkn), directly below the toolbar (zrqxuzzy). It is inline and
+   not modal: the last successfully rendered graph stays on the canvas
+   underneath (vxmzzunt). */
+.state-error {
+	padding: 8px 12px;
+	background: var(--error-surface);
+	color: var(--error-text);
+}
+
+.state-error[hidden] {
+	display: none;
+}
