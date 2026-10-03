@@ -1,0 +1,9 @@
+{
+	"depends_on": ["usunynqx", "srlrwowp"],
+	"kind": "decision",
+	"content": {
+		"type": "implementation",
+		"ref": [".vscode/launch.json"],
+		"rationale": "extensionHost launch config: --extensionDevelopmentPath=${workspaceFolder}, this repo as the opened folder (it carries nodes/*.json, which activation requires), outFiles out/**/*.js, preLaunchTask npm: build — the existing script, so no tasks.json is checked in"
+	}
+}
