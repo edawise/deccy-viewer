@@ -1,0 +1,10 @@
+{
+	"depends_on": ["xtsnpqmr"],
+	"kind": "decision",
+	"content": {
+		"type": "ears",
+		"ref": "inline",
+		"content": "WHEN the developer starts the Run Extension debug session, VS Code shall host vsc-deccy in an Extension Development Host with this repository open and both bundles (out/extension.js, src/webview/main.js) built from the current sources before the host starts.",
+		"rationale": "formalise the run loop so the dev host never runs stale bundles"
+	}
+}
