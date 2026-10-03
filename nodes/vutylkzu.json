@@ -1,0 +1,9 @@
+{
+	"depends_on": ["uuutyrzs", "vqultolm"],
+	"kind": "decision",
+	"content": {
+		"type": "text",
+		"ref": [".vscodeignore"],
+		"rationale": ".vscodeignore excludes everything it can keep out of the vsix: the repo tooling (.jj/**, .git/**, .deccy/**, .vscode/**, nodes/**, schemas/**, design/**, tests/**, newnode, .gitignore, .vscode-test.mjs, vitest.config.ts, LICENSE), the TypeScript sources (src/**/*.ts, src/data/**, src/graph/**), and node_modules/** wholesale except the two files the extension reads, node_modules/@vscode/codicons/dist/codicon.css and node_modules/@vscode/codicons/dist/codicon.ttf. What the vsix carries is the runtime payload those rules leave in place — out/extension.js, media/webview.html, src/styles/*.css, src/webview/main.js and the two codicon files — plus two packaging metadata files, the manifest package.json and the README. Those two are outside the ignore artifact's control: vsce force-includes the manifest and the README when it builds the vsix whether or not .vscodeignore names them, so the artifact cannot keep them out and does not try to. The README ships as packaging metadata, not as a runtime file; the packaged set is therefore the runtime files plus the manifest and README metadata, not the runtime set alone."
+	}
+}

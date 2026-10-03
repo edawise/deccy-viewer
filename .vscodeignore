@@ -1,0 +1,36 @@
+# Exclude everything the vsix can leave out. vsce packages everything not
+# excluded, devDependencies included, so node_modules and the repo tooling
+# are excluded wholesale and the two codicon files the extension reads are
+# re-included by name. The manifest and the README are not listed: vsce
+# force-includes them when it builds the vsix, so this file cannot keep them
+# out, and they ship as packaging metadata rather than runtime files.
+.jj/**
+.git/**
+.deccy/**
+.vscode/**
+nodes/**
+schemas/**
+design/**
+tests/**
+newnode
+.gitignore
+.vscode-test.mjs
+vitest.config.ts
+LICENSE
+
+# Sources: the page loads the compiled script src/webview/main.js and the
+# stylesheets as they stand, never the TypeScript sources.
+src/**/*.ts
+src/data/**
+src/graph/**
+
+# Dependencies: only the codicon stylesheet and the font it loads are read
+# (src/panel.ts resolves them through asWebviewUri); everything else in
+# node_modules is a build-time or test-time dependency, already compiled
+# into out/extension.js or not needed at all.
+node_modules/**
+!node_modules/@vscode/codicons/dist/codicon.css
+!node_modules/@vscode/codicons/dist/codicon.ttf
+
+# Kept: out/extension.js (package.json main), media/webview.html,
+# src/styles/*.css, src/webview/main.js (built by vscode:prepublish).
