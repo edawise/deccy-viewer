@@ -1,0 +1,9 @@
+{
+	"depends_on": ["vylxkuxr", "zrqxuzzy", "qmsmvrnr", "krvyoumy", "wzsxvmvw"],
+	"kind": "decision",
+	"content": {
+		"type": "contract",
+		"ref": ["src/webview/contract.ts"],
+		"rationale": "the page interface the renderer, interaction and state layers all implement; the compiler enforces it. The centring rule's activation trigger starts somewhere the interaction cannot see: the listed relationship id is activated in the panel, which the page composes beside the interaction, so the page is what observes the activation and must be able to hand the node it selects to the interaction. The interface therefore also declares the page's request to bring a selected node into view, centring the viewport on the node it names and leaving the zoom alone (wzsxvmvw); the request names a node and nothing else, because both of that rule's triggers identify a node. It is declared here, as a member of this interface, rather than as a module helper or a free function, because the page can ask the interaction only for what the interface it composes declares and the compiler then holds every implementer to it; and it is the request alone, not the move: performing the centring is the interaction state's part of that rule (noplrntp), so the page's way to ask and the interaction's way to answer are settled separately and neither is written twice."
+	}
+}
