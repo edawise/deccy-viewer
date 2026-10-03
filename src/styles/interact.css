@@ -1,0 +1,106 @@
+/**
+ * The visual states driven by pointer and keyboard interaction (noplrntp), on
+ * top of the static visual grammar (rtlotqvy, grammar.css). Only the states
+ * interactions move elements in and out of are styled here; the default
+ * appearance of the nodes, edges, canvas and panels belongs to grammar.css.
+ *
+ * The selectors are the classes interact.ts sets on the drawn elements
+ * (EmphasisClasses, noplrntp).
+ */
+
+:root {
+	/* Colour roles. accent matches the workbench focus treatment (qqmrtwor:
+	   --vscode-focusBorder); the tooltip floats on the widget surface so it
+	   looks native to the workbench (pztszkqs:
+	   --vscode-editorWidget-background). */
+	--accent: var(--vscode-focusBorder);
+	--tooltip-surface: var(--vscode-editorWidget-background);
+	--tooltip-text: var(--vscode-editorWidget-foreground, var(--vscode-editor-foreground));
+}
+
+/* node/selected: an accent border, so the selection is unmistakable
+   (ortyupqp); the accent role is the one above (qqmrtwor). The node's static
+   border comes from grammar.css and only its colour changes here. */
+.is-selected {
+	border-color: var(--accent);
+}
+
+/* node/focus: a visible focus outline for keyboard traversal (ozxnxzus),
+   also in the accent role (qqmrtwor). */
+.is-focus {
+	outline: 2px solid var(--accent);
+	outline-offset: 2px;
+}
+
+/* edge/related, node/related: highlight (moklnvms) — the neighbourhood under
+   the pointer (kwovtsuv) and the direct dependencies, dependents and
+   evaluations of the selection (zkwypuor). Nodes ring, edges brighten. */
+.is-related,
+.is-hover-neighbour {
+	filter: brightness(1.35);
+}
+
+[data-node-id].is-related,
+[data-node-id].is-hover-neighbour {
+	outline: 2px solid var(--accent);
+	outline-offset: 2px;
+}
+
+/* *: elements unrelated to the selection dim to 0.3 (ksywwktl), focusing the
+   user's attention on the selection (zkwypuor); with nothing selected nothing
+   carries this class (uxuvwurl). */
+.is-dimmed {
+	opacity: 0.3;
+}
+
+/* node/dragging: lifted, with no tooltip (xslqyywt) — tooltips are suppressed
+   while a node is dragged or the canvas is panned (uswruqlq), which interact.ts
+   does by hiding the tooltip. */
+.is-dragging {
+	cursor: grabbing;
+	z-index: 1;
+	box-shadow: 0 10px 24px rgba(0, 0, 0, 0.4);
+}
+
+/* The canvas pans under the pointer (srsnqppq) and nodes move (spllzqlw). */
+.canvas {
+	cursor: grab;
+}
+
+.canvas.is-panning {
+	cursor: grabbing;
+}
+
+[data-node-id] {
+	cursor: move;
+}
+
+/* Nothing on the canvas becomes text while it is dragged (rtmqlnwm). */
+.canvas,
+.canvas * {
+	-webkit-user-select: none;
+	user-select: none;
+}
+
+/* panel/tooltip: the rationale of the hovered node (zrxnpzkq) on the tooltip
+   surface (pztszkqs), positioned by interact.ts next to the pointer. */
+.tooltip {
+	position: fixed;
+	z-index: 100;
+	max-width: 320px;
+	padding: 6px 10px;
+	background: var(--tooltip-surface);
+	color: var(--tooltip-text);
+	border: 1px solid var(--vscode-widget-border, rgba(255, 255, 255, 0.1));
+	border-radius: 4px;
+	font-size: 12px;
+	line-height: 1.4;
+	pointer-events: none;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+}
+
+/* Suppressed while a node is dragged or the canvas is panned (uswruqlq,
+   xslqyywt). */
+.tooltip[hidden] {
+	display: none;
+}

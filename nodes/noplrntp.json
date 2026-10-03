@@ -1,0 +1,9 @@
+{
+	"depends_on": ["ympqvvwr", "qmsmvrnr", "rtmqlnwm", "kwovtsuv", "zrxnpzkq", "uswruqlq", "spllzqlw", "srsnqppq", "kyokxuml", "yymrxqsk", "lntrymms", "trxzsqpv", "oumoznwq", "ltrnmrsr", "uxuvwurl", "zkwypuor", "yxqqozvt", "ykvrkysl", "zvokurzw", "pposortu", "muvkrvuu", "ruqsmuxz", "rwonulnq", "wzqzwsst", "nyxwutoo", "zpkmkvts", "moklnvms", "ortyupqp", "ksywwktl", "ozxnxzus", "xslqyywt", "pztszkqs", "qqmrtwor"],
+	"kind": "decision",
+	"content": {
+		"type": "implementation",
+		"ref": ["src/webview/interact.ts", "src/webview/keyboard.ts", "src/styles/interact.css"],
+		"rationale": "every pointer and keyboard behaviour plus the visual states they drive"
+	}
+}
