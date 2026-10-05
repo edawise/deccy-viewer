@@ -1,0 +1,11 @@
+{
+	"kind": "evaluation",
+	"evaluates": ["lnqowznu", "ulpvslov"],
+	"depends_on": ["zkvxornu", "mkyoyqvt"],
+	"content": {
+		"type": "review-criteria",
+		"ref": "inline",
+		"content": "(1) lnqowznu text states decisions-must-depends_on, evals-must-evaluates-may-depends_on; (2) schemas/node.json depends_on description and allOf agree with (1); (3) both cite zkvxornu kinds and mkyoyqvt edge kinds correctly",
+		"rationale": "ownership wording states I2/I3 consistently across prose and schema"
+	}
+}
