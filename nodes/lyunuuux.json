@@ -1,0 +1,11 @@
+{
+	"kind": "evaluation",
+	"evaluates": ["zswmtqst"],
+	"depends_on": ["mmsmukkk"],
+	"content": {
+		"type": "review-criteria",
+		"ref": "inline",
+		"content": "(1) sandwich B->E->A plus B->A validates with no cycle; (2) decision-depends-on-evaluator and eval-depends chains produce no false positive or false negative; (3) a genuine directed cycle is still reported",
+		"rationale": "cycle check follows the render direction so sandwich evaluations stay acyclic"
+	}
+}
