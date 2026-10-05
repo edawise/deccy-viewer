@@ -1,0 +1,11 @@
+{
+	"kind": "evaluation",
+	"evaluates": ["zswmtqst"],
+	"depends_on": ["ulpvslov"],
+	"content": {
+		"type": "review-criteria",
+		"ref": "inline",
+		"content": "(1) evaluation doc with evaluates + depends_on parses; (2) evaluation with evaluates only parses; (3) evaluation without evaluates is rejected; (4) decision with evaluates is rejected; (5) schemas/node.json allOf and the loader agree on ownership",
+		"rationale": "loader accepts what the schema allows, including eval depends_on for the sandwich"
+	}
+}
