@@ -1,0 +1,15 @@
+{
+  "kind": "evaluation",
+  "evaluates": [
+    "zkwypuor"
+  ],
+  "depends_on": [
+    "ltrnmrsr"
+  ],
+  "content": {
+    "type": "review-criteria",
+    "ref": "inline",
+    "content": "no element of zkwypuor contradicts ltrnmrsr; fail on any contradicting element, naming the element",
+    "rationale": "no eval-matrix cell covers a structured or code parent used by a structured or natural child; the default cell is the gate form, flagged to extend the matrix"
+  }
+}
