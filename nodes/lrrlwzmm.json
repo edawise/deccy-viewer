@@ -1,0 +1,23 @@
+{
+  "kind": "evaluation",
+  "evaluates": [
+    "yruxqknp"
+  ],
+  "depends_on": [
+    "luqwqrll",
+    "ywullzun",
+    "twslmwvn",
+    "vxmzzunt",
+    "krvyoumy",
+    "qxmtwxxr",
+    "rmsyvtvn",
+    "pltovtuo"
+  ],
+  "content": {
+    "type": "test",
+    "ref": [
+      "tests/webview/yruxqknp-conformance-ears.test.ts"
+    ],
+    "rationale": "structured requirements with a runnable artifact dependent: conformance is what running the artifact shows, so the gate states the observables the requirements demand and leaves the verdict to the run; twslmwvn names an empty-state message without pinning its text, and rmsyvtvn names the persisted fields without pinning the values an implausible stored state falls back to, so the check is deliberately structural there: it asserts that the canvas shows a message rather than staying blank and the shape of what is read back, and asserts no message text or fallback value"
+  }
+}
