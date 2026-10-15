@@ -1,0 +1,15 @@
+{
+  "kind": "evaluation",
+  "evaluates": [
+    "xtsnpqmr"
+  ],
+  "depends_on": [
+    "uuutyrzs"
+  ],
+  "content": {
+    "type": "review-criteria",
+    "ref": "inline",
+    "content": "no element of xtsnpqmr contradicts uuutyrzs; fail on any contradicting element, naming the element",
+    "rationale": "prose dependent on a prose prerequisite: the use is sound exactly when it introduces no contradiction, so non-violation is the whole gate"
+  }
+}
