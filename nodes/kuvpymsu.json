@@ -1,0 +1,18 @@
+{
+  "kind": "evaluation",
+  "evaluates": [
+    "srlrwowp"
+  ],
+  "depends_on": [
+    "rtlotqvy",
+    "yruxqknp"
+  ],
+  "content": {
+    "type": "test",
+    "ref": [
+      "tests/integration/srlrwowp.test.ts",
+      ".vscode-test.mjs"
+    ],
+    "rationale": "both ends are executable: the dependent artifact must honor the prerequisite's contract, and that is a machine verdict, so the check runs the two artifacts against each other"
+  }
+}
