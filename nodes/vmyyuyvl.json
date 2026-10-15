@@ -1,0 +1,48 @@
+{
+  "kind": "evaluation",
+  "evaluates": [
+    "rtlotqvy"
+  ],
+  "depends_on": [
+    "mstmuwtk",
+    "mnovnnot",
+    "vlvmrkzr",
+    "sullyqzs",
+    "twotxvqp",
+    "rwxywllw",
+    "otyqzpxn",
+    "ymnkpuvl",
+    "znzkwlnz",
+    "npytqytq",
+    "mnwxnyks",
+    "oqotyplt",
+    "qpmyylwo",
+    "tyvynnqo",
+    "owtptzpl",
+    "ptvkwmym",
+    "utzrtvwy",
+    "sszrrpwn",
+    "wtywxppt",
+    "mwwxxzyk",
+    "tvoouwkn",
+    "rqrlnzny",
+    "qnmuwwvw",
+    "vvzptxmz",
+    "mplxzxnm",
+    "kpkstnps",
+    "sqwusxql",
+    "squvoxyr",
+    "xntonlmp",
+    "plkskmxu",
+    "slksrtvm",
+    "oolrzkvl",
+    "ppkkmxxu"
+  ],
+  "content": {
+    "type": "test",
+    "ref": [
+      "tests/webview/rtlotqvy-conformance-visual.test.ts"
+    ],
+    "rationale": "structured requirements with a runnable artifact dependent: conformance is what running the artifact shows, so the gate states the observables the requirements demand and leaves the verdict to the run. The grammar is read from src/styles/grammar.css and the drawing is the renderer's own markup on a fixture canvas, so every fixed visual value is checked against the rule that carries it and the drawn boxes, edges and arrowheads against the literals the requirements state; the toolbar is not read, because it is not the renderer's subject. The listed entry's own cues are read through the one class vocabulary the panel and the stylesheet share, so the stylesheet's rules for an entry that names a node are checked on the class such an entry carries and its rules for an entry that names none on the class that entry carries: the link colour role, the pointer cursor, the hover underline and the accent focus outline are looked for on an entry that names a node, and the muted secondary colour role together with the absence of all three cues on an entry that names none, every colour compared against the role token its record names (--vscode-textLink-foreground, --vscode-focusBorder, --vscode-descriptionForeground) rather than a literal value, and the two class names taken exactly as the vocabulary fixes them — one class name per entry, the inert name in full and never as a modifier applied beside the other. That vocabulary is the funnel the entry rules are read through: a list of ids drawn as links apart from its sections is one thing to state and another to select, so a stylesheet that draws an entry's cues on a name of its own, or that lets the cues of the followable entry reach the entry that cannot be followed, is what reading the stylesheet through the two classes shows.\n\nThe same reading covers the ref-path entry, which the Content section lists one path at a time for a ref of paths (squvoxyr) and which carries the one class name the vocabulary adds for it (ppkkmxxu): the stylesheet's rules for that name are read the way the listed entry's rules are. The link colour role (xntonlmp) is read as the token oqotyplt records; the pointer cursor (plkskmxu) is read as the pointer-precision commitment wtywxppt's note carries, not as the hit target its element field names for the canvas; the underline (slksrtvm) is read off the hover rule of that entry and not off a state it does not have; the focus outline (oolrzkvl) is read against the token qqmrtwor records. A colour is accepted only as the role token its record names, never as a literal, a second definition of the role, or a role re-pointed away from it, and the resting rule is read apart from the state rules so a cue counts only in the state its record names. Those prerequisites are commitments in words used by a code-layer dependent, so the matrix's natural-to-code cell gives the fidelity form — the artifact enforces exactly what the prose states, neither stricter nor looser — and it is carried by the same runnable check as the structured prerequisites' conformance, because the artifact is code and the prose names the class name and the role tokens that check reads. The cues are read off that entry's own name: a rule which draws one of them selects the ref-path name as a whole class, and the name is nowhere composed with a listed-entry name, since an entry carrying both would put the appearance the vocabulary division keeps apart (sqwusxql, ppkkmxxu) into one element. Which markup element emits the class, and what activating an entry does, stay outside the check: the class the vocabulary fixes is the name the stylesheet's rules are read through."
+  }
+}
