@@ -1,0 +1,42 @@
+{
+  "kind": "evaluation",
+  "evaluates": [
+    "noplrntp"
+  ],
+  "depends_on": [
+    "rtmqlnwm",
+    "kwovtsuv",
+    "zrxnpzkq",
+    "uswruqlq",
+    "spllzqlw",
+    "srsnqppq",
+    "kyokxuml",
+    "yymrxqsk",
+    "lntrymms",
+    "trxzsqpv",
+    "oumoznwq",
+    "ltrnmrsr",
+    "uxuvwurl",
+    "zkwypuor",
+    "yxqqozvt",
+    "ykvrkysl",
+    "zvokurzw",
+    "pposortu",
+    "muvkrvuu",
+    "ruqsmuxz",
+    "rwonulnq",
+    "wzqzwsst",
+    "nyxwutoo",
+    "zpkmkvts",
+    "stppxysx",
+    "qmsmvrnr",
+    "ympqvvwr"
+  ],
+  "content": {
+    "type": "test",
+    "ref": [
+      "tests/webview/noplrntp-conformance-ears.test.ts"
+    ],
+    "rationale": "The requirement sentences with a runnable artifact dependent: conformance is what running the artifact shows, so the gate states the observables the sentences demand and leaves the verdict to the run. The interaction must also apply each state change incrementally per stppxysx — a selection, hover, drag or keyboard focus change looks up the elements the change affects by the identity it carries and writes only those, and the changes pending within a frame are merged into at most one application to the surface, carrying the last pending value rather than dropping it. The check draws its own surface from the layout the interaction asks its delegate for, using only the page interface's identity attributes and the layout module (ympqvvwr, qmsmvrnr), so it runs at this node's base with no renderer in the graph; the real-renderer integration stays with ylolxwpv. It drives real pointer and key events and observes, per change, every element lookup the interaction makes on the surface or on anything the surface contains — any of querySelector, querySelectorAll, getElementsByClassName and getElementsByTagName, with any selector, so naming no selector cannot hide the read — together with the class writes it asks of each drawn element and the relayout calls it makes for one drag within a frame."
+  }
+}
