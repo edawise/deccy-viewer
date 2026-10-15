@@ -1,0 +1,16 @@
+{
+  "kind": "evaluation",
+  "evaluates": [
+    "zrqxuzzy"
+  ],
+  "depends_on": [
+    "vylxkuxr",
+    "ltrnmrsr"
+  ],
+  "content": {
+    "type": "review-criteria",
+    "ref": "inline",
+    "content": "no element of zrqxuzzy contradicts vylxkuxr or ltrnmrsr; fail on any contradicting element, naming the element",
+    "rationale": "no eval-matrix cell covers a structured or code parent used by a structured or natural child; the default cell is the gate form, flagged to extend the matrix"
+  }
+}
