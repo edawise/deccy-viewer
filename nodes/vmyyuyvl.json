@@ -1,0 +1,34 @@
+{
+  "kind": "evaluation",
+  "evaluates": [
+    "rtlotqvy"
+  ],
+  "depends_on": [
+    "mstmuwtk",
+    "mnovnnot",
+    "vlvmrkzr",
+    "sullyqzs",
+    "twotxvqp",
+    "rwxywllw",
+    "otyqzpxn",
+    "ymnkpuvl",
+    "znzkwlnz",
+    "npytqytq",
+    "mnwxnyks",
+    "oqotyplt",
+    "qpmyylwo",
+    "tyvynnqo",
+    "owtptzpl",
+    "ptvkwmym",
+    "utzrtvwy",
+    "sszrrpwn",
+    "wtywxppt"
+  ],
+  "content": {
+    "type": "test",
+    "ref": [
+      "tests/webview/rtlotqvy-conformance-visual.test.ts"
+    ],
+    "rationale": "structured requirements with a runnable artifact dependent: conformance is what running the artifact shows, so the gate states the observables the requirements demand and leaves the verdict to the run. The grammar is read from src/styles/grammar.css and the drawing is the renderer's own markup on a fixture canvas, so every fixed visual value is checked against the rule that carries it and the drawn boxes, edges and arrowheads against the literals the requirements state; the toolbar is not read, because it is not the renderer's subject."
+  }
+}
