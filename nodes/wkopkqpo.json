@@ -1,0 +1,18 @@
+{
+  "kind": "evaluation",
+  "evaluates": [
+    "yruxqknp"
+  ],
+  "depends_on": [
+    "ympqvvwr",
+    "qmsmvrnr",
+    "noplrntp"
+  ],
+  "content": {
+    "type": "test",
+    "ref": [
+      "tests/webview/yruxqknp-contract.test.ts"
+    ],
+    "rationale": "both ends are executable: the dependent artifact must honor the prerequisite's contract, and that is a machine verdict, so the check runs the two artifacts against each other"
+  }
+}
