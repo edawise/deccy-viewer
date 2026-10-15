@@ -1,0 +1,16 @@
+{
+  "kind": "evaluation",
+  "evaluates": [
+    "vznnxtor"
+  ],
+  "depends_on": [
+    "mkyoyqvt",
+    "zkvxornu"
+  ],
+  "content": {
+    "type": "review-criteria",
+    "ref": "inline",
+    "content": "no element of vznnxtor contradicts mkyoyqvt or zkvxornu; fail on any contradicting element, naming the element",
+    "rationale": "a requirement-sentence elaboration of prose buys no license to demand observables; the gate keeps the elaboration honest to its prose parent"
+  }
+}
