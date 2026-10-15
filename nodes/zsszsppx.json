@@ -1,0 +1,15 @@
+{
+  "kind": "evaluation",
+  "evaluates": [
+    "srlrwowp"
+  ],
+  "depends_on": [
+    "rnqkxwsu"
+  ],
+  "content": {
+    "type": "review-criteria",
+    "ref": "inline",
+    "content": "the package.json of srlrwowp is faithful to rnqkxwsu in both directions: it declares exactly the licence the decision records, no stricter and no looser, and smuggles in nothing the decision does not — fail on any license grant or restriction that diverges in either direction, naming it",
+    "rationale": "prose prerequisite with a tool-checkable artifact dependent: the decision records the licence and the manifest declares it, so the gate pins the two together in both directions"
+  }
+}
