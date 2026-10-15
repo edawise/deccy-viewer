@@ -1,0 +1,19 @@
+{
+  "kind": "evaluation",
+  "evaluates": [
+    "yruxqknp"
+  ],
+  "depends_on": [
+    "vmruuytr",
+    "utyvzkwu",
+    "utzyzwmu",
+    "xlqppmkn"
+  ],
+  "content": {
+    "type": "test",
+    "ref": [
+      "tests/webview/yruxqknp-conformance-visual.test.ts"
+    ],
+    "rationale": "structured requirements with a runnable artifact dependent: conformance is what running the artifact shows, so the gate states the observables the requirements demand and leaves the verdict to the run; vmruuytr names the progress indicator without pinning markup, utyvzkwu names the empty-state message without pinning its text, and utzyzwmu names the error banner as a colour role whose token lives in xlqppmkn, so the check is deliberately structural there: it asserts presence, role, the overlay behaviour that lets queued input through, and that the banner stays inline, and asserts no markup, text or token for those three (xlqppmkn's token alone is asserted)"
+  }
+}
