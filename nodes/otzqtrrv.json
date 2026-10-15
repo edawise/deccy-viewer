@@ -1,0 +1,22 @@
+{
+  "kind": "evaluation",
+  "evaluates": [
+    "tpztomkv"
+  ],
+  "depends_on": [
+    "vylxkuxr",
+    "krvyoumy",
+    "noplrntp",
+    "rtlotqvy",
+    "ympqvvwr",
+    "qmsmvrnr",
+    "zrqxuzzy"
+  ],
+  "content": {
+    "type": "test",
+    "ref": [
+      "tests/unit/ympqvvwr-conformance-ears.test.ts"
+    ],
+    "rationale": "structured requirements with a runnable artifact dependent: conformance is what running the artifact shows, so the gate states the observables the requirements demand and leaves the verdict to the run. Its subject is the composed page those requirements are about — the page document the composition serves together with the composition root that draws the graph into it — because every clause these prerequisites speak to is read off that page: the check parses the page document, adopts it as the document the drawn graph lands in, draws through the renderer into the regions it holds, and reads the interaction stylesheet it links as text, so the page interface (ympqvvwr) is the vocabulary the observations are stated in, asserted only where the page is what carries the named region, identity or emphasis name, while the graph layer (qmsmvrnr) and the panel's region schematic (zrqxuzzy) are the substrate the observations are read against, each asserted only where a requirement speaks to it; vylxkuxr names the page and its interactivity without pinning the identity attribute or the page's own reference targets, so the check is deliberately structural there — the identity each drawn element carries names exactly the element of the graph it draws (a box's node id, an edge part's edge key, one per element the graph has) and every reference resolves, without a value being taken from the artifact under evaluation — and krvyoumy's clause is observed at runtime through an implementer of the interface, the per-document problems carried beside the graph the remaining nodes are still drawn into. The gate is the runnable form of that criterion, not a restatement of the composition: it is executed where a runner is present and applied clause by clause against the same artifacts where it is not."
+  }
+}
