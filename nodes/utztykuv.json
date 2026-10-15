@@ -1,0 +1,15 @@
+{
+  "kind": "evaluation",
+  "evaluates": [
+    "xrxmwrxz"
+  ],
+  "depends_on": [
+    "tmmynypo"
+  ],
+  "content": {
+    "type": "review-criteria",
+    "ref": "inline",
+    "content": "no element of xrxmwrxz contradicts tmmynypo; fail on any contradicting element, naming the element",
+    "rationale": "a requirement-sentence elaboration of prose buys no license to demand observables; the gate keeps the elaboration honest to its prose parent"
+  }
+}
