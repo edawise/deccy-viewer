@@ -1,0 +1,16 @@
+{
+  "kind": "evaluation",
+  "evaluates": [
+    "vylxkuxr"
+  ],
+  "depends_on": [
+    "mmsmukkk",
+    "uprztqnr"
+  ],
+  "content": {
+    "type": "review-criteria",
+    "ref": "inline",
+    "content": "no element of vylxkuxr contradicts mmsmukkk or uprztqnr; fail on any contradicting element, naming the element",
+    "rationale": "a requirement-sentence elaboration of prose buys no license to demand observables; the gate keeps the elaboration honest to its prose parent"
+  }
+}
