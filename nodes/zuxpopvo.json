@@ -1,0 +1,22 @@
+{
+  "kind": "evaluation",
+  "evaluates": [
+    "noplrntp"
+  ],
+  "depends_on": [
+    "moklnvms",
+    "ortyupqp",
+    "ksywwktl",
+    "ozxnxzus",
+    "xslqyywt",
+    "pztszkqs",
+    "qqmrtwor"
+  ],
+  "content": {
+    "type": "test",
+    "ref": [
+      "tests/webview/noplrntp-conformance-visual.test.ts"
+    ],
+    "rationale": "structured requirements with a runnable artifact dependent: conformance is what running the artifact shows, so the gate states the observables the requirements demand and leaves the verdict to the run"
+  }
+}
