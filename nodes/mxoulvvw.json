@@ -1,0 +1,17 @@
+{
+  "kind": "evaluation",
+  "evaluates": [
+    "pltovtuo"
+  ],
+  "depends_on": [
+    "kyokxuml",
+    "ltrnmrsr",
+    "srsnqppq"
+  ],
+  "content": {
+    "type": "review-criteria",
+    "ref": "inline",
+    "content": "no element of pltovtuo contradicts kyokxuml or ltrnmrsr or srsnqppq; fail on any contradicting element, naming the element",
+    "rationale": "no eval-matrix cell covers a structured or code parent used by a structured or natural child; the default cell is the gate form, flagged to extend the matrix"
+  }
+}
