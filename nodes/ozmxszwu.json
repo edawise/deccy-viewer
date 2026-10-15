@@ -1,0 +1,20 @@
+{
+  "kind": "evaluation",
+  "evaluates": [
+    "qmsmvrnr"
+  ],
+  "depends_on": [
+    "zqwxlzxm",
+    "owtptzpl",
+    "qmnttlqk",
+    "vvqvvwzk",
+    "msvoysvz"
+  ],
+  "content": {
+    "type": "test",
+    "ref": [
+      "tests/unit/qmsmvrnr-conformance-visual.test.ts"
+    ],
+    "rationale": "structured requirements with a runnable artifact dependent: conformance is what running the artifact shows, so the gate states the observables the requirements demand and leaves the verdict to the run; vvqvvwzk names the edge routing as a cubic-bezier without pinning control points, and no visual spec pins the horizontal spacing between boxes, so the check is deliberately structural there: it asserts that every route is a cubic between the spec'd endpoints and that two boxes of a layer do not overlap, and asserts no control-point or spacing value. The amend adds msvoysvz: qmsmvrnr relies on it for incremental geometry, so the same suite must show that a one-node change re-routes only the moved node's incident edges, that every route the change does not touch is the prior layout's route, that the moved box and its incident routes agree with a full layout of the same drag, and that the neighbour and incident-edge lookups still answer from the graph revision in hand. That clause is checked by handing the layout call its prior layout and asserting the returned geometry; the check pins that one minimal handover and no index, counter, control point or spacing constant, so it does not fix the incremental mechanism beyond what msvoysvz states."
+  }
+}
