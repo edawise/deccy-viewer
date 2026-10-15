@@ -1,0 +1,23 @@
+{
+  "kind": "evaluation",
+  "evaluates": [
+    "noplrntp"
+  ],
+  "depends_on": [
+    "moklnvms",
+    "ortyupqp",
+    "ksywwktl",
+    "ozxnxzus",
+    "xslqyywt",
+    "pztszkqs",
+    "qqmrtwor",
+    "mrrooxux"
+  ],
+  "content": {
+    "type": "test",
+    "ref": [
+      "tests/webview/noplrntp-conformance-visual.test.ts"
+    ],
+    "rationale": "structured requirements with a runnable artifact dependent: conformance is what running the artifact shows, so the gate states the observables the requirements demand and leaves the verdict to the run; ortyupqp names an accent border role without pinning a token, ozxnxzus names a focus outline role without pinning a token, and xslqyywt fixes no value for the lifted, tooltip-free drag state, so the check is deliberately structural there: it asserts that the selected, focused and dragged elements switch emphasis and that the drag state suppresses the tooltip, and asserts no token or exact styling for those three; mrrooxux orders the selection's two emphases, so the check states that order as an observable of the stylesheet rather than as a token or a value: the declarations reaching the selected element are compared with those reaching the related and hover-neighbour elements, resolved through the stylesheet's own cascade and width media queries at the base viewport and at every breakpoint the stylesheet declares, and the check reads the order as no weaker boost and no narrower ring on the selection with at least one of the two strictly stronger, so how the quieter emphasis is drawn stays open and neither its colour nor any fixed metric is asserted"
+  }
+}
