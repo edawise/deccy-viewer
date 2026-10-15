@@ -1,0 +1,18 @@
+{
+  "kind": "evaluation",
+  "evaluates": [
+    "srlrwowp"
+  ],
+  "depends_on": [
+    "kzqwqptv",
+    "twtvwkqm",
+    "vpqxkzxq"
+  ],
+  "content": {
+    "type": "test",
+    "ref": [
+      "tests/integration/srlrwowp-conformance.test.ts"
+    ],
+    "rationale": "structured requirements with a runnable artifact dependent: conformance is what running the artifact shows, so the gate states the observables the requirements demand and leaves the verdict to the run. The observables are read off the sentences the three prerequisites state and never off the shell's internals: the command id those sentences name is the one the manifest must contribute to the Command Palette and to the panel title bar, the extension is looked up under the id its publisher and name make, the panel the command opens is observed by the title the sentences give it, and activation is observed as the extension host activating the extension on a folder that carries the graph, with the manifest's activation event as the mechanism. Amended when the extension's identity moved to deccy-viewer: the command literal became deccyViewer.openGraph and the extension id became edawise.deccy-viewer, which are the ids the prerequisites now name, while the panel title stays Deccy Graph because the title is not part of this rename. The same amend closes the gap that the round's plan records: no gate pinned the manifest's editor/title when-condition to the view type the panel module declares, so a rename could move the panel's type and leave the menu condition on the old name with nothing noticing. The check imports the view type the panel module exports (GRAPH_PANEL_VIEW_TYPE of src/panel.ts) rather than restating it and reads the graph command's editor/title entry's when-condition against it. Amended a second time after a mutation pass over the candidate showed two ways past the first amend. Reading the condition's string literals as a set let a negated condition through: activeWebviewPanelId != the view type names the very type the module declares, so the set still matched, while the entry then shows on every panel except this one. The when-condition is therefore read as a predicate and not as a bag of names: the whole condition must be one equality between the when-clause variable that names the active webview panel's view type (activeWebviewPanelId) and one quoted literal equal to the type the module exports, so a negation, a compound condition with anything else, another operator or another variable fails. The same pass showed the manifest's displayName pinned by nothing: the identity decision uuutyrzs — a prerequisite of the shell — records deccy-viewer displayed as \"Deccy Viewer\", and the check now reads that recorded sentence out of nodes/uuutyrzs.json and requires the manifest's displayName to be the form it records, so the manifest is measured against the record rather than against a name restated in the test."
+  }
+}
