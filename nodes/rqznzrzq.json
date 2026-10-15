@@ -1,0 +1,16 @@
+{
+  "kind": "evaluation",
+  "evaluates": [
+    "rtlotqvy"
+  ],
+  "depends_on": [
+    "uprztqnr",
+    "zrqxuzzy"
+  ],
+  "content": {
+    "type": "review-criteria",
+    "ref": "inline",
+    "content": "the artifact of rtlotqvy is necessary to uprztqnr or zrqxuzzy and faithful to them in both directions: it enforces exactly what they state, no stricter and no looser, and smuggles in nothing they do not \u2014 fail on any rule that diverges in either direction, naming it",
+    "rationale": "prose prerequisites with a tool-checkable artifact dependent: prose says what counts as conforming and the artifact enforces it, so the gate pins the two together in both directions"
+  }
+}
