@@ -1,0 +1,17 @@
+{
+  "kind": "evaluation",
+  "evaluates": [
+    "ympqvvwr"
+  ],
+  "depends_on": [
+    "vylxkuxr",
+    "krvyoumy"
+  ],
+  "content": {
+    "type": "test",
+    "ref": [
+      "tests/unit/ympqvvwr-conformance-ears.test.ts"
+    ],
+    "rationale": "structured requirements with a runnable artifact dependent: conformance is what running the artifact shows, so the gate states the observables the requirements demand and leaves the verdict to the run; vylxkuxr names the page and its interactivity without pinning the identity attribute or the page's own reference targets, so the check is deliberately structural there: it asserts that the attributes are distinct and non-empty and that every reference resolves, and takes no value from the artifact under evaluation"
+  }
+}
