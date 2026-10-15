@@ -1,0 +1,18 @@
+{
+  "kind": "evaluation",
+  "evaluates": [
+    "rtlotqvy"
+  ],
+  "depends_on": [
+    "qmsmvrnr",
+    "ympqvvwr",
+    "tnturzro"
+  ],
+  "content": {
+    "type": "test",
+    "ref": [
+      "tests/webview/rtlotqvy-contract.test.ts"
+    ],
+    "rationale": "both ends are executable: the dependent artifact must honor the prerequisite's contracts, and that is a machine verdict, so the check runs the renderer against them directly on a fixture canvas built from the page interface's regions. The renderer is exercised without the page module or the interaction and presentation controllers, because those are composition and not the renderer's subject. The check reads the drawn elements and the identity the contract gives them, the boxes and routes of the graph layer's layout, the measured heights the renderer keeps across draws, that a one-node move updates the elements it already occupies and measures only the box it moved, and that a height change displaces the region below it as one translation of their container rather than by repositioning or remeasuring its boxes one by one. The drawn origin is read off the drawing itself: the check draws a graph whose layout bounds origin is off the canvas origin on both axes — a depends_on naming a node id with no document leaves a stub standing one layer above a layer-0 box, and that box is dropped left of column 0 — and then reads every drawn box and every point of every drawn route back relative to the canvas node and edge regions, whether the displacement was written into the path data or into a container's transform, asserting that a node's drawn box is its layout box less the layout's bounds origin and that the corners the drawn boxes cover and the points the drawn routes reach run from the regions' own origin to the layout's bounds size (qmsmvrnr)."
+  }
+}
