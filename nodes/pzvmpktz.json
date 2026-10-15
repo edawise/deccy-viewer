@@ -1,0 +1,43 @@
+{
+  "kind": "evaluation",
+  "evaluates": [
+    "noplrntp"
+  ],
+  "depends_on": [
+    "rtmqlnwm",
+    "kwovtsuv",
+    "zrxnpzkq",
+    "uswruqlq",
+    "spllzqlw",
+    "srsnqppq",
+    "kyokxuml",
+    "yymrxqsk",
+    "lntrymms",
+    "trxzsqpv",
+    "oumoznwq",
+    "ltrnmrsr",
+    "uxuvwurl",
+    "zkwypuor",
+    "yxqqozvt",
+    "ykvrkysl",
+    "zvokurzw",
+    "pposortu",
+    "muvkrvuu",
+    "ruqsmuxz",
+    "rwonulnq",
+    "wzqzwsst",
+    "nyxwutoo",
+    "zpkmkvts",
+    "stppxysx",
+    "qmsmvrnr",
+    "ympqvvwr",
+    "wzsxvmvw"
+  ],
+  "content": {
+    "type": "test",
+    "ref": [
+      "tests/webview/noplrntp-conformance-ears.test.ts"
+    ],
+    "rationale": "The requirement sentences with a runnable artifact dependent: conformance is what running the artifact shows, so the gate states the observables the sentences demand and leaves the verdict to the run. The interaction must also apply each state change incrementally per stppxysx — a selection, hover, drag or keyboard focus change looks up the elements the change affects by the identity it carries and writes only those, and the changes pending within a frame are merged into at most one application to the surface, carrying the last pending value rather than dropping it. The check draws its own surface from the layout the interaction asks its delegate for, using only the page interface's identity attributes and the layout module (ympqvvwr, qmsmvrnr), so it runs at this node's base with no renderer in the graph; the real-renderer integration stays with ylolxwpv. It drives real pointer and key events and observes, per change, every element lookup the interaction makes on the surface or on anything the surface contains — any of querySelector, querySelectorAll, getElementsByClassName and getElementsByTagName, with any selector, so naming no selector cannot hide the read — together with the class writes it asks of each drawn element and the relayout calls it makes for one drag within a frame. The check also drives pointer gestures the way a browser delivers them: a press lands on the element under the pointer, the release and the rest of that gesture are addressed where the surface's document was asked to send them (pointer capture when the gesture takes it, the element under the pointer otherwise), and the compatibility event a repeated press produces is addressed to the nearest common inclusive ancestor of the two clicks' targets. The check therefore also spans a graph reload (uvmutyww): the renderer draws the new revision in elements of its own and the page hands the interaction the new graph through the page interface's graph swap, so the two clicks of one double click no longer share the pressed element and the compatibility event lands on the surface whoever is capturing — an addressing the gesture's own capture choice cannot move back onto the pressed node, which is why the check cannot be satisfied by fulfilling the requirement through keeping the browser's addressing where it started. Read back through the delegate's request to open a node's document and through the selection it reports, the check observes that a gesture acts on the subject its press landed on — a node, an edge or the empty canvas — unchanged for the whole gesture, and that each gesture's subject is its own. The check also spans the focus that recentres the viewport (wzsxvmvw): a focus arriving at a node by a means other than a pointer click on that node — keyboard traversal forwards and backwards, and the interaction's own focus move — is observed to leave the viewport on the box the surface draws for that node, with the zoom level unchanged. What the move must leave is taken per axis from the rule and from the extent the layout module draws, never from the limits the behaviour keeps, because the rule draws the line per axis: on an axis where the drawn graph fits within the viewport at the zoom in hand — observed after the viewer frames the graph, after the panel is resized to each size the check drives, and after the graph is zoomed out until it fits — the node's centre is observed at the centre of the canvas exactly, with the margin the rule permits at the graph's edge, and the expectation is not clamped by any limit the behaviour enforces; on an axis where the drawn graph overflows the viewport — observed beside a fitted axis, at the pan and zoom the viewer starts from — the graph is observed to keep covering the viewport, the pan limits read back from the behaviour by panning to each side at the zoom in hand are observed to bind the move, and the check records that accepted boundary: the view comes to rest on a recorded limit and no further there, and the node is not observed centred on that axis. The limit a pan itself keeps is observed where the drawn extent and the canvas's own size put it rather than read back from the behaviour (yymrxqsk), because a limit read back by panning follows a changed clamp instead of naming it: on an axis the drawn graph fits at the zoom in hand — the graph framed to each of the sizes the panel is resized to, and the graph zoomed out until it fits — a pan driven far to each side is observed to leave the viewport at that one place, with the graph's near edge on the canvas's near edge at one extreme and its far edge on the canvas's far edge at the other, and on an axis the graph overflows the view is observed to come to rest with the graph covering the canvas, its far edge on the canvas's far edge at one extreme and its near edge on the canvas's near edge at the other. The boundary of the two readings is driven too: an axis whose drawn extent is exactly the canvas's own is observed to be the fitted one, so a pan holds that axis at the single place it allows and a focus move onto a node still brings the node's centre to the centre of the canvas there — which an axis treated as overflowing on equality fails. The means the recentre must not reach are driven the same way: a pointer click on a node (still selecting it and reporting the selection, ltrnmrsr), a change of the panel's own focus (pltovtuo), and a focus that ends with no node focused as when a reload re-reads the documents without the focused node — each is observed to leave the viewport exactly as it was. A recentre is also observed to be a viewport move and nothing else: the traversal order and its wrap, the focus emphasis on the focused node (ozxnxzus), the zoom level and the selection a click produced stay as their own decisions set them. It is observed against the bound the interaction already carries (mntwwzyl, stppxysx) with a selection dimming and brightening the drawn elements in place: the focus move that recentres makes no element lookup on the surface, writes no class to any drawn element but the one the focus emphasis moves to, moves no drawn box, and leaves the surface the single transform a pan to the same viewport writes, read back from a surface panned there at the same zoom rather than restated."
+  }
+}
