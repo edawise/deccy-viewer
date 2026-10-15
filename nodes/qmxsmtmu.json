@@ -1,0 +1,16 @@
+{
+  "kind": "evaluation",
+  "evaluates": [
+    "ltrnmrsr"
+  ],
+  "depends_on": [
+    "rtmqlnwm",
+    "ulpvslov"
+  ],
+  "content": {
+    "type": "review-criteria",
+    "ref": "inline",
+    "content": "no element of ltrnmrsr contradicts rtmqlnwm or ulpvslov; fail on any contradicting element, naming the element",
+    "rationale": "no eval-matrix cell covers a structured or code parent used by a structured or natural child; the default cell is the gate form, flagged to extend the matrix"
+  }
+}
