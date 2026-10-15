@@ -1,0 +1,18 @@
+{
+  "kind": "evaluation",
+  "evaluates": [
+    "rtlotqvy"
+  ],
+  "depends_on": [
+    "vylxkuxr",
+    "tqxvykwn",
+    "vznnxtor"
+  ],
+  "content": {
+    "type": "test",
+    "ref": [
+      "tests/webview/rtlotqvy-conformance-ears.test.ts"
+    ],
+    "rationale": "structured commitments with a runnable artifact dependent: conformance is what running the artifact shows, so the gate states the observables the renderer requirement sentences demand and leaves the verdict to the run. A fixture canvas is built from the regions the page interface names, a graph is drawn into it with the renderer, and the check reads the markup back: the graph is drawn into the canvas layers, every node box carries its node id and every drawn edge part the key of the edge it draws, an edge whose end names a missing node id is drawn and marked unresolved, and decisions and evaluations are drawn with distinct kind classes as are depends_on and evaluates edges. The page shell, the detail region and the composition are not read, because they are not the renderer's subject."
+  }
+}
