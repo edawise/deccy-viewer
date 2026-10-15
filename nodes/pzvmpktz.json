@@ -1,0 +1,39 @@
+{
+  "kind": "evaluation",
+  "evaluates": [
+    "noplrntp"
+  ],
+  "depends_on": [
+    "rtmqlnwm",
+    "kwovtsuv",
+    "zrxnpzkq",
+    "uswruqlq",
+    "spllzqlw",
+    "srsnqppq",
+    "kyokxuml",
+    "yymrxqsk",
+    "lntrymms",
+    "trxzsqpv",
+    "oumoznwq",
+    "ltrnmrsr",
+    "uxuvwurl",
+    "zkwypuor",
+    "yxqqozvt",
+    "ykvrkysl",
+    "zvokurzw",
+    "pposortu",
+    "muvkrvuu",
+    "ruqsmuxz",
+    "rwonulnq",
+    "wzqzwsst",
+    "nyxwutoo",
+    "zpkmkvts"
+  ],
+  "content": {
+    "type": "test",
+    "ref": [
+      "tests/webview/noplrntp-conformance-ears.test.ts"
+    ],
+    "rationale": "structured requirements with a runnable artifact dependent: conformance is what running the artifact shows, so the gate states the observables the requirements demand and leaves the verdict to the run"
+  }
+}
