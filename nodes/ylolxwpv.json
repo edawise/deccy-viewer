@@ -1,0 +1,18 @@
+{
+  "kind": "evaluation",
+  "evaluates": [
+    "rtlotqvy"
+  ],
+  "depends_on": [
+    "qmsmvrnr",
+    "ympqvvwr",
+    "tnturzro"
+  ],
+  "content": {
+    "type": "test",
+    "ref": [
+      "tests/webview/rtlotqvy-contract.test.ts"
+    ],
+    "rationale": "both ends are executable: the dependent artifact must honor the prerequisite's contracts, and that is a machine verdict, so the check runs the renderer against them directly on a fixture canvas built from the page interface's regions. The renderer is exercised without the page module or the interaction and presentation controllers, because those are composition and not the renderer's subject. The check reads the drawn elements and the identity the contract gives them, the boxes and routes of the graph layer's layout, the measured heights the renderer keeps across draws, that a one-node move updates the elements it already occupies and measures only the box it moved, and that a height change displaces the region below it as one translation of their container rather than by repositioning or remeasuring its boxes one by one."
+  }
+}
