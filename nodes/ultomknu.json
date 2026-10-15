@@ -1,0 +1,19 @@
+{
+  "kind": "evaluation",
+  "evaluates": [
+    "yruxqknp"
+  ],
+  "depends_on": [
+    "vmruuytr",
+    "utyvzkwu",
+    "utzyzwmu",
+    "xlqppmkn"
+  ],
+  "content": {
+    "type": "test",
+    "ref": [
+      "tests/webview/yruxqknp-conformance-visual.test.ts"
+    ],
+    "rationale": "structured requirements with a runnable artifact dependent: conformance is what running the artifact shows, so the gate states the observables the requirements demand and leaves the verdict to the run"
+  }
+}
