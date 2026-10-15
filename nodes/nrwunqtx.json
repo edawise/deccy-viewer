@@ -1,0 +1,23 @@
+{
+  "kind": "evaluation",
+  "evaluates": [
+    "zswmtqst"
+  ],
+  "depends_on": [
+    "krvyoumy",
+    "mnovnnot",
+    "qpsnwxlu",
+    "tqxvykwn",
+    "uvmutyww",
+    "vxmzzunt",
+    "xrxmwrxz"
+  ],
+  "content": {
+    "type": "test",
+    "ref": [
+      "tests/unit/zswmtqst-conformance.test.ts",
+      "vitest.config.ts"
+    ],
+    "rationale": "structured requirements and a structured spec with a runnable artifact dependent: conformance is what running the artifact shows, so the gate states the observables those records demand and leaves the verdict to the run. For mnovnnot the observable handed over is each edge kind's render direction: the declaring node carries the edge and the far end does not name it back, depends_on on the child and evaluates on the evaluator. For xrxmwrxz it is the root's absence as a node and the presence of the edge that names it, since which side omits it is what the two records settle between them. Neither observable is read off a function the records do not fix."
+  }
+}
