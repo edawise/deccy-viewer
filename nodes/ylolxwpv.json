@@ -1,0 +1,19 @@
+{
+  "kind": "evaluation",
+  "evaluates": [
+    "rtlotqvy"
+  ],
+  "depends_on": [
+    "qmsmvrnr",
+    "noplrntp",
+    "yruxqknp",
+    "ympqvvwr"
+  ],
+  "content": {
+    "type": "test",
+    "ref": [
+      "tests/webview/rtlotqvy-contract.test.ts"
+    ],
+    "rationale": "both ends are executable: the dependent artifact must honor the prerequisite's contract, and that is a machine verdict, so the check runs the two artifacts against each other"
+  }
+}
