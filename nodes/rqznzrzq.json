@@ -1,0 +1,15 @@
+{
+  "kind": "evaluation",
+  "evaluates": [
+    "rtlotqvy"
+  ],
+  "depends_on": [
+    "uprztqnr"
+  ],
+  "content": {
+    "type": "review-criteria",
+    "ref": "inline",
+    "content": "the renderer and grammar artifact of rtlotqvy is necessary to uprztqnr and faithful to it in both directions: it enforces exactly what uprztqnr states — a webview panel with an interactive HTML page that presents the deccy graph — no stricter and no looser, and smuggles in nothing uprztqnr does not; fail on any rule that diverges in either direction, naming it",
+    "rationale": "prose prerequisite with a tool-checkable artifact dependent: prose says what counts as conforming and the artifact enforces it, so the gate pins the two together in both directions; the review reads the renderer and grammar artifact alone, since the page shell and the composition are no longer its subject"
+  }
+}
