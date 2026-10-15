@@ -1,0 +1,35 @@
+{
+  "kind": "evaluation",
+  "evaluates": [
+    "rtlotqvy"
+  ],
+  "depends_on": [
+    "mspmqvuk",
+    "mstmuwtk",
+    "mnovnnot",
+    "vlvmrkzr",
+    "sullyqzs",
+    "twotxvqp",
+    "rwxywllw",
+    "otyqzpxn",
+    "ymnkpuvl",
+    "znzkwlnz",
+    "npytqytq",
+    "mnwxnyks",
+    "oqotyplt",
+    "qpmyylwo",
+    "tyvynnqo",
+    "owtptzpl",
+    "ptvkwmym",
+    "utzrtvwy",
+    "sszrrpwn",
+    "wtywxppt"
+  ],
+  "content": {
+    "type": "test",
+    "ref": [
+      "tests/webview/rtlotqvy-conformance-visual.test.ts"
+    ],
+    "rationale": "structured requirements with a runnable artifact dependent: conformance is what running the artifact shows, so the gate states the observables the requirements demand and leaves the verdict to the run"
+  }
+}
