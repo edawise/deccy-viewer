@@ -1,0 +1,16 @@
+{
+  "kind": "evaluation",
+  "evaluates": [
+    "moklnvms"
+  ],
+  "depends_on": [
+    "kwovtsuv",
+    "mrrooxux"
+  ],
+  "content": {
+    "type": "review-criteria",
+    "ref": "inline",
+    "content": "(1) association licence — no element of moklnvms contradicts kwovtsuv: the emphasis the value assigns must still mark the elements associated with a hovered node, the incident edges and the adjacent nodes; fail on each element that drops or narrows that association, naming the element. (2) relative weight — every emphasis moklnvms assigns to those connected elements must denote the quieter, supporting side of the two-level ranking mrrooxux records, that is, a weight below the bolder emphasis the selected element takes; fail on each element that gives the connected elements no relative weight, or an emphatic weight indistinguishable from the selected element's, naming the element.",
+    "rationale": "moklnvms uses kwovtsuv for the cue itself — hovering marks the associated edges and nodes — and mrrooxux for that cue's relative weight — the connected elements are the quieter, supporting emphasis against the bolder selected element. The association half is the licence kwovtsuv needs: an emphasis that stopped marking the associated elements would contradict the requirement it elaborates, while an emphasis that keeps marking them but leaves their weight unordered is not a contradiction of kwovtsuv at all, because kwovtsuv nowhere orders it. That order is what mrrooxux records, so the second half checks the one thing moklnvms takes from it: the value, read with its note, denotes a quieter weight than the selected element's and not a single undifferentiated emphasis. The criterion stays at the notation level a visual-spec value can carry: it asks what the value denotes, not how a highlight is drawn, so it names no colour, token, class, metric or rendering mechanism, and it neither fixes the value's wording nor restates it. The child is an inline visual-spec, structured notation: mrrooxux is inline prose, the natural-to-structured gate cell, and kwovtsuv is an inline ears requirement, a structured parent used by a structured child that no eval-matrix row covers, so that edge takes the default cell, the gate form, flagged to extend the matrix. There is nothing to run: a reviewer applies the two clauses by reading moklnvms against kwovtsuv and mrrooxux in turn, and any finding names the field that carries it."
+  }
+}
