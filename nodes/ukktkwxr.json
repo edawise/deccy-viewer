@@ -1,0 +1,17 @@
+{
+  "kind": "evaluation",
+  "evaluates": [
+    "zrqxuzzy"
+  ],
+  "depends_on": [
+    "vylxkuxr",
+    "ltrnmrsr",
+    "yrtrqutm"
+  ],
+  "content": {
+    "type": "review-criteria",
+    "ref": "inline",
+    "content": "no element of the layout document zrqxuzzy records contradicts vylxkuxr, ltrnmrsr or yrtrqutm, each taken over its whole subject, including the collapse granularity yrtrqutm settles; fail on any contradicting element, naming the element and the prerequisite it contradicts",
+    "rationale": "zrqxuzzy records a layout spec document (prose with an ASCII schematic), which reads as structured; yrtrqutm is inline prose (natural) and vylxkuxr, ltrnmrsr are inline EARS sentences (structured), so the natural-to-structured cell and the default structured-to-structured cell both take the gate form, with the default cell flagged to extend the matrix. The criterion is the license check applied to every recorded prerequisite at once, so the prerequisite that settles collapse granularity is read over its whole subject and no element of the document is named in advance"
+  }
+}
