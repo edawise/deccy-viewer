@@ -1,0 +1,18 @@
+{
+  "kind": "evaluation",
+  "evaluates": [
+    "ympqvvwr"
+  ],
+  "depends_on": [
+    "qmsmvrnr",
+    "vylxkuxr",
+    "krvyoumy"
+  ],
+  "content": {
+    "type": "test",
+    "ref": [
+      "tests/unit/ympqvvwr-contract.test.ts"
+    ],
+    "rationale": "a conformance check over the page interface, realized as a runnable test because every clause is an observable of the artifact: the check reads the interface through its own exported names (the region selectors, the two identity attributes, the emphasis vocabulary and the presentation) and asserts clause by clause what the recorded prerequisites promise. Against vylxkuxr, that the graph is presented inside a page: the interface names a region per page area, each reached by a selector of its own, and every area its own views attach to is one it names. Against krvyoumy, that malformed documents are contained: the check drives an implementer of the interface (the presentation state that attaches to a StatesView, whose module the page provides) instead of a presentation it builds itself, hands it the problems a read reports as loaded's warnings argument, and asserts that state() hands back exactly those problems, unchanged and one per omitted document, so a file name and its problem reach the banner region, that an omitted document is not reported as a failed read, and that the node already drawn stays on the canvas so the remaining nodes still render. It does not read LoadedNodeGraph's warnings: it compares the presentation with the problems it passed to the implementer's own loaded entry point, the entry point by which a read hands its problems to the presentation. Against qmsmvrnr, that the interface is defined over the graph model, its order and its geometry without pinning a value that model's interface does not fix. The clauses face the two requirement-sentence prerequisites as conformance and the code prerequisite as a test, and one runnable check covers all three edges; it reads nothing from the page, the stylesheets or the documents on disk, which are the subjects of other checks, so it stays a check of how the interface carries its contract rather than of what it renders"
+  }
+}
