@@ -1,0 +1,21 @@
+{
+  "kind": "evaluation",
+  "evaluates": [
+    "zswmtqst"
+  ],
+  "depends_on": [
+    "krvyoumy",
+    "qpsnwxlu",
+    "tqxvykwn",
+    "uvmutyww",
+    "vxmzzunt"
+  ],
+  "content": {
+    "type": "test",
+    "ref": [
+      "tests/unit/zswmtqst-conformance.test.ts",
+      "vitest.config.ts"
+    ],
+    "rationale": "structured requirements with a runnable artifact dependent: conformance is what running the artifact shows, so the gate states the observables the requirements demand and leaves the verdict to the run"
+  }
+}
