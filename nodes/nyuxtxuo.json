@@ -1,0 +1,16 @@
+{
+  "kind": "evaluation",
+  "evaluates": [
+    "ympqvvwr"
+  ],
+  "depends_on": [
+    "qmsmvrnr"
+  ],
+  "content": {
+    "type": "test",
+    "ref": [
+      "tests/unit/ympqvvwr-contract.test.ts"
+    ],
+    "rationale": "both ends are executable: the dependent artifact must honor the prerequisite's contract, and that is a machine verdict, so the check runs the two artifacts against each other; qmsmvrnr fixes the graph, its order and its geometry without pinning the edge-key format or the class names of the emphasis vocabulary, so the check is deliberately structural there: it asserts that a key is defined for every edge, names its ends and is unique, and that every emphasis class exists, and takes nothing from the artifact under evaluation"
+  }
+}
