@@ -1,0 +1,16 @@
+{
+  "kind": "evaluation",
+  "evaluates": [
+    "yxnoktrx"
+  ],
+  "depends_on": [
+    "srlrwowp"
+  ],
+  "content": {
+    "type": "test",
+    "ref": [
+      "tests/integration/yxnoktrx.test.ts"
+    ],
+    "rationale": "both ends are executable: the dependent artifact must honor the prerequisite's contract, and that is a machine verdict, so the check runs the two artifacts against each other. Amended for the unit that renames the extension in the manifest this configuration develops: the shell identifies itself as deccy-viewer — package name and displayName under the publisher edawise, the command deccyViewer.openGraph, the view type deccyViewer.graph, the activation event and the menus — so the id the extension host installs it under is edawise.deccy-viewer and the command the manifest contributes is deccyViewer.openGraph. The two literals the check names move with that contract and nothing else does: the lookup id from edawise.vsc-deccy to edawise.deccy-viewer, and the contributed command from vscDeccy.openGraph to deccyViewer.openGraph. The old literals pinned the pre-rename identity, so they no longer cover the use — that the extension the configuration develops and hosts is the one the manifest declares: the manifest's declaration of that identity is what moved, and an id the manifest no longer declares reads nothing off it, so the check would have kept failing a correctly renamed manifest while observing nothing either decision states. The same suites, the same four assertions and the same observables remain, each keeping its subject and strength: the extension loaded from the development path, the entry point the manifest declares built and covered by the configuration's out files, the activation event matching the folder the host opened so the shell really activates, and the command the shell registers once it is hosted. The activation expectation stays workspaceContains:nodes/*.json because that event names no extension id and is the mechanism the dependent's own premise uses — the opened folder carries nodes/*.json, which activation requires — while the rename moves the onCommand literal, not the folder-keyed event. Nothing is added that merely echoes the new name: the two strings appear only where an existing assertion resolves the extension and reads a contributed command, and the view type and menus the rename also touches are not restated here, because pinning them to what the panel module declares is the shell conformance gate's use, not this one's. No assertion was weakened: none was dropped, loosened or made conditional, and every value is still read off the manifest and the hosted extension rather than off this record."
+  }
+}
