@@ -1,0 +1,16 @@
+{
+  "kind": "evaluation",
+  "evaluates": [
+    "ortyupqp"
+  ],
+  "depends_on": [
+    "qqmrtwor",
+    "mrrooxux"
+  ],
+  "content": {
+    "type": "review-criteria",
+    "ref": "inline",
+    "content": "For each value ortyupqp records for an element's emphasis in the selected state, two clauses: (1) the value denotes the stronger of the two emphases its prerequisites rank; a value that records a highlight without denoting it as the stronger one fails. (2) the value keeps the colour role its colour prerequisite records for that element; dropping or replacing that role fails. Fail on any element meeting either failure, naming the element and the clause. Accept any recorded phrasing that denotes the stronger emphasis and the recorded colour role; no class, token, metric or drawing mechanism is required.",
+    "rationale": "The target's emphasis value makes two uses at once: one prerequisite ranks the selected emphasis above the connected set's, and the other fixes the accent colour role for that element. A single review criterion must check both, because a value can carry the accent and leave the ranking unstated, or state the ranking and drop the accent; one clause per use keeps either omission visible. Gate form per the matrix: a natural prerequisite against a structured child is evals/natural-to-structured, and a structured prerequisite against a structured child is the default cell; both are the gate form, so no observables are demanded and the notation is judged on what it denotes, not on a chosen token. Flagged for a matrix entry: the mixed-layer fan-out (one natural and one structured prerequisite, structured child) has no row, and takes the gate floor."
+  }
+}
