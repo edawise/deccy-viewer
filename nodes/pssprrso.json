@@ -1,0 +1,16 @@
+{
+  "kind": "evaluation",
+  "evaluates": [
+    "qmsmvrnr"
+  ],
+  "depends_on": [
+    "zswmtqst"
+  ],
+  "content": {
+    "type": "test",
+    "ref": [
+      "tests/unit/qmsmvrnr-contract.test.ts"
+    ],
+    "rationale": "both ends are executable: the dependent artifact must honor the prerequisite's contract, and that is a machine verdict, so the check runs the two artifacts against each other"
+  }
+}
