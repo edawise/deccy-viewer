@@ -1,0 +1,17 @@
+{
+  "kind": "evaluation",
+  "evaluates": [
+    "noplrntp"
+  ],
+  "depends_on": [
+    "ympqvvwr",
+    "qmsmvrnr"
+  ],
+  "content": {
+    "type": "test",
+    "ref": [
+      "tests/webview/noplrntp-contract.test.ts"
+    ],
+    "rationale": "both ends are executable: the dependent artifact must honor the prerequisite's contract, and that is a machine verdict, so the check runs the two artifacts against each other"
+  }
+}
