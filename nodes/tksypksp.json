@@ -1,0 +1,16 @@
+{
+  "kind": "evaluation",
+  "evaluates": [
+    "qwzwpxws"
+  ],
+  "depends_on": [
+    "vqwoptmu",
+    "ulpvslov"
+  ],
+  "content": {
+    "type": "review-criteria",
+    "ref": "inline",
+    "content": "(1) license — no element of qwzwpxws contradicts vqwoptmu; fail on any contradicting element, naming the element. (2) grounded vocabulary — every field, value form and content kind qwzwpxws relies on to determine how a section's value is presented is one ulpvslov's recorded node structure declares; fail on any clause requiring a field, value form or content kind that structure does not declare, naming the clause and the undeclared term.",
+    "rationale": "qwzwpxws uses vqwoptmu as the frame its sections are presented within and ulpvslov as the recorded structure and content typing it presents from; that use is sound exactly when it contradicts neither and draws no structural or type vocabulary the recorded schema does not declare, so non-violation plus grounded vocabulary is the whole gate. The check is applied by reading qwzwpxws against each prerequisite in turn; nothing runs. Neither clause names an element of either endpoint in advance, so the check survives rewording of qwzwpxws."
+  }
+}
