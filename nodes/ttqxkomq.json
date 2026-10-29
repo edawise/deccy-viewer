@@ -1,0 +1,15 @@
+{
+  "kind": "evaluation",
+  "evaluates": [
+    "yrtrqutm"
+  ],
+  "depends_on": [
+    "vqwoptmu"
+  ],
+  "content": {
+    "type": "review-criteria",
+    "ref": "inline",
+    "content": "License: no element of yrtrqutm contradicts vqwoptmu. Fail on any contradicting element, naming the element.",
+    "rationale": "prose dependent on a prose prerequisite: the use is sound exactly when the dependent adds no element that contradicts the prerequisite, so non-violation is the whole gate. Nothing is runnable at this layer, so the reviewer applies the license check by reading the two recorded nodes and names any contradicting element."
+  }
+}
