@@ -1,0 +1,14 @@
+{
+  "kind": "decision",
+  "depends_on": [
+    "zkwypuor",
+    "kwovtsuv",
+    "ltrnmrsr"
+  ],
+  "content": {
+    "type": "text",
+    "ref": "inline",
+    "content": "Where a selection highlights both the selected element and the elements connected to it, the selected element takes the bolder highlight and the connected elements take the quieter one. The selected element is the stronger of the two emphases; the elements connected to it are emphatic only as the supporting set around it.",
+    "rationale": "The node settles nothing except the relative weight of the two emphases the prerequisites already record: ltrnmrsr and zkwypuor establish that a selection highlights the selected node and the elements connected to it, and kwovtsuv establishes the association emphasis between a node and the elements and edges related to it. None of the three orders those emphases against each other, so a viewer that renders the selected node and its connected set with equal weight still satisfies all of them; the gap this decision closes is exactly that missing order. Naming the selected element as the bolder emphasis and its connected set as the quieter one keeps the ranking with the decision that owns the selection cue and keeps the association cue available for the rest of the viewer. The content carries no colour, token, metric or drawing mechanism, so it constrains the relative weight without pre-empting how a highlight is drawn, and it adds no behaviour for unselected or unrelated elements. Every element set it ranks is one the prerequisites already mark, and no prerequisite states a contrary ordering, so the node is licensed by all three and grounded in what they record."
+  }
+}
