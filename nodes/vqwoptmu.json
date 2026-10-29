@@ -1,0 +1,12 @@
+{
+  "kind": "decision",
+  "depends_on": [
+    "ltrnmrsr"
+  ],
+  "content": {
+    "type": "text",
+    "ref": "inline",
+    "content": "The detail panel presents the selected node's kind, content and rationale as three labelled sections, in that order. The selected node's kind appears in a section labelled \"Kind\", its content in a section labelled \"Content\", and its rationale in a section labelled \"Rationale\". Each section is labelled with its field name, the order is fixed at kind, content, rationale for every selection, and a section whose value is empty still appears with its label rather than being dropped.",
+    "rationale": "The prerequisite requires the detail panel to display the selected node's kind, content and rationale; this node settles how they are presented. Labelling each section binds each value to its field explicitly, so a reader does not have to infer from position what a value means, and fixing the order keeps the panel stable across selections. Naming the three sections also gives later detail decisions a fixed frame to extend rather than each inventing its own layout. The choice adds only the presentation of the three required fields and leaves their types, any collapse behaviour and relationships to the decisions that own those."
+  }
+}
