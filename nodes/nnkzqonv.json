@@ -1,0 +1,17 @@
+{
+  "kind": "evaluation",
+  "evaluates": [
+    "mrrooxux"
+  ],
+  "depends_on": [
+    "zkwypuor",
+    "kwovtsuv",
+    "ltrnmrsr"
+  ],
+  "content": {
+    "type": "review-criteria",
+    "ref": "inline",
+    "content": "(1) license — no element of mrrooxux contradicts zkwypuor, kwovtsuv or ltrnmrsr; fail on each contradicting element, naming the element and the prerequisite it contradicts. (2) grounded ranking — every comparative emphasis mrrooxux states holds between cues at least one of the three prerequisites records, and every element set it ranks is one a prerequisite marks; fail on each comparison or ranked set that no prerequisite records, naming it.",
+    "rationale": "mrrooxux uses zkwypuor, kwovtsuv and ltrnmrsr as the two emphasis cues it ranks: the selection emphasis zkwypuor and ltrnmrsr establish and the hover-associated emphasis kwovtsuv establishes. That use is sound exactly when the ranking contradicts none of the three and ranks only cues and element sets they already record, because none of them orders the two cues or gives the selected element a different emphasis from its connected set, so the ordering is the dependent's to introduce and non-violation plus grounded ranking is the whole gate over prose. No eval-matrix cell covers a structured parent used by a natural child; the default cell is the gate form, flagged to extend the matrix. The check is applied by reading mrrooxux against each prerequisite in turn; nothing runs. Neither clause names an element of any endpoint in advance, so the check survives rewording of mrrooxux."
+  }
+}
