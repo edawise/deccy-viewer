@@ -1,0 +1,15 @@
+{
+  "kind": "evaluation",
+  "evaluates": [
+    "vqwoptmu"
+  ],
+  "depends_on": [
+    "ltrnmrsr"
+  ],
+  "content": {
+    "type": "review-criteria",
+    "ref": "inline",
+    "content": "no element of vqwoptmu contradicts ltrnmrsr; fail on any contradicting element, naming the element",
+    "rationale": "structured prerequisite used by a natural dependent: no eval-matrix cell covers it, so the default cell applies, which is the gate form, flagged for a matrix entry. The dependent may add presentation detail the prerequisite leaves open, so non-contradiction is exactly the licence this edge needs and anything stricter would demand behaviour from a prose child."
+  }
+}
