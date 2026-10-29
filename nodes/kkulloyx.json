@@ -1,0 +1,11 @@
+{
+	"kind": "evaluation",
+	"evaluates": ["rmovtvkt"],
+	"depends_on": ["vqwoptmu", "mkyoyqvt", "mnovnnot"],
+	"content": {
+		"type": "review-criteria",
+		"ref": "inline",
+		"content": "no element of rmovtvkt contradicts vqwoptmu or mkyoyqvt or mnovnnot; fail on any contradicting element, naming the element",
+		"rationale": "the dependent is inline prose, so it is natural-layer; vqwoptmu and mkyoyqvt are inline prose (natural-to-natural, the gate cell), while mnovnnot is an inline visual-spec (structured parent, natural child), a cell no eval-matrix row covers, so it takes the default cell: the gate form, flagged for a matrix entry. A prose child may add presentation detail its prose and structured parents leave open, so non-contradiction is exactly the licence this edge needs; any stricter check would demand behaviour from a prose dependent and restate it, which the gate form forbids."
+	}
+}
