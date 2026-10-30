@@ -1,0 +1,12 @@
+{
+	"kind": "decision",
+	"content": {
+		"type": "text",
+		"ref": "inline",
+		"content": "The viewer's cost for a user interaction shall follow what that interaction changed, not the number of nodes visible in the panel: applying one and the same change costs the same whether the panel shows few nodes or many.",
+		"rationale": "vylxkuxr settles only that the deccy graph is presented inside a VS Code webview panel as an interactive HTML page. 'Interactive' is the word that decays silently as the graph grows: a page whose every interaction re-does work in proportion to what is on screen is still an HTML page in a panel, yet stops being interactive in any usable sense once enough nodes are visible. This node therefore fixes the condition under which that word keeps holding as the graph's size varies: the work an interaction costs follows what the interaction changed, and not how many nodes are visible. The licence is the prerequisite's own wording, not an imported rule — it speaks of the page being interactive for a graph whose visible extent changes, and this commitment constrains only the relation between an interaction's cost and its change, which is exactly the content of 'interactive'. It is an elaboration, not a restatement: 'interactive HTML page' states nothing about cost, and this adds a cost condition. It is deliberately restrained: it names no latency or frame budget, no node-count or graph-size ceiling, no rendering technique, library, file, protocol or host, so it cannot be read as deciding any of those, and none of them is needed to apply it. It does not contradict the prerequisite: the panel, the HTML page and the interactivity all remain, now with a condition attached. It is decidable from the recorded statement alone: the refuting observation is a pair of interactions that apply the same change to different numbers of visible nodes and whose measured cost differs — the statement supplies the quantity (cost per interaction), the control (same change) and the independent variable (visible node count), so a reviewer needs no rule of their own to name the counterexample. The node records the commitment, not any measurement or verdict."
+	},
+	"depends_on": [
+		"vylxkuxr"
+	]
+}
