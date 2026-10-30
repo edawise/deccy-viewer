@@ -1,0 +1,10 @@
+{
+	"depends_on": ["uuutyrzs", "ympqvvwr", "mspmqvuk"],
+	"kind": "decision",
+	"content": {
+		"type": "text",
+		"ref": "inline",
+		"content": "The packaged extension has two parts. Its runtime payload is exactly: out/extension.js, media/webview.html, src/styles/*.css (the styles/ directory the page interface names, interact.css with the emphasis classes among them), src/webview/main.js, and from node_modules only @vscode/codicons/dist/codicon.css with the codicon.ttf it loads. Its packaging metadata is the manifest VS Code needs in order to install the extension and the README that vsce always includes in the vsix, whether or not the payload names it. Apart from these, no other file ships: no TypeScript sources, tests, design notes, node documents, schemas, build configuration, or other dependency.",
+		"rationale": "the running extension touches exactly the payload files and no others: VS Code activates out/extension.js, which serves media/webview.html and resolves the page's own stylesheet and script references, so the styles (the emphasis classes of ympqvvwr among them) and the page script must sit exactly where the page names them; it also links @vscode/codicons/dist/codicon.css, which loads codicon.ttf, so the toolbar's fit-graph action (mspmqvuk) draws its screen-full glyph instead of a blank box. The manifest and the README are packaging metadata rather than runtime payload: VS Code needs the manifest to install the extension at all, and vsce always includes the repository README in the vsix regardless of what the payload lists, so the README ships without being a runtime file. Everything else in the repository, the TypeScript sources, tests, design notes, nodes and schemas, is read while developing and never by the installed extension, and other node_modules packages are compiled into out/extension.js at build time, so packaging them only inflates the vsix."
+	}
+}
