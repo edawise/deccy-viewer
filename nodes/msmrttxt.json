@@ -1,0 +1,17 @@
+{
+	"kind": "evaluation",
+	"evaluates": [
+		"vqultolm"
+	],
+	"depends_on": [
+		"uuutyrzs",
+		"ympqvvwr",
+		"mspmqvuk"
+	],
+	"content": {
+		"type": "review-criteria",
+		"ref": "inline",
+		"content": "no element of vqultolm contradicts uuutyrzs or ympqvvwr or mspmqvuk; fail on any contradicting element, naming the element",
+		"rationale": "the dependent is inline prose, so it is natural-layer; uuutyrzs is inline prose (natural-to-natural, the gate cell), while mspmqvuk is an inline visual-spec (structured parent, natural child) and ympqvvwr is a ref to a source contract (code parent, natural child), cells no eval-matrix row covers, so those two take the default cell: the gate form, flagged for a matrix entry. A prose child commits in words, so its prerequisites can settle only whether the commitment contradicts them: the check reads the committed statement, including every exclusion it states, against the three prerequisites and names any element of the commitment a prerequisite contradicts. A behavioural check over the committed set would demand behaviour from a prose dependent and restate it, which the gate form forbids."
+	}
+}
