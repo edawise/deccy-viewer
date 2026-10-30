@@ -1,0 +1,11 @@
+{
+	"kind": "evaluation",
+	"evaluates": ["srlrwowp"],
+	"depends_on": ["vqultolm"],
+	"content": {
+		"type": "review-criteria",
+		"ref": "inline",
+		"content": "criterion (both directions, read from package.json against the packaged set): LOOSER -- every package named in `dependencies` is one the packaged set says ships from node_modules, i.e. @vscode/codicons carrying the codicon stylesheet and the font it loads, and no build or check-suite tooling appears among them (no devDependency is also a runtime dependency), so nothing the packaged set does not name can enter the production closure the packager resolves; STRICTER -- @vscode/codicons is declared as a runtime dependency, so the packager resolves and ships the vendored part of the packaged set, not left in devDependencies and not absent; fail naming the dependency and the direction it diverges in. The criterion reads the dependency declaration only; how the packaged files are filtered is another decision's artifact and is not re-decided here.",
+		"rationale": "vqultolm states in prose what the installed extension is made of and, from node_modules, names only the codicon stylesheet with the font it loads; srlrwowp's package.json is the artifact whose dependency declaration the packager resolves into the vsix, so the edge sits in the matrix's natural-to-code cell and takes the fidelity form: the declaration must carry the prose exactly, neither stricter nor looser, with each divergence named. The criterion is read in both directions -- a runtime dependency the packaged set does not name (build or check-suite tooling leaking into the production closure) is looser, and the codicon package missing from the runtime dependencies (the vendored part of the payload not shipped, or shipped as dev-only) is stricter. It names no field order, ignore mechanism or file list, so it survives any rewrite of the dependent that keeps the same dependency declaration, and it presupposes no packaging decision beyond the ones already recorded."
+	}
+}
