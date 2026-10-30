@@ -1,0 +1,15 @@
+{
+  "kind": "evaluation",
+  "evaluates": [
+    "msvoysvz"
+  ],
+  "depends_on": [
+    "vztxmxum"
+  ],
+  "content": {
+    "type": "review-criteria",
+    "ref": "inline",
+    "content": "Read the recorded design of the graph layer and check, element by element: (1) neighbour and incident-edge lookups are served from indexes built once per graph revision, not by scanning the edge set per query; (2) a change recomputes only the geometry it affects — a moved node's box and its incident edge routes — and not the whole graph; (3) the mechanism leaves no per-query, per-event or per-visible-node term proportional to the graph or to the visible surface, such as a full edge scan or a full order/layout pass per interaction; (4) the mechanism entails the prerequisite's bound — the same change costs the same regardless of how many nodes are visible — and no element contradicts the prerequisite; (5) fail on a substituted goal: a one-off build-time cache with no incremental update, a lazy rebuild of the whole graph, or a technique adopted for its own sake. Fail on any failing element, naming the element.",
+    "rationale": "The dependent is prose but its use of the prerequisite is a mechanism, so non-contradiction alone cannot decide the edge: a layer that re-scans every edge on each query contradicts nothing on its face, yet reintroduces exactly the term the prerequisite forbids. The criterion therefore applies the prerequisite's own bound — cost follows what the interaction changed, not what is visible — to the mechanism the dependent commits to: indexes held once per revision and geometry recomputed only where the change lands. The last clause exists because a cache or a lazy rebuild can satisfy the letter of an incremental-sounding description while doing the whole graph's work per interaction, which is the failure mode this edge is exposed to. The criterion states no latency budget, threshold, file, symbol or library; every clause is decidable by reading the recorded design, so it survives rewording of the dependent and presupposes no decision that is not recorded."
+  }
+}
