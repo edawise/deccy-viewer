@@ -1,0 +1,10 @@
+{
+	"kind": "evaluation",
+	"evaluates": ["rxqsupwm"],
+	"depends_on": ["vqultolm", "tpztomkv", "noplrntp"],
+	"content": {
+		"type": "fidelity",
+		"ref": ["tests/gitignore-fidelity.py"],
+		"rationale": "rxqsupwm decides which files the repository tracks and which it leaves out; vqultolm is the record that separates the extension's authored runtime files (media/webview.html, the src/styles/*.css the page names) from what is built from sources (out/, src/webview/main.js), vendored (node_modules, the codicon stylesheet and font among them) and packaged as a .vsix. The check projects that split onto the repository and asks git's own matcher about representative paths of each class in both directions: every generated or vendored path must be ignored, and no authored runtime source may be, so the ignore set neither leaks a build product or package into the repository nor drops a file the installed extension needs. It reads the effect of the rules rather than their spelling, order or count, so any rule set that draws the packaged set's line passes, while a looser one (a generated class still tracked) or a stricter one (a runtime source untracked) fails naming the offending path. Two of the paths it names are not vqultolm's to spell but their authors': media/webview.html is the page tpztomkv composes and ships, and src/styles/interact.css is the stylesheet noplrntp writes, so the check reads those names from tpztomkv and noplrntp, each of which owns its file below this check; and because the check asks git's matcher about the path strings and reads neither file, the dependency is on the names staying the owners' names - a rename in either owner would leave this list naming a path the installed extension no longer carries, a staleness the rules' verdict on the string itself cannot show. vqultolm is natural-layer prose and the artifact is tool-checkable, so the edge this check gates is the matrix's natural-to-code cell and takes the fidelity form."
+	}
+}
