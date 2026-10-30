@@ -1,0 +1,15 @@
+{
+  "kind": "evaluation",
+  "evaluates": [
+    "tnturzro"
+  ],
+  "depends_on": [
+    "vztxmxum"
+  ],
+  "content": {
+    "type": "review-criteria",
+    "ref": "inline",
+    "content": "1. Bound: the decision's mechanism, as recorded, entails that the work of applying an interaction is bounded by what that interaction changed, with no term proportional to the number of visible nodes; fail if it entails less than that, or if it asserts a mechanism and that cost relation side by side without connecting them, naming where. This clause is not met by a mechanism that carries each node's drawn element and measured height across draws while the interaction's work still measures, positions, lays out or otherwise touches every visible node, nor by figures described as already at hand that are nonetheless recomputed or corrected per visible node; it is not met by repositioning, remeasuring or laying out the nodes below a node whose height changed by any per-node means, and a decision that relies on those layout consequences must state how they are handled without work proportional to the visible nodes. 2. Non-contradiction: no element of the decision contradicts the prerequisite — applying the same change costing more when more nodes are visible, or the panel / interactive HTML page dropping away; fail on the contradicting element, naming it. 3. No substitute goal: the decision does not swap the prerequisite's condition for a different goal — a latency or frame budget, a node-count or capacity ceiling, a cache policy with no tie to what the interaction changed, or a rendering technique adopted for its own sake with no stated bearing on that relation; fail on the substituted goal, naming it.",
+    "rationale": "Prose dependent on a prose prerequisite, so this is the gate cell: the use is an elaboration, and a reviewer reading the two recorded nodes checks that the mechanism the decision commits to makes the prerequisite's cost condition hold, contradicts nothing in it, and does not substitute a different goal for it. The prerequisite states a bound — cost follows what the interaction changed, never the number of visible nodes — so the criterion requires the decision to entail that bound rather than merely name a cheaper mechanism: a mechanism can carry every element and measured height and still revisit all visible nodes, and a change's layout consequences below it can still be paid per visible node, so the criterion names those as cases the decision must close itself. Both endpoints are recorded prose, so the check is applied by reading them; there is no artifact to run and no behavior to probe — the prerequisite fixes no budget, capacity or technique against which behavior could be measured. Which element satisfies, contradicts or substitutes is found at check time and named in the check's output, never in this criterion."
+  }
+}
