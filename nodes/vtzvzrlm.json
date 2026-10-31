@@ -1,0 +1,15 @@
+{
+  "kind": "evaluation",
+  "evaluates": [
+    "ksoupzqm"
+  ],
+  "depends_on": [
+    "vylxkuxr"
+  ],
+  "content": {
+    "type": "review-criteria",
+    "ref": "inline",
+    "content": "(1) licence — no element of ksoupzqm contradicts vylxkuxr; fail on each contradicting element, naming the element. (2) grounded substrate — every presentation surface or interaction medium ksoupzqm relies on is one vylxkuxr records; fail on each surface or medium the recorded prerequisite does not state, naming it.",
+    "rationale": "vylxkuxr is an inline EARS requirement (structured layer); ksoupzqm is an inline text decision (natural layer). The matrix cell for a structured parent used by a natural child is 'default': the gate form (evals/natural-to-natural.md) plus a flag to extend the matrix, so the check is inline review criteria and nothing runs. The use is that the search decision relies on the recorded webview presentation as the substrate on which search and its results appear; that use is sound exactly when the decision contradicts no element of the requirement and presumes no presentation surface or interaction medium the requirement does not record. A prose child may add detail its parent leaves open, so 'exceeds' is read narrowly as presuming an unrecorded substrate: a literal 'adds nothing the parent does not state' would forbid the decision, which exists to add the search behaviour, and would both define the subject and restate it. Neither clause names an element of either endpoint in advance, so the check survives rewording of ksoupzqm; it is applied by reading the two recorded nodes."
+  }
+}
