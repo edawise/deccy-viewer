@@ -1,0 +1,15 @@
+{
+  "kind": "evaluation",
+  "evaluates": [
+    "nvxuyzot"
+  ],
+  "depends_on": [
+    "ksoupzqm"
+  ],
+  "content": {
+    "type": "review-criteria",
+    "ref": "inline",
+    "content": "(1) licence — no element of nvxuyzot contradicts ksoupzqm: an interaction the requirement records must not negate, narrow away or replace the find-by-text capability the prerequisite records; fail on each contradicting element, naming the element. (2) grounded substrate — every presentation surface or interaction medium the requirement relies on is one ksoupzqm records; fail on each surface or medium the prerequisite does not state, naming it. Accept any recorded phrasing that keeps the recorded find-by-text capability on the recorded surface; no particular control, field, layout or key is required.",
+    "rationale": "nvxuyzot is an inline EARS requirement (structured layer); ksoupzqm is inline prose (natural layer), so the edge takes the natural-to-structured gate cell (evals/natural-to-structured.md): the licence check, with no observables demanded. The use is that the search decision's invocation and opening commitment relies on the recorded find-by-text capability for the capability it names and the surface it names it over; that use is sound exactly when the elaboration contradicts no element of the prerequisite and presumes no presentation surface or interaction medium the prerequisite does not record. A structured child elaborates rather than implements its parent, so any stricter check would judge a requirement sentence as an artifact and restate the dependent, which the gate form forbids. Neither clause names an element of either endpoint in advance, so the criterion survives rewording of nvxuyzot: a reviewer applies it by reading the two recorded nodes, and there is nothing to run."
+  }
+}
