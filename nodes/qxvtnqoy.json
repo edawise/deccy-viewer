@@ -1,0 +1,21 @@
+{
+	"kind": "evaluation",
+	"evaluates": ["uryrrttr"],
+	"depends_on": [
+		"ksoupzqm",
+		"nvxuyzot",
+		"oovzklpv",
+		"yqwsztww",
+		"kstrrnyt",
+		"ukuppmko",
+		"zolnxlyv",
+		"noplrntp",
+		"ympqvvwr",
+		"qmsmvrnr"
+	],
+	"content": {
+		"type": "test",
+		"ref": ["tests/webview/uryrrttr-search.test.ts"],
+		"rationale": "The decision is an implementation whose refs are code (the search page module), and it uses the page interface (ympqvvwr), the graph model and order (qmsmvrnr), the interaction controller (noplrntp) and the recorded search requirements (ksoupzqm, nvxuyzot, oovzklpv, yqwsztww, kstrrnyt, ukuppmko, zolnxlyv); the load-bearing prerequisites are tool-checkable artefacts, so the code-to-code cell applies and the check is a runnable test. The test imports the module's public attachment API and drives it against a fixture canvas whose node boxes carry the interface's node id, a recording InteractionController and a small graph built with the graph model and order, without the page or main.ts. It exercises the module boundary for the recorded uses: `/` opens a focused field without selecting, panning or zooming and a modified `/` does not; a typed query marks exactly the id, label and content matches ignoring case and marks none when empty; Enter and Shift+Enter select the next and previous marked node in graph order with wrapping and change nothing when no node matches; Esc closes the field, clears the marks and clears the selection; setGraph keeps the query and re-marks the reloaded graph without touching the selection; and the match class is added without displacing the selected or related classes or dimming non-matches. The check names no internal module structure, styling token or rendering mechanism, and the composition behaviours outside the field remain with keyboard.ts."
+	}
+}
