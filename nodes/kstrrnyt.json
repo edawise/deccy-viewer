@@ -1,0 +1,14 @@
+{
+  "content": {
+    "content": "WHEN the user presses Esc in the search field, the viewer shall close that field, clear the marks the query in that field marked and clear the selection; clearing the marks ends that query's marking of nodes and redefines no part of what a query marks, and pressing Esc outside the search field shall continue to clear the selection.",
+    "rationale": "The decision fixes only what Esc does while the search field carries the query: it dismisses the field, ends the marking that query produced and clears the selection, so the field's own key leaves no search state behind on the graph. Marking stays with oovzklpv — clearing ends the current query's marking and redefines no part of what a query marks — and traversal stays with yqwsztww, whose Enter and Shift+Enter behaviour is scoped to the field and is neither restated nor changed here. The Esc effect is layered on zpkmkvts rather than replacing it: the selection clearing that key press already performs is kept inside the field and explicitly continues outside it, and the two further effects, closing the field and clearing its marks, are confined to Esc pressed in the search field, so no viewer-wide Esc behaviour is widened. Nothing about how the field opens, how matches are reported, how the graph is presented or how the key is handled is fixed, so any implementation that dismisses the field on that key press and drops that field's marks and the selection satisfies it.",
+    "ref": "inline",
+    "type": "ears"
+  },
+  "depends_on": [
+    "nvxuyzot",
+    "yqwsztww",
+    "zpkmkvts"
+  ],
+  "kind": "decision"
+}
