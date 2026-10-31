@@ -1,0 +1,16 @@
+{
+  "kind": "decision",
+  "content": {
+    "type": "visual-spec",
+    "ref": "inline",
+    "content": "{\"element\": \"node/*\", \"aspect\": \"emphasis\", \"state\": \"matching\", \"value\": \"search-match-mark\", \"note\": \"the nodes oovzklpv matches take an added emphasis only: no element becomes dimmed or undimmed because of the query, so non-matching elements keep the state they already have and are undimmed while nothing is selected (uxuvwurl) and keep the dim state the selection gives them (zkwypuor, ksywwktl); the highlighted and dimmed sets a selection defines are unchanged by a match, and the selected element stays the bolder of the two emphases when it or the elements connected to it match (mrrooxux)\"}",
+    "rationale": "The node adds one emphasis and nothing else: a node the query matches carries a search mark, expressed as emphasis on the matching state so it layers on top of the states the prerequisites already define rather than replacing any of them. It is licensed by all five prerequisites and contradicts none. oovzklpv already marks exactly the nodes whose id, label or content contains the typed query, ignoring case, so the decision names that same matched set and adds only the emphasis those marks take. uxuvwurl makes the no-selection state undimmed, and the note forbids the query from dimming or undimming anything, so that state survives a match. zkwypuor partitions elements into a highlighted neighbourhood and dimmed unrelated elements, and ksywwktl fixes the dimmed value; the note leaves both sets and that value exactly as the selection defines them, so the search emphasis neither extends the highlighted set nor rescues a dimmed element from dimming. mrrooxux ranks the selected element bolder than the elements connected to it; the note keeps that ranking when the selected element matches, when a connected element matches, or when both do, so a matched connected element never overtakes the selected one. Because the emphasis is stated as a mark on matching nodes and never as a rule about non-matching nodes, it stays silent where the prerequisites are silent. It names no colour, token, class, metric or drawing mechanism because no prerequisite records one for the match state: the emphasis stays a commitment in words that constrains its presence without deciding how it is rendered, and it presumes no surface beyond the presented graph oovzklpv matches."
+  },
+  "depends_on": [
+    "oovzklpv",
+    "uxuvwurl",
+    "zkwypuor",
+    "ksywwktl",
+    "mrrooxux"
+  ]
+}
