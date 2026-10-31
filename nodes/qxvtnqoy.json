@@ -1,0 +1,23 @@
+{
+	"kind": "evaluation",
+	"evaluates": ["uryrrttr"],
+	"depends_on": [
+		"ksoupzqm",
+		"nvxuyzot",
+		"oovzklpv",
+		"yqwsztww",
+		"kstrrnyt",
+		"ukuppmko",
+		"zolnxlyv",
+		"uowtmmqw",
+		"noplrntp",
+		"ympqvvwr",
+		"qmsmvrnr",
+		"rtlotqvy"
+	],
+	"content": {
+		"type": "test",
+		"ref": ["tests/webview/uryrrttr-search.test.ts"],
+		"rationale": "The decision is an implementation whose refs are code (the search page module), and it uses the page interface (ympqvvwr), the graph model and order (qmsmvrnr), the interaction controller (noplrntp), the renderer and static visual grammar its own stylesheet sits on top of (rtlotqvy) and the recorded search requirements (ksoupzqm, nvxuyzot, oovzklpv, yqwsztww, kstrrnyt, ukuppmko, zolnxlyv, uowtmmqw); the load-bearing prerequisites are tool-checkable artefacts, so the code-to-code cell applies and the check is a runnable test. The test imports the module's public attachment API and drives it against a fixture canvas whose node boxes carry the interface's node id, a recording InteractionController and a small graph built with the graph model and order, without the page or main.ts. It exercises the module boundary for the recorded uses: `/` opens a focused field without selecting, panning or zooming and a modified `/` does not; a typed query marks exactly the id, label and content matches ignoring case and marks none when empty; Enter and Shift+Enter select the next and previous marked node in graph order with wrapping and change nothing when no node matches; Esc closes the field, clears the marks and clears the selection, and the module's close() is exercised as that same dismissal; setGraph keeps the query and re-marks the reloaded graph without touching the selection; and the match class is added without displacing the selected or related classes or dimming non-matches. For the third trigger uowtmmqw adds to the one centring move wzsxvmvw records, the recording controller also carries the page interface's centring member (ympqvvwr), so the movement block observes the ask the module makes once the selection exists: one ask per selection the two key presses land on, in the order they land, each naming the node that selection landed on, none where the key press selects nothing, no viewport move of the module's own beside it - no pan, no zoom, no fit - and no focus move onto the node, so the ask is the selection's and the move stays the interaction state's to perform. The ask is also read against the selection that causes it: the controller records the selections, the asks and the clearings in the order the module makes them, and the selection it holds at the moment of each ask, so the block observes that each press's selection is made before the ask that answers it and that no ask is made while the node it names is not the selection - the centring is started by the selection and not by the key press. The paths that make no selection are observed as well: opening the field, a query that marks nodes without selecting, the dismissal Esc and close() each perform, a reloaded graph and the module's own dispose all leave the ask empty and the viewport where it stood, with no pan, no zoom and no fit of the module's own, so a module that also asks for the centring where nothing was selected is seen. The move's own terms are not re-decided here: the fitted and overflowing axis terms, where a recorded pan limit reaches a centring move and the zoom level left unchanged are wzsxvmvw's and are observed by that decision's checks and by the composition's (uqmyqotm), so the check names the ask and leaves the move's outcome to the decision that states it. For the composition with the static visual grammar the check also draws the same graph with the renderer (rtlotqvy) and reads the search's own stylesheet and the interaction states' stylesheet as text: the match class is observed on the boxes the renderer drew and on no other element of the canvas, each rule the search's stylesheet writes for the match class is observed to be reached by that drawn box once the match class is taken out of its selector, and the properties those rules declare are observed to be disjoint from the properties the interaction states declare for the selected, related and dimmed classes, so the added emphasis is drawn on the grammar's box beside those cues instead of replacing one. The check names no internal module structure, styling token or rendering mechanism, and the composition behaviours outside the field remain with keyboard.ts."
+	}
+}
