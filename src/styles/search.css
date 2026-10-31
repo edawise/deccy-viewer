@@ -1,0 +1,58 @@
+/**
+ * The find-by-text field and the match emphasis of the deccy graph viewer
+ * (ksoupzqm, zolnxlyv), on top of the static visual grammar (rtlotqvy,
+ * grammar.css) and the interaction states (noplrntp, interact.css).
+ *
+ * The selectors are the elements and classes search.ts puts on the page:
+ *
+ * - .search: the container of the query field, floating over the canvas
+ *   (nvxuyzot). It takes no layout space, so opening it moves nothing that is
+ *   already presented;
+ * - .search__field: the query input itself (oovzklpv), in the workbench input
+ *   styling;
+ * - .node.is-search-match: the added emphasis a matched node carries
+ *   (zolnxlyv). It is a ring of its own, drawn with `box-shadow` so it is not a
+ *   replacement for the selection's outline (interact.css) and it carries no
+ *   dimming for the nodes it does not match.
+ */
+
+:root {
+	/* The match ring takes the workbench focus role the selection's accent
+	   already uses (qqmrtwor), so a match reads as part of the same vocabulary
+	   rather than as a new colour. */
+	--search-match: var(--vscode-focusBorder);
+}
+
+/* canvas/overlay, search: the field sits at the top-left of the canvas
+   (nvxuyzot) without taking layout space; the canvas is its positioned
+   ancestor (grammar.css). */
+.search {
+	position: absolute;
+	top: 8px;
+	left: 8px;
+	z-index: 2;
+}
+
+/* The query input (oovzklpv). */
+.search__field {
+	box-sizing: border-box;
+	width: 14rem;
+	padding: 4px 8px;
+	color: var(--vscode-input-foreground, var(--text));
+	background: var(--vscode-input-background);
+	border: 1px solid var(--vscode-input-border, transparent);
+	outline: none;
+	font: inherit;
+}
+
+/* Focus stays visible on the field that has it. */
+.search__field:focus {
+	border-color: var(--search-match);
+}
+
+/* node/search-match: the added emphasis of a matched node (zolnxlyv). It rings
+   the box instead of recolouring it, so the selected and related classes
+   (interact.css) keep their own cues, and no non-match is dimmed. */
+.node.is-search-match {
+	box-shadow: 0 0 0 2px var(--search-match);
+}
