@@ -1,0 +1,19 @@
+{
+  "kind": "evaluation",
+  "evaluates": [
+    "zolnxlyv"
+  ],
+  "depends_on": [
+    "oovzklpv",
+    "uxuvwurl",
+    "zkwypuor",
+    "ksywwktl",
+    "mrrooxux"
+  ],
+  "content": {
+    "type": "review-criteria",
+    "ref": "inline",
+    "content": "(1) Licence - no element of zolnxlyv contradicts any of its recorded prerequisites (oovzklpv, uxuvwurl, zkwypuor, ksywwktl, mrrooxux); fail on each contradicting element, naming the element and the prerequisite it contradicts. (2) Added emphasis, not a second state rule - for each emphasis state a prerequisite records, the emphasis zolnxlyv assigns to a matching node must leave that state's partition unchanged: under uxuvwurl no element becomes dimmed on account of a match, under zkwypuor the set of highlighted elements and the set of dimmed elements remain exactly the ones the selection defines, and under ksywwktl the dimmed state keeps its recorded value; fail on any element of zolnxlyv that replaces or overrides a recorded state, or that extends zkwypuor's highlighted or dimmed set on account of a match, naming the state and the prerequisite. (3) Selection ordering preserved - where mrrooxux ranks the selected element bolder than the elements connected to it, the added match emphasis must not invert or flatten that ranking: when the selected element, a connected element, or both carry the match, the selected element remains the bolder of the two; fail on any element of zolnxlyv that gives a matched connected element weight equal to or greater than the selected element, naming the element. (4) Non-matching elements - the added emphasis imposes no new dimming on elements the query does not match: in uxuvwurl's undimmed state they remain undimmed, and in zkwypuor's selection state their dim state remains exactly the one zkwypuor and ksywwktl assign; fail on any element of zolnxlyv that dims or undims a non-matching element because of the query, naming the element.",
+    "rationale": "The prerequisites mix layers: oovzklpv, uxuvwurl and zkwypuor are inline EARS requirements and ksywwktl is an inline visual-spec object, all constrained notation (structured); mrrooxux is inline prose (natural). zolnxlyv is an inline visual-spec object (structured). The matrix cells are therefore structured-to-structured, whose entry is still 'default' and needs a matrix extension, and natural-to-structured, which takes the gate form. The check is the gate form's non-violation criterion, split by prerequisite only so a reviewer can name the state at issue, and it demands no observable because a structured child of these parents is still a commitment in words. The use is that zolnxlyv relies on its prerequisites for the emphasis vocabulary and the selection ordering its match emphasis must layer onto without altering: the query already marks nodes (oovzklpv), the no-selection state is undimmed (uxuvwurl), the selection defines a highlight/dim partition with a recorded dimmed value (zkwypuor, ksywwktl), and the selected element outranks its connected elements (mrrooxux). The criteria check only that the added emphasis does not contradict any of those states, does not displace the selection ordering, and does not introduce dimming for non-matching elements; they name no element of either endpoint in advance and survive rewording of zolnxlyv, so they remain decidable by reading the recorded nodes. Nothing runs."
+  }
+}
