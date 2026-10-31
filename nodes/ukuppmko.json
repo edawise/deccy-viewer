@@ -1,0 +1,10 @@
+{
+  "kind": "decision",
+  "content": {
+    "type": "ears",
+    "ref": "inline",
+    "content": "WHEN the graph reloads with a query active, the viewer shall keep the typed query and mark again, in the reloaded graph, the nodes that query matches, and the selection shall follow the existing reload behaviour: unchanged unless the selected node no longer exists, in which case it is cleared.",
+    "rationale": "The decision fixes only what a reload does to an active search: the query the user already typed stays in the field nvxuyzot opens, and once the reloaded graph is presented the viewer marks again, over that graph, the nodes the query matches. It does not restate or alter the matching rule: the set marked after the reload is exactly the set oovzklpv defines for the same query, so keeping the query and re-marking introduces no rule for which nodes a typed query marks that differs from the prerequisite, and an empty query still marks nothing. It leaves pan and zoom to luqwqrll, which already requires that a graph data change re-renders without losing them, so the reload path here neither moves the view nor resets it. Selection is delegated rather than redefined: the selection after a reload is the one qxmtwxxr already decides, unchanged while the selected node still exists and cleared when it no longer does, so this decision adds no rule for a selection whose node no longer exists after a reload. How matches are reported, how the user moves between them and how the search field closes, along with emphasis of a selection, mounting of the viewer and module structure, are left to the decisions that descend from this one. The requirement is stated over the reload of the graph the panel's interactive HTML page presents, the one presentation surface vylxkuxr records, and presumes no other; it is a behavioural requirement, naming no mechanism for retaining the query or for re-running the mark, so any implementation that keeps the active query across a reload and marks exactly the nodes it matches satisfies it."
+  },
+  "depends_on": ["oovzklpv", "luqwqrll", "qxmtwxxr"]
+}
