@@ -1,0 +1,14 @@
+{
+  "kind": "decision",
+  "content": {
+    "type": "ears",
+    "ref": "inline",
+    "content": "WHEN Enter or Shift+Enter is pressed in the search field, the viewer shall select the next marked node for Enter and the previous marked node for Shift+Enter, among the nodes the query in that field marks, in graph order (by topological depth from the roots, then initial left-to-right position, then node id), wrapping from the last marked node to the first and from the first to the last; when the query marks no node, no selection changes; pressing Enter outside the search field shall continue to select the focused node.",
+    "rationale": "The decision fixes only what the two key presses do while the search field carries a query: it moves the selection through the nodes that query marks, so matching stays with oovzklpv (which marks exactly the nodes containing the query and none for an empty query), the sequence stays with ruqsmuxz (topological depth from the roots, then initial left-to-right position, then node id, with the order unaffected by dragging), and what Enter does outside the field stays with wzqzwsst (selecting the focused node). The traversal is restricted to the marked set rather than the whole graph, and wraps within that set, so it neither widens the set oovzklpv marks nor substitutes an order ruqsmuxz does not record; an empty query marks nothing, so no selection changes. The key behaviour is scoped to the search field: Enter outside it still selects the focused node, and marking still selects nothing by itself, so no prerequisite's behaviour is displaced. The requirement names no mechanism and no visual treatment, so any implementation that selects the next or previous marked node in the recorded order, wrapping, satisfies it; how the field is closed and how a selection is presented are left to the decisions that descend from this one."
+  },
+  "depends_on": [
+    "oovzklpv",
+    "ruqsmuxz",
+    "wzqzwsst"
+  ]
+}
