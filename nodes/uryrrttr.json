@@ -1,0 +1,24 @@
+{
+	"kind": "decision",
+	"depends_on": [
+		"ksoupzqm",
+		"nvxuyzot",
+		"oovzklpv",
+		"yqwsztww",
+		"kstrrnyt",
+		"ukuppmko",
+		"zolnxlyv",
+		"noplrntp",
+		"ympqvvwr",
+		"qmsmvrnr",
+		"rtlotqvy"
+	],
+	"content": {
+		"type": "implementation",
+		"ref": [
+			"src/webview/search.ts",
+			"src/styles/search.css"
+		],
+		"rationale": "the find-by-text interaction as one page module, search.ts, that owns its field, its key handling, its match state and the dismarking a reload needs, and owns nothing else: it is handed the canvas, the interaction controller, the graph and the node labels of the page interface (ympqvvwr), reaches the interaction state only through InteractionController (noplrntp), finds the drawn node boxes by the NODE_ID_ATTR identity every box carries (qmsmvrnr), and reads order and model straight from the InteractionGraph, so it neither knows main.ts nor depends on the page being composed. The field is built once when the module attaches and is appended to the canvas and focused only when the search opens (nvxuyzot), which is why opening leaves the selection, pan and zoom untouched - the module calls no selection, pan or zoom operation on opening; `/` with no Ctrl, Meta or Alt held opens it (nvxuyzot) and a `/` typed into any field is left to the field, so the search never intercepts the text the user is already typing. The matching is a single rule applied to the graph model: a query marks every node whose id, label or content contains it, compared lower-cased, and an empty query marks nothing (oovzklpv). The marked set is re-derived from the graph on every query change rather than remembered per box, so setGraph keeps the active query and runs the same derivation over the reloaded model and its labels, painting the new boxes and leaving the selection to the interaction state's own reload behaviour (ukuppmko); painting adds and removes SEARCH_MATCH_CLASS on exactly the boxes whose ids are in the set, which is how the class stays an added emphasis that neither replaces the selected, related or dimmed classes nor dims a non-match (zolnxlyv), and its ring-only appearance lives in search.css, as one more emphasis composed with the box and the classes the static visual grammar draws (rtlotqvy). Enter and Shift+Enter, handled only while the field has focus, walk graph.order.ids filtered to the marked set, selecting the next or previous marked node and wrapping at either end; with no marked node the handler returns before touching the controller, so an unproductive query changes nothing (yqwsztww). Esc closes the field, resets the query so the field reopens neutral and a later reload marks nothing, removes the marks and calls clearSelection once, leaving no search state behind (kstrrnyt), and close() is that same dismissal. dispose removes the document keydown listener, the field and its marks."
+	}
+}
