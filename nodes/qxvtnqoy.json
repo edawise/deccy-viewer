@@ -1,0 +1,22 @@
+{
+	"kind": "evaluation",
+	"evaluates": ["uryrrttr"],
+	"depends_on": [
+		"ksoupzqm",
+		"nvxuyzot",
+		"oovzklpv",
+		"yqwsztww",
+		"kstrrnyt",
+		"ukuppmko",
+		"zolnxlyv",
+		"noplrntp",
+		"ympqvvwr",
+		"qmsmvrnr",
+		"rtlotqvy"
+	],
+	"content": {
+		"type": "test",
+		"ref": ["tests/webview/uryrrttr-search.test.ts"],
+		"rationale": "The decision is an implementation whose refs are code (the search page module), and it uses the page interface (ympqvvwr), the graph model and order (qmsmvrnr), the interaction controller (noplrntp), the renderer and static visual grammar its own stylesheet sits on top of (rtlotqvy) and the recorded search requirements (ksoupzqm, nvxuyzot, oovzklpv, yqwsztww, kstrrnyt, ukuppmko, zolnxlyv); the load-bearing prerequisites are tool-checkable artefacts, so the code-to-code cell applies and the check is a runnable test. The test imports the module's public attachment API and drives it against a fixture canvas whose node boxes carry the interface's node id, a recording InteractionController and a small graph built with the graph model and order, without the page or main.ts. It exercises the module boundary for the recorded uses: `/` opens a focused field without selecting, panning or zooming and a modified `/` does not; a typed query marks exactly the id, label and content matches ignoring case and marks none when empty; Enter and Shift+Enter select the next and previous marked node in graph order with wrapping and change nothing when no node matches; Esc closes the field, clears the marks and clears the selection; setGraph keeps the query and re-marks the reloaded graph without touching the selection; and the match class is added without displacing the selected or related classes or dimming non-matches. For the composition with the static visual grammar the check also draws the same graph with the renderer (rtlotqvy) and reads the search's own stylesheet and the interaction states' stylesheet as text: the match class is observed on the boxes the renderer drew and on no other element of the canvas, each rule the search's stylesheet writes for the match class is observed to be reached by that drawn box once the match class is taken out of its selector, and the properties those rules declare are observed to be disjoint from the properties the interaction states declare for the selected, related and dimmed classes, so the added emphasis is drawn on the grammar's box beside those cues instead of replacing one. The check names no internal module structure, styling token or rendering mechanism, and the composition behaviours outside the field remain with keyboard.ts."
+	}
+}
