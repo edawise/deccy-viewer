@@ -1,0 +1,17 @@
+{
+  "kind": "evaluation",
+  "evaluates": [
+    "yqwsztww"
+  ],
+  "depends_on": [
+    "oovzklpv",
+    "ruqsmuxz",
+    "wzqzwsst"
+  ],
+  "content": {
+    "type": "review-criteria",
+    "ref": "inline",
+    "content": "(1) licence — no element of yqwsztww contradicts oovzklpv, ruqsmuxz or wzqzwsst; fail on each contradicting element, naming the element and the prerequisite it contradicts. (2) grounded match set — every node yqwsztww acts on is one oovzklpv's requirement marks for the query in hand, and no element has it acting on a node in a state where that requirement marks none; fail on each node set or state the recorded requirement does not mark, naming it. (3) grounded order — every order yqwsztww sequences those nodes by is the one ruqsmuxz records, neither redefining it nor substituting an order no prerequisite records; fail on each order that diverges from the recorded one or that nothing records, naming it. (4) grounded key scope — every key press yqwsztww acts on is scoped to the context the requirement states, and outside that context the behaviour wzqzwsst records for the same key press stands unchanged; fail on each element that widens the key's behaviour beyond that context or displaces the recorded behaviour, naming it. Accept any recorded phrasing that keeps the traversal on the marked set, in the recorded order and inside the stated context; no implementation of the traversal is required.",
+    "rationale": "yqwsztww is an inline EARS requirement and oovzklpv, ruqsmuxz and wzqzwsst are inline EARS requirements, so both endpoints of every edge sit on the structured layer; the eval-matrix has no structured-to-structured cell, so the edges take the default cell — the gate form (evals/natural-to-natural.md, licence check only) — flagged to extend the matrix. The use is that the decision relies on oovzklpv for the set of nodes it moves through, on ruqsmuxz for the order it sequences them in, and on wzqzwsst for what the key press it acts on does outside the context it names; that use is sound exactly when the requirement contradicts none of the three, acts only on nodes the marking requirement marks (and on none where it marks none), sequences them only by the recorded order, and confines its key behaviour to the stated context so the recorded behaviour for the same key press still stands. A structured child elaborates rather than implements its parents, so the check demands no observables, no test and no command; any stricter check would judge a requirement sentence as an artifact and restate the dependent, which the gate form forbids. Neither clause names an element of any endpoint in advance, so the criterion survives rewording of the evaluated decision: a reviewer applies it by reading the recorded nodes and reporting the element at issue, and there is nothing to run."
+  }
+}
