@@ -1,0 +1,15 @@
+{
+  "kind": "evaluation",
+  "evaluates": [
+    "oovzklpv"
+  ],
+  "depends_on": [
+    "nvxuyzot"
+  ],
+  "content": {
+    "type": "review-criteria",
+    "ref": "inline",
+    "content": "(1) licence — no element of oovzklpv contradicts nvxuyzot: no element of the elaboration may negate, narrow away or replace the opening of the query surface the prerequisite records, nor disturb the state the prerequisite records as unchanged; fail on each such element, naming the element. (2) grounded substrate — every presentation surface, query source or interaction medium the requirement relies on is one the prerequisite, or a prerequisite it records, states; fail on each surface or medium that is not recorded, naming it. Accept any recorded phrasing that keeps the reported outcome on the recorded surface and its recorded query; no particular control, layout, notation or way of reporting a match is required.",
+    "rationale": "oovzklpv and nvxuyzot are both inline EARS requirements, so both endpoints sit on the structured layer; the eval-matrix has no structured-to-structured cell, so the edge takes the default cell — the gate form (evals/natural-to-natural.md, licence check only) — flagged to extend the matrix. The use is that the decision relies on the query surface the prerequisite records for the query it consumes, and on the presentation the prerequisite records as the thing whose nodes it acts upon; that use is sound exactly when the elaboration contradicts no element of the prerequisite and presumes no presentation surface or interaction medium the prerequisite or its recorded prerequisites do not state. A structured child elaborates rather than implements its parent, so the check demands no observables, no test and no command; any stricter check would judge a requirement sentence as an artifact and restate the dependent, which the gate form forbids. Neither clause names an element of either endpoint in advance, so the criterion survives rewording of the evaluated decision: a reviewer applies it by reading the two recorded nodes and reporting the element at issue, and there is nothing to run."
+  }
+}
