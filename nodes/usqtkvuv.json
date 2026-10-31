@@ -1,0 +1,17 @@
+{
+  "kind": "evaluation",
+  "evaluates": [
+    "kstrrnyt"
+  ],
+  "depends_on": [
+    "nvxuyzot",
+    "yqwsztww",
+    "zpkmkvts"
+  ],
+  "content": {
+    "type": "review-criteria",
+    "ref": "inline",
+    "content": "(1) licence against the opening requirement — no element of kstrrnyt contradicts nvxuyzot: the requirement must not negate, narrow away or replace the opening of the focused search field the prerequisite records, nor place into the act of opening any change to the state that prerequisite records as unchanged; fail on each contradicting element, naming the element. (2) licence against the traversal requirement — no element of kstrrnyt contradicts yqwsztww: clearing the marked set must not redefine which nodes a query marks, nor change the order the recorded key presses move through them, nor change what those key presses do where the prerequisite's context does not hold; fail on each contradicting element, naming the element and the prerequisite it contradicts. (3) consistency with the Esc requirement — every element of kstrrnyt that acts on Esc must keep the selection clearing zpkmkvts records, and any further effect it attaches to that key press must stay within the search-field context it states, so the recorded Esc behaviour is neither removed, narrowed nor replaced where the prerequisite's condition holds; fail on each element that drops or narrows the recorded behaviour, or that widens its own scope beyond that context, naming it. Accept any recorded phrasing that keeps the recorded opening, marked-set traversal and Esc-clears-selection behaviour intact; no particular control, field, layout, mechanism or key handling is required.",
+    "rationale": "kstrrnyt, nvxuyzot, yqwsztww and zpkmkvts are all inline EARS requirements, so every endpoint of every edge sits on the structured layer; the eval-matrix has no structured-to-structured cell, so the edges take the default cell — the gate form (evals/natural-to-natural.md, licence check only) — flagged to extend the matrix. The use is threefold: the decision relies on nvxuyzot for the focused search field whose closing it commits to, on yqwsztww for the marked set it clears and the traversal that set carries, and on zpkmkvts for the selection effect the same key press already has. That use is sound exactly when the requirement contradicts none of the three: it keeps the recorded opening and its preservation clause intact, it clears marks without redefining which nodes are marked or how the recorded key presses move through them, and its Esc handling keeps clearing the selection while confining any additional effect to the search-field context, leaving the recorded Esc behaviour standing where that context does not hold. A structured child elaborates rather than implements its parents, so the check demands no observables, no test and no command; any stricter check would judge a requirement sentence as an artifact and restate the dependent, which the gate form forbids. Neither clause names an element of any endpoint in advance, so the criterion survives rewording of the evaluated decision: a reviewer applies it by reading the recorded nodes and reporting the element at issue, and there is nothing to run."
+  }
+}
