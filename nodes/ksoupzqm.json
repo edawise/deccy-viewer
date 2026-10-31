@@ -1,0 +1,12 @@
+{
+  "kind": "decision",
+  "content": {
+    "type": "text",
+    "ref": "inline",
+    "content": "Within the graph presented in the VS Code webview panel, the viewer supports finding nodes by a text query: the user supplies a text query, and the viewer determines, from the graph that the panel's interactive HTML page presents, which nodes match that query.",
+    "rationale": "The commitment is the find-by-query capability itself, not its design: how a query is supplied, which part of a node is matched, how matches are reported and how the user moves to them are left to the decisions that descend from this one. It is stated entirely over the graph that the webview panel's interactive HTML page already presents, so the search takes place on the one presentation surface the viewer records (vylxkuxr) and presumes no other; it contradicts no element of that requirement, since the panel still presents the graph as an interactive HTML page with finding as one more interaction available inside it."
+  },
+  "depends_on": [
+    "vylxkuxr"
+  ]
+}
