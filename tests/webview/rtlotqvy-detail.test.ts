@@ -396,7 +396,9 @@ beforeAll(async () => {
 		getState: (): unknown => undefined,
 		setState: (): void => undefined,
 	});
-	main = await import("../../src/webview/main");
+	// The source entry, not the built src/webview/main.js beside it: the gate
+	// must drive the page module this unit owns.
+	main = await import("../../src/webview/main.ts");
 });
 
 // ---------------------------------------------------------------- the checks

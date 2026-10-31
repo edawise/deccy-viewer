@@ -1,0 +1,26 @@
+{
+	"kind": "evaluation",
+	"evaluates": ["tpztomkv"],
+	"depends_on": [
+		"rtlotqvy",
+		"uryrrttr",
+		"noplrntp",
+		"yruxqknp",
+		"ympqvvwr",
+		"qmsmvrnr",
+		"vqwoptmu",
+		"yrtrqutm",
+		"qwzwpxws",
+		"rmovtvkt",
+		"mspmqvuk",
+		"zrqxuzzy"
+	],
+	"content": {
+		"type": "test",
+		"ref": [
+			"tests/webview/rtlotqvy-detail.test.ts",
+			"tests/webview/tpztomkv-composition.test.ts"
+		],
+		"rationale": "The decision is a page composition whose refs are code (media/webview.html, src/webview/main.ts), and the prerequisites it mounts are code artefacts too — the renderer (rtlotqvy), the search page module (uryrrttr), the interaction and keyboard state (noplrntp), the presentation (yruxqknp), the page interface (ympqvvwr), the graph model and order (qmsmvrnr), the detail-section behaviour (vqwoptmu, yrtrqutm, qwzwpxws, rmovtvkt), the toolbar action (mspmqvuk) and the page regions (zrqxuzzy) — so the code-to-code cell applies and the check is a runnable test. The composition test parses the real media/webview.html, adopts its body into jsdom, loads the source entry src/webview/main.ts into it and posts graphs across the page's message seam; it then drives the composed page as a user does: it reads the regions the page interface names, counts the node boxes and routed edges the renderer draws into the canvas layers, clicks a node and reads the detail region back, posts a warning and reads the banner, presses the toolbar's fit action and reads the viewport transform, presses `/` and reads a focused field, types a query and reads the match class on exactly the matching boxes, presses Enter and reads the newly selected box and its detail, presses Esc and reads the field, the marks and the selection gone, and posts a reload containing a node the query newly matches and reads the active query, the re-applied marks and the kept selection (including that only one search is attached). The detail test drives the same composed page for the detail panel it renders (vqwoptmu, yrtrqutm, qwzwpxws, rmovtvkt). The check names no composition function, field or event wiring the record does not fix: it finds the regions and the drawn identity through the page interface's exported selectors and attributes, the match emphasis through the search module's exported class, and the query field as the input the page puts over the canvas, so any page that mounts these modules and shows the committed behaviour passes."
+	}
+}
