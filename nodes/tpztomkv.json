@@ -1,0 +1,9 @@
+{
+	"kind": "decision",
+	"content": {
+		"type": "implementation",
+		"ref": ["media/webview.html", "src/webview/main.ts"],
+		"rationale": "the page composition of the viewer: media/webview.html serves the panel regions the page interface names and links the four stylesheets the composed page uses, including styles/search.css, so the search field and its match marks are styled by the module that owns them; src/webview/main.ts is the composition root that receives the graph across the webview seam, builds and orders it, and attaches the renderer, the interaction state, the keyboard equivalents, the presentation, the fit action, the detail panel and find-by-text search to those regions. The search is attached exactly once, after the interaction controller exists, with the canvas, the queued controller, the current graph and its labels. Every later graph is a revision swap: the interaction state keeps the selection, pan and zoom, the detail panel re-renders the selected node, and the search is handed the new graph and labels, so the active query re-marks the reloaded graph and the same field keeps its value instead of a second controller being attached. The standard page lifecycle notifications (pagehide, beforeunload, unload) dispose the search, so no field, listener or match mark outlives the page. The composition owns only the page shell and the entry point: the renderer, interaction, keyboard, presentation, detail and search modules keep their own behaviour."
+	},
+	"depends_on": ["rtlotqvy", "uryrrttr", "noplrntp", "yruxqknp", "ympqvvwr", "qmsmvrnr", "vqwoptmu", "yrtrqutm", "qwzwpxws", "rmovtvkt", "mspmqvuk", "zrqxuzzy"]
+}

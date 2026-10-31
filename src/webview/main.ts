@@ -43,6 +43,8 @@ import type {
 import { SELECTORS } from "./contract";
 import { applyPanelState } from "./state";
 import type { PanelState } from "./state";
+import { attachSearch } from "./search";
+import type { SearchController } from "./search";
 
 /** A message from the extension host to the page. */
 export type GraphMessage =
@@ -139,6 +141,12 @@ let measuredHeights: ReadonlyMap<string, number> = new Map();
 let persisted: PanelState | undefined;
 let controller: InteractionController | undefined;
 let queued: InteractionController | undefined;
+/**
+ * The find-by-text search of the page (ksoupzqm, uryrrttr), attached once
+ * beside the interaction state and kept across graph reloads so the active
+ * query and its marks survive them (ukuppmko).
+ */
+let search: SearchController | undefined;
 
 /**
  * The renderer (rtlotqvy), reached from the interaction state. The recorded
@@ -235,10 +243,12 @@ const delegate: InteractionDelegate = {
  * Draw the graph of `records`, label its nodes from `labels` and show the
  * `warnings` of the documents that were left out (krvyoumy).
  *
- * The first graph attaches the interactions, keyboard, presentation queue
- * and fit action to the page (ympqvvwr) and restores the persisted panel
- * state into them; every later graph swaps the data out from under the
- * interactions, keeping the selection, pan and zoom (luqwqrll).
+ * The first graph attaches the interactions, keyboard, presentation queue,
+ * fit action and find-by-text search to the page (ympqvvwr, uryrrttr) and
+ * restores the persisted panel state into them; every later graph swaps the
+ * data out from under the interactions and hands the new graph to the search,
+ * keeping the selection, pan and zoom (luqwqrll) and the active query and its
+ * marks (ukuppmko).
  */
 export function showGraph(
 	records: readonly NodeRecord[],
@@ -265,6 +275,10 @@ export function showGraph(
 		fitButton.addEventListener("click", (): void => {
 			queued?.fitGraph();
 		});
+		// The search is attached once, beside the interaction state it selects
+		// through (uryrrttr, ksoupzqm); a reload swaps the graph under it
+		// instead of attaching a second field (ukuppmko).
+		search = attachSearch({ canvas, controller: queued, graph, labels });
 		states.loaded(records.length, warnings);
 		if (persisted !== undefined) {
 			applyPanelState(queued, persisted);
@@ -272,6 +286,9 @@ export function showGraph(
 		renderDetail(controller.selected());
 	} else {
 		controller.setGraph({ model, order });
+		// The active query stays and marks the new graph under the same rule
+		// (ukuppmko); the field itself is the one attached above.
+		search?.setGraph({ model, order }, labels);
 		states.loaded(records.length, warnings);
 		renderDetail(controller.selected());
 	}
@@ -507,6 +524,19 @@ window.addEventListener("message", (event: MessageEvent<unknown>): void => {
 		receive(message);
 	}
 });
+
+/**
+ * Tear the search down with the page (ksoupzqm): a page may be closed through
+ * any standard lifecycle notification, so every one of them detaches the
+ * field, its listeners and its marks, and no search state outlives the page.
+ */
+function disposeSearch(): void {
+	search?.dispose();
+	search = undefined;
+}
+for (const event of ["pagehide", "beforeunload", "unload"]) {
+	window.addEventListener(event, disposeSearch);
+}
 
 // The listener above is attached synchronously while this module runs, but the
 // host may already have posted the first graph state by then and lost the
