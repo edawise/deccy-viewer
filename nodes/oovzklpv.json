@@ -1,0 +1,12 @@
+{
+  "content": {
+    "content": "WHEN a query is typed in the search field, the viewer shall mark every node of the graph the webview panel's interactive HTML page presents whose id, label or content contains that query, ignoring case, and shall mark no node when the query is empty.",
+    "rationale": "The decision fixes only which nodes a typed query matches: the field the prerequisite opens carries the query, and matching considers the three things the graph records about a node — its id, its label and its content — with case ignored and containment as the comparison, while an empty query marks nothing so the opened field begins in a neutral state. How matches are reported, how the user moves between them, closing the field, reload behaviour, emphasis of a selection and mounting of the viewer are left to the decisions that descend from this one. The requirement stays on what its prerequisites record: the field, the typed text and the graph being matched are the query surface and the presented graph nvxuyzot opens onto the interactive HTML page vylxkuxr records, and the matched id, label and content are node data the presented graph already carries, so no other presentation surface or interaction medium is presumed. It contradicts nothing in the prerequisite: opening the field is untouched, and marking nodes adds a match state to them without selecting, moving or reframing anything, so the selection, pan and zoom the prerequisite preserves stay as they were. It is stated as a requirement rather than a mechanism: no index, ordering, algorithm or visual treatment is named, so any implementation that marks exactly the nodes containing the query, and none for an empty query, satisfies it.",
+    "ref": "inline",
+    "type": "ears"
+  },
+  "depends_on": [
+    "nvxuyzot"
+  ],
+  "kind": "decision"
+}
