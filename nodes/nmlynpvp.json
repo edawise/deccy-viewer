@@ -1,0 +1,11 @@
+{
+  "kind": "evaluation",
+  "evaluates": ["ukuppmko"],
+  "depends_on": ["oovzklpv", "luqwqrll", "qxmtwxxr"],
+  "content": {
+    "type": "review-criteria",
+    "ref": "inline",
+    "content": "No element of the evaluated decision contradicts oovzklpv, luqwqrll or qxmtwxxr. Apply the check once per prerequisite and fail on any element of the decision that contradicts that prerequisite, naming the element and the prerequisite it contradicts. The decision's use of oovzklpv is licensed only where it introduces no rule for which nodes a typed query marks that differs from the rule the prerequisite states; its use of luqwqrll only where it requires no loss and no change of the current selection, pan or zoom when the graph data changes and is re-rendered; its use of qxmtwxxr only where it adds no rule for a selection whose node no longer exists after a reload. Anything a prerequisite leaves open is permitted.",
+    "rationale": "Each prerequisite and the dependent is an inline EARS requirement, the structured layer, so the edge falls in the structured-to-structured cell: the matrix leaves that cell at its default, the gate form from natural-to-natural, flagged for a matrix entry. The child is a commitment in words, so the strictness rule permits only a non-violation check and forbids behaviour probes; the criterion therefore states a licence per prerequisite, leaves which element is at issue to the check's output, and survives rewording of the dependent. A runnable test would demand observables from a prose dependent, which this cell forbids."
+  }
+}
