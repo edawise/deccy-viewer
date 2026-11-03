@@ -1,0 +1,10 @@
+{
+	"depends_on": ["xtsnpqmr"],
+	"kind": "decision",
+	"content": {
+		"type": "text",
+		"ref": "inline",
+		"content": "The README's development section explains that a fresh clone runs with a single VS Code debug session, with no manual build, install or packaging.",
+		"rationale": "the README is where a fresh clone's first run is explained, so the documented entry point is recorded as its own commitment on top of xtsnpqmr: the development section describes a single VS Code debug session from clone to running extension, with no manual build, install or packaging in between, which keeps the documentation from drifting into setup steps the extension does not require"
+	}
+}
