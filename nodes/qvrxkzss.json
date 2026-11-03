@@ -1,0 +1,15 @@
+{
+  "kind": "evaluation",
+  "evaluates": [
+    "rolozxtn"
+  ],
+  "depends_on": [
+    "rnqkxwsu"
+  ],
+  "content": {
+    "type": "review-criteria",
+    "ref": "inline",
+    "content": "license — read the license section of the README that rolozxtn commits to, and fail on any element of that section which contradicts rnqkxwsu: the license the section names must be the one the prerequisite records, and no element may deny, narrow or add conditions to what that license grants. Fail naming the element and the way it contradicts. A section that is absent, or that leaves the extension's license unstated, leaves the use with no subject and is a finding; so is a placeholder dependent. The check demands no particular wording, order or arrangement from the section, and an element that settles a point the prerequisite leaves open — where the license text lives, whom to contact about licensing — is not a contradiction.",
+    "rationale": "The dependent is a commitment in words — the README's license section states the extension's license — so it is natural-layer; rnqkxwsu is a text decision whose ref is the repository LICENSE, prose as well, so the edge is the eval-matrix's natural-to-natural gate cell: the criterion is non-violation and nothing runs. The use is the license identity the section publishes: the license it names and any right or condition it attaches must be the one rnqkxwsu records and its Apache-2.0 text grants, so the README cannot drift to a different license or contradict the patent grant that the prerequisite's rationale relies on. The check is applied by reading the authored section against the prerequisite; it demands no particular wording, order or arrangement, because the natural-child strictness rule forbids behavior probes. A placeholder dependent, or a README without a license section, leaves the check with no subject to read."
+  }
+}
