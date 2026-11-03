@@ -1,0 +1,22 @@
+{
+  "kind": "decision",
+  "content": {
+    "type": "text",
+    "ref": "inline",
+    "content": "The README's features section describes the viewer's interactive graph, text search and detail panel in user-facing terms. It presents the interactive graph in a panel, drawn with a box for a decision, a rounded box for an evaluation, solid dependency edges, dashed evaluation edges, a single arrowhead at the child end of each edge, and an unresolved edge visibly marked, with each node's box displaying only its label from the jj change description. It presents text search: pressing `/` with no modifier opens a focused search field without changing the current selection, pan or zoom; typing a query marks every node whose id, label or content contains the query, ignoring case, and marks none when the query is empty; pressing Enter and Shift+Enter steps to the next and previous marked node in graph order, wrapping at either end; and pressing Esc closes the field and clears the search marks and selection. It presents the detail panel's three labelled sections — Kind, Content and Rationale — in that fixed order for every selection, with each value under its label and empty sections still shown with their labels. In the Content section, the value is formatted by its content type while keeping the section's label and place and leaving Kind and Rationale unchanged: narrative prose is shown as wrapped running text with paragraph breaks preserved and no code framing; structured or code content and any other content types are shown verbatim in a monospaced block labelled with the content type, preserving line breaks and indentation without refusing or hiding unrecognised types; and file-referenced content shows the content type and referenced file paths in that block. It presents the four labelled relationship sections — `depends_on`, `evaluates`, `dependents` and `evaluators` — listing related node ids for the selected node's prerequisites, evaluated nodes (empty for a decision), dependents and evaluators, with empty sections showing an explicit empty state.",
+    "rationale": "The features section is the README's user-facing summary of the viewer, so its commitment states those capabilities in user-facing terms rather than reciting internal JSON property names, schema token rosters, layout tie-break formulas or webview hosting mechanics, while grounding every claim in the eleven prerequisites. uprztqnr, rtlotqvy and qpsnwxlu ground the graph: uprztqnr records the interactive graph panel, rtlotqvy records the visual grammar (a box for a decision, a rounded box for an evaluation, solid dependency edges, dashed evaluation edges, a child-end arrowhead, and an unresolved edge visibly marked), and qpsnwxlu records node labels from jj change descriptions, with one label per box and no visible node id or secondary label. ksoupzqm, nvxuyzot, oovzklpv, yqwsztww and kstrrnyt ground text search: ksoupzqm records finding nodes by a text query, nvxuyzot records `/` with no modifier opening a focused search field without changing selection, pan or zoom, oovzklpv records case-insensitive matching on node id, label or content with an empty query marking nothing, yqwsztww records Enter and Shift+Enter stepping to the next and previous marked node in graph order with wrap-around, and kstrrnyt records Esc closing the field and clearing the search marks and selection. vqwoptmu and qwzwpxws ground the detail fields and content display: vqwoptmu records Kind, Content and Rationale in that fixed order with empty sections kept with their labels, and qwzwpxws records type-based Content formatting (wrapped running prose, a verbatim monospaced block labelled with the content type for structured/code and any unrecognised types, and the content type with referenced file paths). rmovtvkt grounds the four labelled relationship sections (`depends_on`, `evaluates`, `dependents`, `evaluators`) listing related node ids for prerequisites, evaluated nodes (empty for a decision), dependents and evaluators, with empty sections showing an explicit empty state."
+  },
+  "depends_on": [
+    "uprztqnr",
+    "rtlotqvy",
+    "ksoupzqm",
+    "vqwoptmu",
+    "nvxuyzot",
+    "oovzklpv",
+    "yqwsztww",
+    "kstrrnyt",
+    "qpsnwxlu",
+    "qwzwpxws",
+    "rmovtvkt"
+  ]
+}
