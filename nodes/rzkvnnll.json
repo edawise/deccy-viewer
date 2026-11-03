@@ -1,0 +1,13 @@
+{
+  "kind": "decision",
+  "content": {
+    "type": "text",
+    "ref": "inline",
+    "content": "The README's getting-started section tells the reader to open the graph with the 'Deccy: Open Deccy Graph' command from the Command Palette, or from that command's editor title bar entry, which is shown while the graph webview panel is the active webview panel.",
+    "rationale": "package.json contributes one graph-opening command, with category \"Deccy\" and title \"Open Deccy Graph\", so the Command Palette lists it under the label \"Deccy: Open Deccy Graph\", and it contributes that command to two menus: commandPalette, and editor/title with the condition activeWebviewPanelId == 'deccyViewer.graph' in the navigation group. kzqwqptv records the same command as the extension's entry point on the same two surfaces, the Command Palette and the panel title bar. The getting-started section is the first place a reader looks for a way in, and this command is the only graph-opening affordance the manifest declares, so the section sends the reader to it. The claims the section makes are held to exactly what those prerequisites record: the label it names is the category/title pair the manifest declares, the second surface is the editor title bar entry the manifest contributes, and the section states the manifest's own condition for showing that entry; it names no command, label, keybinding or surface that the manifest and kzqwqptv do not carry, so the commitment contradicts neither prerequisite."
+  },
+  "depends_on": [
+    "kzqwqptv",
+    "srlrwowp"
+  ]
+}
