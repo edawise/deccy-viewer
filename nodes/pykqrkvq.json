@@ -1,0 +1,11 @@
+{
+	"kind": "evaluation",
+	"evaluates": ["rzkvnnll"],
+	"depends_on": ["kzqwqptv", "srlrwowp"],
+	"content": {
+		"type": "review-criteria",
+		"ref": "inline",
+		"content": "no element of rzkvnnll contradicts kzqwqptv or srlrwowp; in particular, every claim the getting-started section makes about the command it sends the reader to — its identity, the label the reader will see and choose, and the surfaces it says the command is available from — must be permitted by what those prerequisites record; fail on any element that contradicts them or adds a command claim they do not license, naming the element and the prerequisite it fails against",
+		"rationale": "the dependent is a commitment in words — the README's getting-started section tells the reader how to open the graph — so it is natural-layer. kzqwqptv is an inline EARS sentence (structured parent, natural child) and srlrwowp refs the extension manifest and sources (code parent, natural child); both are default cells of the eval-matrix (the gate form) and are flagged for matrix entries. The use is the command the section sends the reader to: at check time the reviewer reads the getting-started statement (the node's inline content, or the artifact its ref names) and every claim it makes about which command opens the graph, the label the reader will see and choose, and the places the section says the command is available from, and names any such claim that the recorded command contribution or the manifest contradicts or does not state. A behavioural check would demand behaviour from a prose dependent and restate it, which the gate form forbids; the manifest is read as the prerequisite that licenses the section's claims, not as a second subject."
+	}
+}
