@@ -1,0 +1,15 @@
+{
+  "kind": "evaluation",
+  "evaluates": [
+    "ynmpvmmp"
+  ],
+  "depends_on": [
+    "xtsnpqmr"
+  ],
+  "content": {
+    "type": "review-criteria",
+    "ref": "inline",
+    "content": "license — read the development section of the README that ynmpvmmp commits to and fail on any element of that section which contradicts xtsnpqmr: every claim the section makes about how a fresh clone is run must be permitted by the recorded one-step flow; fail naming the element and the prerequisite it fails against. The check has no subject while the dependent is only a placeholder or the README carries no development section (either is a finding), and it demands no particular wording, order or arrangement from the section. A claim that settles a point xtsnpqmr leaves open — for example how the debug session is started — is not a contradiction.",
+    "rationale": "The dependent is a commitment in words — the README's development section explains that a fresh clone runs in one step — so it is natural-layer. xtsnpqmr is inline prose, so the edge is the eval-matrix's natural-to-natural gate cell: the criterion is non-violation and nothing runs. The use is the one-step flow the section documents: every claim the section makes about how a fresh clone is run must be licensed by xtsnpqmr, which records a single VS Code debug session with no manual build, install or packaging. The check is applied by reading the authored section against the prerequisite; it demands no particular wording, order or arrangement, because the natural-child strictness rule forbids behavior probes and dispatching coverage. A placeholder dependent, or a README without a development section, leaves the check with no subject to read."
+  }
+}
