@@ -1,0 +1,12 @@
+{
+  "kind": "decision",
+  "content": {
+    "type": "text",
+    "ref": "inline",
+    "content": "The README's license section states that the extension is licensed under Apache-2.0, and points readers at the LICENSE file at the repository root for the full license text.",
+    "rationale": "rnqkxwsu records the extension's license as Apache-2.0 — permissive with an explicit patent grant, Marketplace-compatible, keeping commercial reuse open while contributors grant patent rights — and its ref is the LICENSE file at the repository root, whose text is the Apache License, Version 2.0. The license section is the place that publishes that identity to readers, so it must name the same license and nothing narrower: naming Apache-2.0 and pointing at LICENSE restates exactly what the prerequisite settles without adding a condition, restricting commercial reuse, or qualifying the patent grant. Pointing at LICENSE settles where the text lives, a point the prerequisite leaves open, so the section can be read as a licence statement rather than a paraphrase of the terms."
+  },
+  "depends_on": [
+    "rnqkxwsu"
+  ]
+}
