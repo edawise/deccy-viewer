@@ -1,0 +1,18 @@
+{
+	"kind": "evaluation",
+	"evaluates": [
+		"kwxutvpw"
+	],
+	"depends_on": [
+		"rmovtvkt",
+		"ltrnmrsr",
+		"ykvrkysl",
+		"wzqzwsst"
+	],
+	"content": {
+		"type": "review-criteria",
+		"ref": "inline",
+		"content": "Applied by a reviewer reading kwxutvpw against each prerequisite in turn, from the recorded nodes; nothing runs.\n\n(1) license against rmovtvkt — no element of kwxutvpw contradicts rmovtvkt; fail on any contradicting element, naming the element.\n\n(2) license against ltrnmrsr — no element of kwxutvpw contradicts ltrnmrsr; fail on any contradicting element, naming the element.\n\n(3) license against ykvrkysl — no element of kwxutvpw contradicts ykvrkysl; fail on any contradicting element, naming the element.\n\n(4) license against wzqzwsst — no element of kwxutvpw contradicts wzqzwsst; fail on any contradicting element, naming the element.\n\nNo clause names an element of any endpoint in advance, so the check survives rewording of kwxutvpw; which element is at issue is what the check finds, not what the criterion records.",
+		"rationale": "kwxutvpw uses rmovtvkt for the relationship sections whose listed ids it activates, ltrnmrsr for the select-and-show-node-detail outcome that activation must produce, ykvrkysl for the keyboard equivalents whose commitment the activation must respect, and wzqzwsst for the Enter-to-select keystroke it must leave intact. rmovtvkt is inline prose and so sits on the natural layer; ltrnmrsr, ykvrkysl and wzqzwsst are single requirement sentences and so sit on the structured layer; kwxutvpw is a commitment in words, natural layer. The pairs therefore cover the natural-to-natural cell — evals/natural-to-natural.md, whose check is copied as the criterion — and the structured-to-natural default cell, which takes that same gate form and is flagged here as a matrix gap: no eval-matrix cell covers a structured parent used by a natural child. The two edges added after judging are further instances of that same structured-to-natural default cell, so the same criterion, extended by one clause per prerequisite, covers them: the layer pair is unchanged, and a second evaluation would gate one layer pair two ways. Both cells check non-violation and nothing more: a prose or requirement-sentence parent states no observables, so demanding behaviour would exceed the license these edges give, while a dependent in words is sound exactly when it contradicts none of its prerequisites. A behaviour probe is still not this gate's job — keyboard activation of the listed relationship entries, and whether Enter still selects the focused node once entries can be activated, are observable only of a code-layer artifact and are gated where the viewer becomes one, in the evaluation of tpztomkv, which already depends on kwxutvpw; probing the keystrokes here would re-test that artifact from a node that decides no behaviour. The criterion never defines kwxutvpw, restates it, or tracks its wording."
+	}
+}
