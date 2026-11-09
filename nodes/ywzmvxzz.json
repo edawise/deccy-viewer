@@ -1,0 +1,16 @@
+{
+  "kind": "evaluation",
+  "evaluates": [
+    "tvoouwkn"
+  ],
+  "depends_on": [
+    "mwwxxzyk",
+    "oqotyplt"
+  ],
+  "content": {
+    "type": "review-criteria",
+    "ref": "inline",
+    "content": "Licence check, applied by reading the recorded nodes; nothing runs, because the dependent is a commitment in words and decides no artifact. Read the dependent's recorded decision against each recorded prerequisite in turn.\n\n(1) Against mwwxxzyk — no element of the dependent contradicts mwwxxzyk: fail, naming the element and the prerequisite it contradicts, if any element of the dependent forbids, reverses or substitutes an outcome that prerequisite fixes, or narrows the prerequisite by excepting a case the prerequisite covers.\n\n(2) Against oqotyplt — no element of the dependent contradicts the recorded visual-spec entry: fail, naming the element and the recorded entry it contradicts, if any element of the dependent forbids, reverses or substitutes the recorded value that entry fixes for its element, aspect and state.\n\n(3) The check presumes no element of the dependent and no particular prerequisite clause: which element is at issue is a finding named only in the check's output. It requires no wording, sentence order or vocabulary of the dependent, and invents no rule the prerequisites do not state.\n\n(4) A placeholder, empty or ref-less commitment in the dependent, or in a prerequisite the check is read against, leaves the check with no recorded subject: fail, naming the placeholder.",
+    "rationale": "tvoouwkn uses mwwxxzyk for which listed ids already are links: it picks the colour such an entry is drawn in and must not re-decide which listed entries are links; and it uses oqotyplt for the recorded link colour role, spending that role on the entry rather than substituting a colour of its own for it. mwwxxzyk is inline prose and so sits on the natural layer; oqotyplt records one element/aspect/state/value/token entry inline in visual-spec and so sits on the structured layer; tvoouwkn is a commitment in words, natural layer. The mwwxxzyk use therefore sits in the matrix's natural-to-natural gate cell — evals/natural-to-natural.md, whose licence check is copied as the criterion — and the oqotyplt use has no matrix cell (structured parent, natural child): it takes the documented default, the same gate form, and is flagged here as a matrix gap for a structured-to-natural cell, the same gap lvqyqozt flagged for its structured-to-natural edge. One criterion covers both uses because both ask the same question of the same dependent text: does it contradict a prerequisite it was drawn against. Because the endpoints are words and recorded notation rather than artifacts, any test of how, or in what colour, a listed entry is drawn would exceed the child's layer and presuppose a code-layer decision not recorded here; that appears only where the viewer becomes code, and is gated by the evaluation of the node deciding that artifact, not here. The criterion never defines tvoouwkn, restates it, or tracks its wording."
+  }
+}
