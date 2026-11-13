@@ -1,0 +1,16 @@
+{
+  "kind": "evaluation",
+  "evaluates": [
+    "srlrwowp"
+  ],
+  "depends_on": [
+    "sppkuruw"
+  ],
+  "content": {
+    "type": "test",
+    "ref": [
+      "tests/unit/uyouzlvw-manifest-placeholder.test.ts"
+    ],
+    "rationale": "the dependent is code-layer — its ref names the manifest and the shell's sources — while sppkuruw is a commitment in words that names no artifact, so the edge is the eval-matrix's natural-to-code fidelity cell: the manifest must hold the prose's rule exactly, neither looser nor stricter. What the edge adds is one committed field value: the version the manifest carries while no release is in hand, the fixed placeholder 0.0.1 that a release supplies only at release time. Because the whole claim is a single committed value, the fidelity review is discharged by a run instead of a read: the check reads the manifest document and nothing else, and it exercises both directions — the committed value is the placeholder and not a release number, since a release number or a dated, channelled or build-stamped value is a release version committed (looser), and the manifest still declares a version a dev host installs, a plain triple rather than a deleted, emptied or release-shaped field (stricter). It names no version but the placeholder, re-checks none of the dependent's naming, activation, serving or bundling content, and forbids no release procedure that takes its version as an explicit argument, so a rewrite of the dependent that keeps the placeholder leaves the check intact."
+  }
+}
