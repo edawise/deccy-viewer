@@ -1,0 +1,18 @@
+{
+	"kind": "evaluation",
+	"evaluates": [
+		"wrowytry"
+	],
+	"depends_on": [
+		"sppkuruw",
+		"vqultolm",
+		"srlrwowp"
+	],
+	"content": {
+		"type": "test",
+		"ref": [
+			"tests/unit/skzxumuk-release-entry.test.ts"
+		],
+		"rationale": "the dependent is code-layer: the release entry point it adds is a runnable program, so the check for its use runs rather than reads. Its prerequisite srlrwowp is code-layer too, its ref naming the manifest and the shell's sources, so that edge is the eval-matrix's code-to-code cell: the entry point must take the manifest it finds as given \u2014 its committed placeholder, its name, everything \u2014 and put the release value into the packaged artifact without writing it into the tree. The artifact is read where a host reads it, in both places it holds a version: the manifest under extension/ that a host activates, and the container's own extension.vsixmanifest Identity, which the host installs and displays as the extension's version \u2014 an identity left holding the tree's committed placeholder ships the placeholder however clean the packaged manifest is \u2014 so the identity's Version carries the value the argument gave and its Id and Publisher stay the tree's own manifest's, the artifact being this extension packaged. The earlier form of this check read the packaged manifest alone and looked for the value, so a wrong identity and a value-free leftover both went unseen, while the standards hold the tree the release leaves behind to the tree it found and nothing of the value anywhere but the artifact. The other two prerequisites are inline commitments in words, so those edges are the natural-to-code fidelity cell, and the one run discharges them in both directions. No looser: the version reaches the artifact only as an explicit argument, refuse if none is given and never fall back to a committed or default value, and after the run no file of the tree has been added or rewritten apart from the artifact \u2014 no working file, no staged or stamped manifest, no backup, no lockfile, no build output \u2014 so residue is residue whether or not it holds the value, and no file the run added or rewrote carries it either; a release that ships the placeholder, that stamps the tree and forgets to restore it, or that pins the value into a lock is a release version committed, which is what sppkuruw forbids and what vqultolm's packaged set leaves no file for. No stricter: the check names no packager, no flag spelling (a positional value and a --version value are both explicit arguments), no artifact filename, no payload file and no build step, so it demands nothing either prose states, and it reads the identity only for the value it ships and for the extension it names, inventing no field of it. It runs the entry point in a throwaway copy of the tree outside the repository, so that a stamp-and-restore is observed after the fact rather than concealed, and it looks for the artifact there because a .vsix in the tree is what the repository's own ignore rules already anticipate. It re-checks none of the prerequisites' own content: the committed placeholder is the subject of the manifest's own check, the packaged set is vqultolm's, and the naming, activation and serving of the shell are srlrwowp's, so rewriting the dependent without changing what it commits \u2014 another packager, another spelling of the argument, another artifact name \u2014 leaves this check intact; which element of a wrong release fails is the run's report, never what the check names in advance."
+	}
+}
