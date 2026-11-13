@@ -1,0 +1,16 @@
+{
+  "kind": "evaluation",
+  "evaluates": [
+    "sppkuruw"
+  ],
+  "depends_on": [
+    "uuutyrzs",
+    "tpztomkv"
+  ],
+  "content": {
+    "type": "review-criteria",
+    "ref": "inline",
+    "content": "no element of sppkuruw contradicts or re-decides uuutyrzs or tpztomkv; fail on any contradicting or re-decided element, naming the element and the prerequisite it offends, and pass when every element of the dependent is compatible with each prerequisite and settles nothing either of them already settles",
+    "rationale": "the dependent is inline prose that writes no artifact, so it is natural-layer and its use can only be read, not run: no command and no test path exist for it, and a reviewer applies this criterion to the committed statement at review time. uuutyrzs is inline prose (natural-to-natural, the gate cell, followed here); tpztomkv is prose whose ref points at media/webview.html and src/webview/main.ts, so by the matrix's ref rule it is code-layer and the cell is code-to-natural, which has no row: the default cell, i.e. this gate form, flagged for a matrix entry. The strictness rule settles the rest -- a child of a natural layer is a commitment in words, so the check is non-violation and non-re-decision and never demands behaviour, even where the prerequisite carries ref'd source. Both edges are covered by this one criterion because both checks are the same read of the same committed prose against one prerequisite apiece (fan-out, one broad eval), and no element of the dependent or of either prerequisite is named in advance: which element is at issue is what the check discovers at check time, so the criterion survives any rewrite of the dependent that decides the same thing and presupposes no decision not yet recorded."
+  }
+}
